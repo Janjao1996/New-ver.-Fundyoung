@@ -9,6 +9,8 @@
 import UIKit
 
 class RiskSelectedVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource  {
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -20,31 +22,45 @@ class RiskSelectedVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         return risk[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        RiskResult.text = risk[row]
+        
+        plan_.Risk = row + 1
     }
     
     let risk = ["Risk-Adverse","Conservative","Balanced","Advanced","Aggressive"]
- 
     
-    var plan:Plan!
- 
-    @IBOutlet weak var RiskResult: TextFieldStyle1!
+    
+    var plan_:Plan!
+    
+    
     @IBOutlet weak var riskPicker: UIPickerView!
+    @IBAction func nextBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "RecommendationVC", sender: self)
+    }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let Fundreccomendation = segue.destination as? fundRecommendationVC{
+            let plan = plan_
+            Fundreccomendation.plan = plan
+            
+        }
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        RiskResult.text = risk[0]
+        plan_.Risk = 1
         riskPicker.dataSource = self
         riskPicker.delegate = self
-        print(plan.PlanName)
-        print(plan.Target)
-        print(plan.NumberOfYear)
-        
-    
+        print(plan_.PlanName)
+        print(plan_.Target)
+        print(plan_.NumberOfYear)
         
     }
-  
-
-
+    @IBAction func unwindFromRecommendationVC(unwindSegue : UIStoryboardSegue){
+        
+    }
+    
+    
+    
 }
+

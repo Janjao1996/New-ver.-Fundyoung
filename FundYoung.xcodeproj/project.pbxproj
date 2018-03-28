@@ -47,6 +47,7 @@
 		A57CC4C0206100EC0096E68E /* RecomendedFundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CC4BF206100EC0096E68E /* RecomendedFundCell.swift */; };
 		A5D082232067E6C900DAE50A /* RiskSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */; };
 		A5D082252067F58B00DAE50A /* txtfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D082242067F58B00DAE50A /* txtfieldStyle.swift */; };
+		A5D08229206BA74200DAE50A /* namedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D08228206BA74200DAE50A /* namedVC.swift */; };
 		A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEDBDE2039564100153CB3 /* FundCell.swift */; };
 		A5DEDBE220395AEF00153CB3 /* FundDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEDBE120395AEF00153CB3 /* FundDataService.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		A57CC4BF206100EC0096E68E /* RecomendedFundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedFundCell.swift; sourceTree = "<group>"; };
 		A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskSelectedVC.swift; sourceTree = "<group>"; };
 		A5D082242067F58B00DAE50A /* txtfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = txtfieldStyle.swift; sourceTree = "<group>"; };
+		A5D08228206BA74200DAE50A /* namedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namedVC.swift; sourceTree = "<group>"; };
 		A5DEDBDE2039564100153CB3 /* FundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCell.swift; sourceTree = "<group>"; };
 		A5DEDBE120395AEF00153CB3 /* FundDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDataService.swift; sourceTree = "<group>"; };
 		C8BC92BC8BC0F0A90E3CCD66 /* Pods-FundYoung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundYoung.release.xcconfig"; path = "Pods/Target Support Files/Pods-FundYoung/Pods-FundYoung.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				A551F700203F3CA300A726A9 /* Question9VC.swift */,
 				A551F702203F3CBB00A726A9 /* Question10VC.swift */,
 				A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */,
+				A5D08228206BA74200DAE50A /* namedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */,
 				A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */,
 				A53440DF203A730800AC3508 /* UserDataService.swift in Sources */,
+				A5D08229206BA74200DAE50A /* namedVC.swift in Sources */,
 				A551F6F9203F3C5E00A726A9 /* Question5VC.swift in Sources */,
 				A56279BE20386B3F000DF151 /* Fund.swift in Sources */,
 				A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */,

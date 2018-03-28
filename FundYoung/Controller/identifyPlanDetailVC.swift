@@ -1,18 +1,10 @@
-//
-//  identifyPlanDetailVC.swift
-//  FundYoung
-//
-//  Created by Janjao on 17/2/2561 BE.
-//  Copyright © 2561 Janjao. All rights reserved.
-//
-
 import UIKit
 
 class identifyPlanDetailVC: UIViewController {
     
-    @IBOutlet weak var nameInput: TextFieldStyle1!
-    @IBOutlet weak var targetInput: TextFieldStyle1!
-    @IBOutlet weak var yearInput: TextFieldStyle1!
+    
+    @IBOutlet weak var targetInput: UITextView!
+    @IBOutlet weak var yearInput: UITextView!
     
     var namePlan = ""
     var targetPlan = 0
@@ -20,7 +12,7 @@ class identifyPlanDetailVC: UIViewController {
     
     
     override func viewDidLoad() {
-   
+        
         super.viewDidLoad()
         let doneBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
         doneBtn.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -30,24 +22,19 @@ class identifyPlanDetailVC: UIViewController {
         doneBtn.layer.borderWidth = 0.5
         doneBtn.addTarget(self, action: #selector(identifyPlanDetailVC.done), for: .touchUpInside)
         
-        nameInput.inputAccessoryView = doneBtn
         targetInput.inputAccessoryView = doneBtn
         yearInput.inputAccessoryView = doneBtn
         
         
-    
+        
     }
     
     @objc func done() {
-        if let nameInput = nameInput.text{
-       
-            namePlan = nameInput
-            view.endEditing(true)
-        }
+        
         if let targetInput = targetInput.text{
             if let target = Int(targetInput){
                 targetPlan = target
-               
+                
                 view.endEditing(true)
             }
         }
@@ -65,19 +52,19 @@ class identifyPlanDetailVC: UIViewController {
     @IBAction func nextBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "RiskVC", sender: self)
     }
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let risk = segue.destination as? RiskSelectedVC{
             let plan = Plan(Id: 0 ,PlanName: namePlan, Target: targetPlan, NumberOfYear: yearPlan)
-                risk.plan = plan
+            risk.plan_ = plan
             
         }
     }
-    @IBAction func unwindFromFundrecommendationVC(unwindSegue : UIStoryboardSegue){
+    @IBAction func unwindFromRiskVC(unwindSegue : UIStoryboardSegue){
         
     }
-  
-
-   
+    
+    
+    
 }

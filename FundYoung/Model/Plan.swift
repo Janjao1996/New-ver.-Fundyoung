@@ -6,14 +6,17 @@
 //  Copyright © 2561 Janjao. All rights reserved.
 //
 
+//
+
 import Foundation
 struct  Plan {
     var Id: Int!
     var PlanName: String!
     var Target: Int!
     var NumberOfYear: Int!
+    var Risk: Int!
     //var FundList = [Fund]()
-   // var Assesment = [Question]()
+    // var Assesment = [Question]()
     
     init(Id: Int, PlanName: String, Target : Int, NumberOfYear:Int) {
         self.Id = Id
@@ -21,7 +24,10 @@ struct  Plan {
         self.Target = Target
         self.NumberOfYear = NumberOfYear
     }
-  
+    
 }
+
+
+
 
 
