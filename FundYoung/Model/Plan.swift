@@ -15,7 +15,7 @@ struct  Plan {
     var Target: Int!
     var NumberOfYear: Int!
     var Risk: Int!
-    //var FundList = [Fund]()
+    var FundList = [Fund]()
     // var Assesment = [Question]()
     
     init(Id: Int, PlanName: String, Target : Int, NumberOfYear:Int) {

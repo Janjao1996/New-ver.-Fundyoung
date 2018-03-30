@@ -1,14 +1,26 @@
 PODS:
-  - Charts (3.0.5):
-    - Charts/Core (= 3.0.5)
-  - Charts/Core (3.0.5)
+  - Alamofire (4.7.0)
+  - Charts (3.1.0):
+    - Charts/Core (= 3.1.0)
+  - Charts/Core (3.1.0)
+  - Socket.IO-Client-Swift (13.1.3):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.4)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Charts
+  - Socket.IO-Client-Swift
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Charts: 0b0c96f6118b6ce63f11adbcaa3b31045ee4d772
+  Socket.IO-Client-Swift: d30d6fd08a38ad2a182b090936a043bf512ab2de
+  Starscream: f5da93fe6984c77b694366bf7299b7dc63a76f26
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: f353e21032dac76064f852fed41978d3744fab0a
+PODFILE CHECKSUM: 62d47b355df3a8360dc78dd368e510e8252140ad
 
 COCOAPODS: 1.4.0

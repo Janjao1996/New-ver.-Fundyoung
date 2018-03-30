@@ -7,5 +7,8 @@ target 'FundYoung' do
 
   # Pods for FundYoung
   pod 'Charts'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Socket.IO-Client-Swift'
 
 end

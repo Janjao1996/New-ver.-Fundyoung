@@ -14,11 +14,13 @@ class FundCell: UITableViewCell {
     @IBOutlet weak var FundName: UILabel!
     @IBOutlet weak var FundRisk: UILabel!
     @IBOutlet weak var FundReturn: UILabel!
+    
     @IBOutlet weak var AddBtn: UIButton!
     func updateViews(fund: Fund){
         FundName.text = fund.FundName
         FundRisk.text = String(fund.Risk)
         FundReturn.text = String(fund.Return)
+        
     }
    
 

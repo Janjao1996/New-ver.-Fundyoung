@@ -10,21 +10,30 @@ import UIKit
 import Charts
 
 class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var custom = false
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let fundCell = tableView.dequeueReusableCell(withIdentifier: "ReccomendFund") as? RecomendedFundCell{
-            let fund = FundDataService.instance.getFunds()[indexPath.row]
-            fundCell.updateViews(fund: fund)
-            return fundCell
-        }
-        else{
-            print("fail")
-            return RecomendedFundCell()
+        if custom == false{
+            if let fundCell = tableView.dequeueReusableCell(withIdentifier: "ReccomendFund") as? RecomendedFundCell{
+                let fund = FundDataService.instance.getFundByRisk(risk: plan.Risk)[indexPath.row]
+                fundCell.updateViews(fund: fund)
+                return fundCell
+            }
+            else{
+                print("fail")
+                return RecomendedFundCell()
+                
+            }
             
         }
+        else{
+            return RecomendedFundCell()
+        }
+        
+       
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FundDataService.instance.getFunds().count
+        return FundDataService.instance.getFundByRisk(risk: plan.Risk).count
     }
     
     var plan:Plan!
@@ -59,51 +68,8 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     func getDataSet(risk: Int) -> PieChartDataSet {
-        switch risk {
-        case 1:
-            let entry1 = PieChartDataEntry(value: Double(30.0), label: "#สินทรัพย์สภาพคล่อง")
-            let entry2 = PieChartDataEntry(value: Double(70.0), label: "#ตราสารหนี้")
-            let dataSet = PieChartDataSet(values: [entry1, entry2], label: "Fund")
-            return dataSet
-            
-        case 2:
-            let entry1 = PieChartDataEntry(value: Double(16.0), label: "#ตราสารผสม")
-            let entry2 = PieChartDataEntry(value: Double(16.0), label: "#ตรสารทุน")
-            let entry3 = PieChartDataEntry(value: Double(20.0), label: "#สินทรัพย์สภาพคล่อง")
-            let entry4 = PieChartDataEntry(value: Double(48.0), label: "#ตราสารหนี้")
-            let dataSet = PieChartDataSet(values: [entry1, entry2, entry3, entry4], label: "Fund")
-            return dataSet
-            
-        case 3:
-            let entry1 = PieChartDataEntry(value: Double(16.0), label: "#ตราสารผสม")
-            let entry2 = PieChartDataEntry(value: Double(32.0), label: "#ตรสารทุน")
-            let entry3 = PieChartDataEntry(value: Double(15.0), label: "#สินทรัพย์สภาพคล่อง")
-            let entry4 = PieChartDataEntry(value: Double(70.0), label: "#ตราสารหนี้")
-            let entry5 = PieChartDataEntry(value: Double(2.0), label: "#สินค้าโภคภัณฑ์")
-            let dataSet = PieChartDataSet(values: [entry1, entry2, entry3, entry4, entry5], label: "Fund")
-            return dataSet
-        case 4:
-            let entry1 = PieChartDataEntry(value: Double(20.0), label: "#ตราสารผสม")
-            let entry2 = PieChartDataEntry(value: Double(48.0), label: "#ตรสารทุน")
-            let entry3 = PieChartDataEntry(value: Double(10.0), label: "#สินทรัพย์สภาพคล่อง")
-            let entry4 = PieChartDataEntry(value: Double(70.0), label: "#ตราสารหนี้")
-            let entry5 = PieChartDataEntry(value: Double(2.0), label: "#สินค้าโภคภัณฑ์")
-            let dataSet = PieChartDataSet(values: [entry1, entry2, entry3, entry4, entry5], label: "Fund")
-            return dataSet
-        case 5:
-            let entry1 = PieChartDataEntry(value: Double(24.0), label: "#ตราสารผสม")
-            let entry2 = PieChartDataEntry(value: Double(68.0), label: "#ตรสารทุน")
-            let entry3 = PieChartDataEntry(value: Double(5.0), label: "#สินทรัพย์สภาพคล่อง")
-            let entry5 = PieChartDataEntry(value: Double(3.0), label: "#สินค้าโภคภัณฑ์")
-            let dataSet = PieChartDataSet(values: [entry1, entry2, entry3, entry5], label: "Fund")
-            return dataSet
-        default:
-            let entry = PieChartDataEntry(value: Double(100.0), label: "#ตราสารหนี้")
-            let dataSet = PieChartDataSet(values: [entry], label: "Fund")
-            return dataSet
-            
-        }
-        
+        let dataSet = FundDataService.instance.getFundWeightChart(risk: risk)
+       return dataSet
     }
     @IBAction func renderChart(){
         pieChartUpdate()

@@ -11,9 +11,11 @@ import UIKit
 class RecomendedFundCell: UITableViewCell {
     
     @IBOutlet weak var FundName: UILabel!
+    @IBOutlet weak var weightLbl: UILabel!
     
     func updateViews(fund: Fund){
         FundName.text = fund.FundName
+        weightLbl.text = String(fund.Percentage)
     }
     
 }

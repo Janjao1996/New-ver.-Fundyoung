@@ -29,12 +29,11 @@ class PlanDataService{
     func getPlan(forPlanID : Int) -> Plan {
         print("get plan")
         return Plan(Id : 0,PlanName: "RoadTrip to U.S.", Target: 200000, NumberOfYear: 3)
-     
     }
-
     func getNAV() -> Float{
         return 0
     }
+    
     
 }
 
