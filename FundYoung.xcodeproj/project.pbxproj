@@ -18,6 +18,8 @@
 		A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */; };
 		A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */; };
 		A53440DF203A730800AC3508 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DE203A730800AC3508 /* UserDataService.swift */; };
+		A548A8272071156100C7E1AC /* SumaryPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8262071156100C7E1AC /* SumaryPlanVC.swift */; };
+		A548A82920711EB500C7E1AC /* planTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A82820711EB500C7E1AC /* planTableCell.swift */; };
 		A551F6ED203F210500A726A9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6EC203F210500A726A9 /* Question.swift */; };
 		A551F6EF203F316F00A726A9 /* AssesmentDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6EE203F316F00A726A9 /* AssesmentDataService.swift */; };
 		A551F6F1203F3C0400A726A9 /* Question1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F0203F3C0400A726A9 /* Question1VC.swift */; };
@@ -65,6 +67,8 @@
 		A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle1.swift; sourceTree = "<group>"; };
 		A53440DE203A730800AC3508 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		A548A8262071156100C7E1AC /* SumaryPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumaryPlanVC.swift; sourceTree = "<group>"; };
+		A548A82820711EB500C7E1AC /* planTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planTableCell.swift; sourceTree = "<group>"; };
 		A551F6EC203F210500A726A9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A551F6EE203F316F00A726A9 /* AssesmentDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssesmentDataService.swift; sourceTree = "<group>"; };
 		A551F6F0203F3C0400A726A9 /* Question1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1VC.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				A551F702203F3CBB00A726A9 /* Question10VC.swift */,
 				A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */,
 				A5D08228206BA74200DAE50A /* namedVC.swift */,
+				A548A8262071156100C7E1AC /* SumaryPlanVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				A51A6F252056E44D00048697 /* termLblStyle.swift */,
 				A57CC4BF206100EC0096E68E /* RecomendedFundCell.swift */,
 				A5D082242067F58B00DAE50A /* txtfieldStyle.swift */,
+				A548A82820711EB500C7E1AC /* planTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,7 +392,9 @@
 				A558E19D205939FA003627AA /* plancreating.swift in Sources */,
 				A562799A203854E9000DF151 /* AppDelegate.swift in Sources */,
 				A51A6F242056E38900048697 /* PlanCellStyle.swift in Sources */,
+				A548A8272071156100C7E1AC /* SumaryPlanVC.swift in Sources */,
 				A551F6F3203F3C1F00A726A9 /* Question2VC.swift in Sources */,
+				A548A82920711EB500C7E1AC /* planTableCell.swift in Sources */,
 				A551F6F1203F3C0400A726A9 /* Question1VC.swift in Sources */,
 				A551F701203F3CA300A726A9 /* Question9VC.swift in Sources */,
 				A56279BA20386B21000DF151 /* User.swift in Sources */,
