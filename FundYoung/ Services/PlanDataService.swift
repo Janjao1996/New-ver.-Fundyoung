@@ -18,7 +18,7 @@ class PlanDataService{
     private let longTermPlan = [
          Plan(Id : 3,PlanName: "Home1", Target: 5000000, NumberOfYear: 20),
          Plan(Id : 4, PlanName: "Home2", Target: 5000000, NumberOfYear: 20),
-         Plan(Id : 5,PlanName: "Home3", Target: 5000000, NumberOfYear: 20)
+       
     ]
     func getShortTermPlan() -> [Plan]{
         return shortTermPlan
