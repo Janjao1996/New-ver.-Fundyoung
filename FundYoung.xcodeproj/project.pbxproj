@@ -11,7 +11,6 @@
 		A503938C203A98170086D54D /* LabelStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503938B203A98170086D54D /* LabelStyle1.swift */; };
 		A5039390203C2D6A0086D54D /* RebalanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A503938F203C2D6A0086D54D /* RebalanceVC.swift */; };
 		A5039392203C39980086D54D /* PlanDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5039391203C39980086D54D /* PlanDataService.swift */; };
-		A51A6F222056BB8000048697 /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A6F212056BB8000048697 /* PlanCell.swift */; };
 		A51A6F242056E38900048697 /* PlanCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A6F232056E38900048697 /* PlanCellStyle.swift */; };
 		A51A6F262056E44D00048697 /* termLblStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A6F252056E44D00048697 /* termLblStyle.swift */; };
 		A53440D9203A0D0400AC3508 /* lightGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */; };
@@ -20,6 +19,9 @@
 		A53440DF203A730800AC3508 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DE203A730800AC3508 /* UserDataService.swift */; };
 		A548A8272071156100C7E1AC /* SumaryPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8262071156100C7E1AC /* SumaryPlanVC.swift */; };
 		A548A82920711EB500C7E1AC /* planTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A82820711EB500C7E1AC /* planTableCell.swift */; };
+		A548A82E207282BB00C7E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A548A82D207282BA00C7E1AC /* Assets.xcassets */; };
+		A548A8302072A14700C7E1AC /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A82F2072A14600C7E1AC /* PlanCell.swift */; };
+		A548A8322072A9C800C7E1AC /* DurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8312072A9C800C7E1AC /* DurationVC.swift */; };
 		A551F6ED203F210500A726A9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6EC203F210500A726A9 /* Question.swift */; };
 		A551F6EF203F316F00A726A9 /* AssesmentDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6EE203F316F00A726A9 /* AssesmentDataService.swift */; };
 		A551F6F1203F3C0400A726A9 /* Question1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F0203F3C0400A726A9 /* Question1VC.swift */; };
@@ -37,7 +39,6 @@
 		A562799C203854E9000DF151 /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562799B203854E9000DF151 /* welcomeVC.swift */; };
 		A562799F203854E9000DF151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A562799D203854E9000DF151 /* Main.storyboard */; };
 		A56279A4203854E9000DF151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56279A2203854E9000DF151 /* LaunchScreen.storyboard */; };
-		A56279AE20386772000DF151 /* myPlansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279AD20386772000DF151 /* myPlansVC.swift */; };
 		A56279B0203867B4000DF151 /* identifyPlanDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */; };
 		A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B1203867E6000DF151 /* fundRecommendationVC.swift */; };
 		A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B52038682E000DF151 /* fundSelectionVC.swift */; };
@@ -59,7 +60,6 @@
 		A503938B203A98170086D54D /* LabelStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle1.swift; sourceTree = "<group>"; };
 		A503938F203C2D6A0086D54D /* RebalanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebalanceVC.swift; sourceTree = "<group>"; };
 		A5039391203C39980086D54D /* PlanDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDataService.swift; sourceTree = "<group>"; };
-		A51A6F212056BB8000048697 /* PlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
 		A51A6F232056E38900048697 /* PlanCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCellStyle.swift; sourceTree = "<group>"; };
 		A51A6F252056E44D00048697 /* termLblStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termLblStyle.swift; sourceTree = "<group>"; };
 		A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightGreyBtnBorder.swift; sourceTree = "<group>"; };
@@ -68,6 +68,9 @@
 		A53440DE203A730800AC3508 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		A548A8262071156100C7E1AC /* SumaryPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumaryPlanVC.swift; sourceTree = "<group>"; };
 		A548A82820711EB500C7E1AC /* planTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planTableCell.swift; sourceTree = "<group>"; };
+		A548A82D207282BA00C7E1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A548A82F2072A14600C7E1AC /* PlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
+		A548A8312072A9C800C7E1AC /* DurationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationVC.swift; sourceTree = "<group>"; };
 		A551F6EC203F210500A726A9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A551F6EE203F316F00A726A9 /* AssesmentDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssesmentDataService.swift; sourceTree = "<group>"; };
 		A551F6F0203F3C0400A726A9 /* Question1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1VC.swift; sourceTree = "<group>"; };
@@ -87,7 +90,6 @@
 		A562799E203854E9000DF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A56279A3203854E9000DF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56279A5203854E9000DF151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A56279AD20386772000DF151 /* myPlansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPlansVC.swift; sourceTree = "<group>"; };
 		A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = identifyPlanDetailVC.swift; sourceTree = "<group>"; };
 		A56279B1203867E6000DF151 /* fundRecommendationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundRecommendationVC.swift; sourceTree = "<group>"; };
 		A56279B52038682E000DF151 /* fundSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundSelectionVC.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				A562799D203854E9000DF151 /* Main.storyboard */,
 				A56279A2203854E9000DF151 /* LaunchScreen.storyboard */,
 				A56279A5203854E9000DF151 /* Info.plist */,
+				A548A82D207282BA00C7E1AC /* Assets.xcassets */,
 			);
 			path = FundYoung;
 			sourceTree = "<group>";
@@ -173,8 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				A562799B203854E9000DF151 /* welcomeVC.swift */,
-				A56279AD20386772000DF151 /* myPlansVC.swift */,
 				A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */,
+				A548A8312072A9C800C7E1AC /* DurationVC.swift */,
 				A56279B1203867E6000DF151 /* fundRecommendationVC.swift */,
 				A56279B52038682E000DF151 /* fundSelectionVC.swift */,
 				A56279B72038685A000DF151 /* estimateSaving.swift */,
@@ -203,8 +206,8 @@
 				A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */,
 				A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */,
 				A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */,
+				A548A82F2072A14600C7E1AC /* PlanCell.swift */,
 				A503938B203A98170086D54D /* LabelStyle1.swift */,
-				A51A6F212056BB8000048697 /* PlanCell.swift */,
 				A51A6F232056E38900048697 /* PlanCellStyle.swift */,
 				A51A6F252056E44D00048697 /* termLblStyle.swift */,
 				A57CC4BF206100EC0096E68E /* RecomendedFundCell.swift */,
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56279A4203854E9000DF151 /* LaunchScreen.storyboard in Resources */,
+				A548A82E207282BB00C7E1AC /* Assets.xcassets in Resources */,
 				A562799F203854E9000DF151 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +394,7 @@
 				A51A6F242056E38900048697 /* PlanCellStyle.swift in Sources */,
 				A548A8272071156100C7E1AC /* SumaryPlanVC.swift in Sources */,
 				A551F6F3203F3C1F00A726A9 /* Question2VC.swift in Sources */,
+				A548A8302072A14700C7E1AC /* PlanCell.swift in Sources */,
 				A548A82920711EB500C7E1AC /* planTableCell.swift in Sources */,
 				A551F6F1203F3C0400A726A9 /* Question1VC.swift in Sources */,
 				A551F701203F3CA300A726A9 /* Question9VC.swift in Sources */,
@@ -398,19 +403,18 @@
 				A5D082252067F58B00DAE50A /* txtfieldStyle.swift in Sources */,
 				A551F6FF203F3C9500A726A9 /* Question8VC.swift in Sources */,
 				A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */,
-				A51A6F222056BB8000048697 /* PlanCell.swift in Sources */,
 				A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */,
 				A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */,
 				A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */,
 				A53440DF203A730800AC3508 /* UserDataService.swift in Sources */,
 				A5D08229206BA74200DAE50A /* namedVC.swift in Sources */,
 				A551F6F9203F3C5E00A726A9 /* Question5VC.swift in Sources */,
+				A548A8322072A9C800C7E1AC /* DurationVC.swift in Sources */,
 				A56279BE20386B3F000DF151 /* Fund.swift in Sources */,
 				A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */,
 				A551F6F5203F3C2F00A726A9 /* Question3VC.swift in Sources */,
 				A551F6F7203F3C4D00A726A9 /* Question4VC.swift in Sources */,
 				A5DEDBE220395AEF00153CB3 /* FundDataService.swift in Sources */,
-				A56279AE20386772000DF151 /* myPlansVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

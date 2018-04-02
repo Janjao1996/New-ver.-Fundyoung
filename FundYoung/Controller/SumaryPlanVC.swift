@@ -11,10 +11,18 @@ import UIKit
 class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     
-    /*
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let plan = PlanDataService.instance.getShortTermPlan()[indexPath.row]
-        performSegue(withIdentifier: "RebanceVC", sender: plan)
+        switch segment.selectedSegmentIndex {
+        case 0:
+            let plan = PlanDataService.instance.getShortTermPlan()[indexPath.row]
+            performSegue(withIdentifier: "RebanceVC", sender: plan)
+        case 1:
+            let plan = PlanDataService.instance.getLongTermPlan()[indexPath.row]
+            performSegue(withIdentifier: "RebanceVC", sender: plan)
+        default:
+            break
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let RebalanceVC = segue.destination as? RebalanceVC{
@@ -24,7 +32,7 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             
         }
     }
-    */
+    
     
 
     
@@ -84,6 +92,9 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     
     @IBAction func unwindFromIdetifyingVC(unwindSegue : UIStoryboardSegue){
+        
+    }
+    @IBAction func unwindFromRebalanceVC(unwindSegue : UIStoryboardSegue){
         
     }
     

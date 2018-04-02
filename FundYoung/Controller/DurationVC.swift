@@ -1,9 +1,16 @@
+//
+//  DurationVC.swift
+//  FundYoung
+//
+//  Created by Janjao on 3/4/2561 BE.
+//  Copyright © 2561 Janjao. All rights reserved.
+//
+
 import UIKit
 
-class identifyPlanDetailVC: UIViewController {
-    
-    
-    @IBOutlet weak var targetInput: UITextView!
+class DurationVC: UIViewController {
+
+    @IBOutlet weak var yearInput: UITextView!
     
     var namePlan = ""
     var targetPlan = 0
@@ -19,9 +26,9 @@ class identifyPlanDetailVC: UIViewController {
         doneBtn.setTitleColor(#colorLiteral(red: 0.4352941176, green: 0.4431372549, blue: 0.4745098039, alpha: 1), for: .normal)
         doneBtn.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         doneBtn.layer.borderWidth = 0.5
-        doneBtn.addTarget(self, action: #selector(identifyPlanDetailVC.done), for: .touchUpInside)
-        
-        targetInput.inputAccessoryView = doneBtn
+        doneBtn.addTarget(self, action: #selector(DurationVC.done), for: .touchUpInside)
+      
+        yearInput.inputAccessoryView = doneBtn
         
         
         
@@ -29,20 +36,20 @@ class identifyPlanDetailVC: UIViewController {
     
     @objc func done() {
         
-        if let targetInput = targetInput.text{
-            if let target = Int(targetInput){
-                targetPlan = target
-                
+        if let yearInput = yearInput.text{
+            if let year = Int(yearInput){
+                yearPlan = year
                 view.endEditing(true)
             }
         }
-      
+        
+        
     }
     
     
     
     @IBAction func nextBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "DurationVC", sender: self)
+        performSegue(withIdentifier: "RiskVC", sender: self)
     }
     
     
@@ -53,10 +60,10 @@ class identifyPlanDetailVC: UIViewController {
             
         }
     }
-    @IBAction func unwindFromDurationVC(unwindSegue : UIStoryboardSegue){
+    @IBAction func unwindFromRiskVC(unwindSegue : UIStoryboardSegue){
         
     }
     
     
-    
+
 }
