@@ -29,7 +29,7 @@ class TextFieldStyle1: UITextField {
         if let p = placeholder{
             let place = NSAttributedString(string: p, attributes: [.foregroundColor: #colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1)])
             attributedPlaceholder = place
-            textColor = #colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1)
+            textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.8545590753)
         }
     }
 
