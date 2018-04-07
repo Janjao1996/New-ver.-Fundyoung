@@ -14,8 +14,8 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if custom == false{
             if let fundCell = tableView.dequeueReusableCell(withIdentifier: "ReccomendFund") as? RecomendedFundCell{
-                let fund = FundDataService.instance.getFundByRisk(risk: plan.Risk)[indexPath.row]
-                fundCell.updateViews(fund: fund)
+                let fundRatio = FundDataService.instance.getFundByRisk(risk: plan.Risk)[indexPath.row]
+                fundCell.updateViews(fund: fundRatio)
                 return fundCell
             }
             else{
@@ -37,6 +37,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     var plan:Plan!
+    var fundList = [fundRatio]()
     @IBOutlet weak var pieChart : PieChartView!
     @IBOutlet weak var FundTable: UITableView!
     

@@ -23,60 +23,43 @@ class  FundDataService {
     func getFunds() -> [Fund]{
         return Funds
     }
-    func getFundByRisk(risk: Int) -> [Fund] {
-        var funds = [Fund]()
+    func getFundByRisk(risk: Int) -> [fundRatio] {
+        var funds = [fundRatio]()
         switch risk {
         case 1:
-            var fund1 = Funds[0]
-            fund1.Percentage = 70
-            var fund2 = Funds[1]
-            fund2.Percentage = 30
+            let fund1 = fundRatio(fund: Funds[0], ratio: 70)
+            let fund2 = fundRatio(fund: Funds[1], ratio: 30)
             funds.append(fund1)
             funds.append(fund2)
             return funds
         case 2:
-            var fund1 = Funds[0]
-            var fund2 = Funds[1]
-            var fund3 = Funds[2]
-            var fund4 = Funds[3]
-            fund1.Percentage = 16
-            fund2.Percentage = 16
-            fund3.Percentage = 20
-            fund4.Percentage = 48
+            let fund1 = fundRatio(fund: Funds[0], ratio: 16)
+            let fund2 = fundRatio(fund: Funds[1], ratio: 16)
+            let fund3 = fundRatio(fund: Funds[2], ratio: 20)
+            let fund4 = fundRatio(fund: Funds[3], ratio: 48)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
             funds.append(fund4)
             return funds
         case 3:
-            var fund1 = Funds[0]
-            var fund2 = Funds[1]
-            var fund3 = Funds[2]
-            var fund4 = Funds[3]
-            var fund5 = Funds[4]
-            fund1.Percentage = 16
-            fund2.Percentage = 32
-            fund3.Percentage = 15
-            fund4.Percentage = 35
-            fund5.Percentage = 2
+            let fund1 = fundRatio(fund: Funds[0], ratio: 16)
+            let fund2 = fundRatio(fund: Funds[1], ratio: 32)
+            let fund3 = fundRatio(fund: Funds[2], ratio: 15)
+            let fund4 = fundRatio(fund: Funds[3], ratio: 35)
+            let fund5 = fundRatio(fund: Funds[4], ratio: 2)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
             funds.append(fund4)
             funds.append(fund5)
             return funds
-            
         case 4:
-            var fund1 = Funds[0]
-            var fund2 = Funds[1]
-            var fund3 = Funds[2]
-            var fund4 = Funds[3]
-            var fund5 = Funds[4]
-            fund1.Percentage = 20
-            fund2.Percentage = 48
-            fund3.Percentage = 10
-            fund4.Percentage = 20
-            fund5.Percentage = 2
+            let fund1 = fundRatio(fund: Funds[0], ratio: 20)
+            let fund2 = fundRatio(fund: Funds[1], ratio: 48)
+            let fund3 = fundRatio(fund: Funds[2], ratio: 10)
+            let fund4 = fundRatio(fund: Funds[3], ratio: 20)
+            let fund5 = fundRatio(fund: Funds[4], ratio: 2)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
@@ -84,25 +67,19 @@ class  FundDataService {
             funds.append(fund5)
             return funds
         case 5:
-            var fund1 = Funds[0]
-            var fund2 = Funds[1]
-            var fund3 = Funds[2]
-            var fund4 = Funds[3]
-            fund1.Percentage = 24
-            fund2.Percentage = 68
-            fund3.Percentage = 5
-            fund4.Percentage = 3
+            let fund1 = fundRatio(fund: Funds[0], ratio: 24)
+            let fund2 = fundRatio(fund: Funds[1], ratio: 68)
+            let fund3 = fundRatio(fund: Funds[2], ratio: 5)
+            let fund4 = fundRatio(fund: Funds[3], ratio: 3)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
             funds.append(fund4)
             return funds
         default:
-            var fund1 = Funds[0]
-            fund1.Percentage = 100
-            funds.append(fund1)
-            return funds
+            break
         }
+        return funds
     }
 
     func getFundWeightChart(risk:Int)-> PieChartDataSet {

@@ -11,12 +11,14 @@ import UIKit
 class estimateSaving: UIViewController {
 
     @IBOutlet weak var initialInvestLbl: UITextField!
-    
     @IBOutlet weak var investOnceLbl: UILabel!
-    
     @IBOutlet weak var monthlyLbl: UILabel!
-    
     @IBOutlet weak var InitMonthlyLbl: UILabel!
+    @IBOutlet weak var InvestOnceView: customUIView!
+    @IBOutlet weak var MonthlyView: customUIView!
+    @IBOutlet weak var initialView: customUIView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +30,51 @@ class estimateSaving: UIViewController {
         calcBtn.layer.borderWidth = 0.5
         calcBtn.addTarget(self, action: #selector(estimateSaving.calculate), for: .touchUpInside)
         initialInvestLbl.inputAccessoryView = calcBtn
+        let InvestOncetap = UITapGestureRecognizer(target: self, action: #selector(self.investOnceTapped(_:)))
+        InvestOnceView.addGestureRecognizer(InvestOncetap)
+        InvestOnceView.isUserInteractionEnabled = true
+        
+        let Monthlytap = UITapGestureRecognizer(target: self, action: #selector(self.monthlyTapped(_:)))
+        MonthlyView.addGestureRecognizer(Monthlytap)
+        MonthlyView.isUserInteractionEnabled = true
+        let Initialtap = UITapGestureRecognizer(target: self, action: #selector(self.initialTapped(_:)))
+        initialView.addGestureRecognizer(Initialtap)
+        initialView.isUserInteractionEnabled = true
+     
+        
+        
     }
+    
+    @IBAction func InintialTxtTapped(_ sender: Any) {
+        initialView.click()
+        InvestOnceView.unclick()
+        MonthlyView.unclick()
+    }
+    @objc func investOnceTapped(_ sender: UITapGestureRecognizer){
+        InvestOnceView.click()
+        MonthlyView.unclick()
+        initialView.unclick()
+    }
+    @objc func monthlyTapped(_ sender: UITapGestureRecognizer){
+        MonthlyView.click()
+        InvestOnceView.unclick()
+        initialView.unclick()
+    }
+    @objc func initialTapped(_ sender: UITapGestureRecognizer){
+        initialView.click()
+        InvestOnceView.unclick()
+        MonthlyView.unclick()
+        
+    }
+ 
+ 
     @objc func calculate(){
         InitMonthlyLbl.text = String(500000)
         view.endEditing(true)
         
     }
+  
+    
     @IBAction func unwindFromIdetifyingVC(unwindSegue : UIStoryboardSegue){
         
     }

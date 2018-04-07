@@ -13,9 +13,9 @@ class RecomendedFundCell: UITableViewCell {
     @IBOutlet weak var FundName: UILabel!
     @IBOutlet weak var weightLbl: UILabel!
     
-    func updateViews(fund: Fund){
-        FundName.text = fund.FundName
-        weightLbl.text = String(fund.Percentage)
+    func updateViews(fund: fundRatio){
+        FundName.text = fund.fund.FundName
+        weightLbl.text = String(fund.ratio)
     }
     
 }
