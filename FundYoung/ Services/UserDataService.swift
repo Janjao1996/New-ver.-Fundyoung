@@ -10,9 +10,6 @@ import Foundation
 
 class UserDataService {
     static let instance = UserDataService()
-    private let user = User(FistName: "Theeranith", LastName: "Atchaklab")
-    func getUser() -> User {
-        return user
-    }
+
     
 }

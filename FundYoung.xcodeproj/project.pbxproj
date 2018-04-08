@@ -24,6 +24,7 @@
 		A53F0EFD207A39C5008B1679 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EFC207A39C5008B1679 /* TestVC.swift */; };
 		A53F0EFF207A3D05008B1679 /* GradieantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EFE207A3D05008B1679 /* GradieantView.swift */; };
 		A53F0F02207A4928008B1679 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0F01207A4928008B1679 /* Constants.swift */; };
+		A53F0F04207A74CB008B1679 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0F03207A74CB008B1679 /* SignUpVC.swift */; };
 		A548A8272071156100C7E1AC /* SumaryPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8262071156100C7E1AC /* SumaryPlanVC.swift */; };
 		A548A82920711EB500C7E1AC /* planTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A82820711EB500C7E1AC /* planTableCell.swift */; };
 		A548A82E207282BB00C7E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A548A82D207282BA00C7E1AC /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		A53F0EFC207A39C5008B1679 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		A53F0EFE207A3D05008B1679 /* GradieantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradieantView.swift; sourceTree = "<group>"; };
 		A53F0F01207A4928008B1679 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A53F0F03207A74CB008B1679 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A548A8262071156100C7E1AC /* SumaryPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumaryPlanVC.swift; sourceTree = "<group>"; };
 		A548A82820711EB500C7E1AC /* planTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planTableCell.swift; sourceTree = "<group>"; };
 		A548A82D207282BA00C7E1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */,
 				A5D08228206BA74200DAE50A /* namedVC.swift */,
 				A53F0EFC207A39C5008B1679 /* TestVC.swift */,
+				A53F0F03207A74CB008B1679 /* SignUpVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				A53F0EF0207942DA008B1679 /* fundTypesVC.swift in Sources */,
 				A56279BC20386B30000DF151 /* Plan.swift in Sources */,
 				A51A6F262056E44D00048697 /* termLblStyle.swift in Sources */,
+				A53F0F04207A74CB008B1679 /* SignUpVC.swift in Sources */,
 				A53F0EFD207A39C5008B1679 /* TestVC.swift in Sources */,
 				A551F703203F3CBB00A726A9 /* Question10VC.swift in Sources */,
 				A5039390203C2D6A0086D54D /* RebalanceVC.swift in Sources */,

@@ -9,11 +9,22 @@
 import UIKit
 
 class LogInVC: UIViewController {
+    
 
+    
+    @IBOutlet weak var emailTxt: txtfieldStyle!
+    @IBOutlet weak var PasswordTxt: txtfieldStyle!
+    @IBAction func signInBtnPressed(_ sender: Any) {
+    }
+    
+    @IBAction func signUpBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBAction func prepareForUnwind(Segue: UIStoryboardSegue)
 
     
 
