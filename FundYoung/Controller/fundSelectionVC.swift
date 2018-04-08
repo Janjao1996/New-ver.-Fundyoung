@@ -11,22 +11,22 @@ import UIKit
 class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     @IBOutlet weak var FundTable: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FundDataService.instance.getFunds().count
+        return FundDataService.instance.getFundsByTypes(type: fundtype).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let fundCell = tableView.dequeueReusableCell(withIdentifier: "FundCell") as? FundCell{
-            let fund = FundDataService.instance.getFunds()[indexPath.row ]
+            let fund = FundDataService.instance.getFundsByTypes(type: fundtype)[indexPath.row ]
             fundCell.updateViews(fund: fund)
             return fundCell
             
         }
         else{
-            print("fail")
             return FundCell()
         }
         
     }
+    var fundtype: String!
     override func viewDidLoad() {
         super.viewDidLoad()
         FundTable.dataSource = self
@@ -34,7 +34,9 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
 
       
     }
+    func getType(type: String){
+        fundtype = type
+    }
     
-
    
 }

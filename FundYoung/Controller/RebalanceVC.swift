@@ -17,6 +17,7 @@ class RebalanceVC: UIViewController {
     @IBOutlet weak var pieChart: PieChartView!
     var plan_ :Plan!
     @IBOutlet weak var GoalNameLbl: UILabel!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()

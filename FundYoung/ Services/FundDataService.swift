@@ -19,8 +19,14 @@ class  FundDataService {
         Fund(FundName: "SCBFP1", Risk: 4, Return: 4),
         Fund(FundName: "SCBTMFPLUS-P1", Risk: 6, Return: 7)
     ]
-    
-    func getFunds() -> [Fund]{
+    private var Types = ["Equity","Bond","Money Market","Commodities"]
+    func getTypes()-> [String]{
+        return Types
+        
+    }
+   
+    func getFundsByTypes(type: String) -> [Fund]{
+        
         return Funds
     }
     func getFundByRisk(risk: Int) -> [fundRatio] {

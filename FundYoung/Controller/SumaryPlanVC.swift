@@ -11,6 +11,7 @@ import UIKit
 class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     
+   
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch segment.selectedSegmentIndex {
@@ -41,14 +42,19 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var segment: UISegmentedControl!
     
+    @IBOutlet weak var menuBtn: UIButton!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        
+        
         PlanTable.dataSource = self
         PlanTable.delegate = self
-
-      
+       
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
