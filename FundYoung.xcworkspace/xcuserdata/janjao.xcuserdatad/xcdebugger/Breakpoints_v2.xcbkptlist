@@ -2,4 +2,84 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FundYoung/Controller/SignUpVC.swift"
+            timestampString = "545130811.582684"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "SignUpVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FundYoung.SignUpVC.PasswordTxt.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "FundYoung"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janjao/Desktop/New-ver.-Fundyoung/FundYoung/Controller/SignUpVC.swift"
+                  timestampString = "545130814.359221"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FundYoung.SignUpVC.PasswordTxt.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "FundYoung"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janjao/Desktop/New-ver.-Fundyoung/FundYoung/Controller/SignUpVC.swift"
+                  timestampString = "545130814.365212"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FundYoung.SignUpVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FundYoung.SignUpVC"
+                  moduleName = "FundYoung"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janjao/Desktop/New-ver.-Fundyoung/FundYoung/Controller/SignUpVC.swift"
+                  timestampString = "545130814.367905"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "253">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FundYoung.SignUpVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;FundYoung.SignUpVC&gt;"
+                  moduleName = "FundYoung"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/janjao/Desktop/New-ver.-Fundyoung/FundYoung/Controller/SignUpVC.swift"
+                  timestampString = "545130814.369802"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "187">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

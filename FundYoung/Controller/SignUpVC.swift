@@ -26,10 +26,37 @@ class SignUpVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        creareDatePickerView()
+        createDatePickerView()
+        let doneBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
+        doneBtn.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        doneBtn.setTitle("Done", for: .normal)
+        doneBtn.setTitleColor(#colorLiteral(red: 0.4352941176, green: 0.4431372549, blue: 0.4745098039, alpha: 1), for: .normal)
+        doneBtn.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        doneBtn.layer.borderWidth = 0.5
+        doneBtn.addTarget(self, action: #selector(SignUpVC.done), for: .touchUpInside)
+        emailTxt.inputAccessoryView = doneBtn
+        PasswordTxt.inputAccessoryView = doneBtn
+        RepasswordTxt.inputAccessoryView = doneBtn
+        firstNameTxt.inputAccessoryView = doneBtn
+        lastNameTxt.inputAccessoryView = doneBtn
+        
+        
 
     }
-    func creareDatePickerView() {
+    var Email: String!
+    var Passwd: String!
+    @objc func done() {
+        if let email = emailTxt.text{
+            Email = email
+            view.endEditing(true)
+        }
+        if let pass = PasswordTxt.text {
+            Passwd = pass
+            view.endEditing(true)
+        }
+        
+    }
+    func createDatePickerView() {
         let ToolBar = UIToolbar()
         ToolBar.sizeToFit()
         let done = UIBarButtonItem(barButtonSystemItem: .done, target: nil , action: #selector(donePressed))
@@ -47,7 +74,10 @@ class SignUpVC: UIViewController {
         self.view.endEditing(true)
         
     }
-
+    @IBAction func signUpPressed(_ sender: Any) {
+        
+    }
+    
     
     
 
