@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpVC: UIViewController {
     
@@ -43,9 +44,10 @@ class SignUpVC: UIViewController {
         
 
     }
-    var Email: String!
-    var Passwd: String!
+    //var Email: String!
+   // var Passwd: String!
     @objc func done() {
+        /*
         if let email = emailTxt.text{
             Email = email
             view.endEditing(true)
@@ -54,7 +56,8 @@ class SignUpVC: UIViewController {
             Passwd = pass
             view.endEditing(true)
         }
-        
+        */
+        view.endEditing(true)
     }
     func createDatePickerView() {
         let ToolBar = UIToolbar()
@@ -75,6 +78,20 @@ class SignUpVC: UIViewController {
         
     }
     @IBAction func signUpPressed(_ sender: Any) {
+        if let email = emailTxt.text, let pass = PasswordTxt.text {
+            print(email)
+            print(pass)
+            Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
+                if let u = user{
+                    
+                    self.performSegue(withIdentifier: "goToLogIn", sender: self)
+                }
+                else{
+                    print("error")
+                }
+            }
+            
+        }
         
     }
     

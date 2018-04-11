@@ -56,6 +56,7 @@
 		A56279BA20386B21000DF151 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279B920386B21000DF151 /* User.swift */; };
 		A56279BC20386B30000DF151 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279BB20386B30000DF151 /* Plan.swift */; };
 		A56279BE20386B3F000DF151 /* Fund.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279BD20386B3F000DF151 /* Fund.swift */; };
+		A567A0A3207E0F9D0019CEFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A567A0A2207E0F9D0019CEFA /* GoogleService-Info.plist */; };
 		A57CC4C0206100EC0096E68E /* RecomendedFundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CC4BF206100EC0096E68E /* RecomendedFundCell.swift */; };
 		A5D082232067E6C900DAE50A /* RiskSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */; };
 		A5D082252067F58B00DAE50A /* txtfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D082242067F58B00DAE50A /* txtfieldStyle.swift */; };
@@ -119,6 +120,7 @@
 		A56279B920386B21000DF151 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A56279BB20386B30000DF151 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		A56279BD20386B3F000DF151 /* Fund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fund.swift; sourceTree = "<group>"; };
+		A567A0A2207E0F9D0019CEFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A57CC4BF206100EC0096E68E /* RecomendedFundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedFundCell.swift; sourceTree = "<group>"; };
 		A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskSelectedVC.swift; sourceTree = "<group>"; };
 		A5D082242067F58B00DAE50A /* txtfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = txtfieldStyle.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				A5627999203854E9000DF151 /* AppDelegate.swift */,
 				A562799D203854E9000DF151 /* Main.storyboard */,
 				A56279A2203854E9000DF151 /* LaunchScreen.storyboard */,
+				A567A0A2207E0F9D0019CEFA /* GoogleService-Info.plist */,
 				A56279A5203854E9000DF151 /* Info.plist */,
 				A548A82D207282BA00C7E1AC /* Assets.xcassets */,
 			);
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56279A4203854E9000DF151 /* LaunchScreen.storyboard in Resources */,
+				A567A0A3207E0F9D0019CEFA /* GoogleService-Info.plist in Resources */,
 				A548A82E207282BB00C7E1AC /* Assets.xcassets in Resources */,
 				A562799F203854E9000DF151 /* Main.storyboard in Resources */,
 			);
@@ -386,17 +390,23 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FundYoung/Pods-FundYoung-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
