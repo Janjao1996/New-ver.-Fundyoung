@@ -82,9 +82,8 @@ class SignUpVC: UIViewController {
             print(email)
             print(pass)
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
-                if let u = user{
-                    
-                    self.performSegue(withIdentifier: "goToLogIn", sender: self)
+                if user != nil{
+                  self.performSegue(withIdentifier: "goToLogIn", sender: self)
                 }
                 else{
                     print("error")
