@@ -21,6 +21,8 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var firstNameTxt: UITextField!
     @IBOutlet weak var lastNameTxt: UITextField!
     
+    @IBOutlet weak var ErrorLbl: UILabel!
+    @IBOutlet weak var GenderTXt: UITextField!
     @IBOutlet weak var DOBTxt: UITextField!
     let DOBPicker = UIDatePicker()
     
@@ -44,19 +46,9 @@ class SignUpVC: UIViewController {
         
 
     }
-    //var Email: String!
-   // var Passwd: String!
+    
     @objc func done() {
-        /*
-        if let email = emailTxt.text{
-            Email = email
-            view.endEditing(true)
-        }
-        if let pass = PasswordTxt.text {
-            Passwd = pass
-            view.endEditing(true)
-        }
-        */
+  
         view.endEditing(true)
     }
     func createDatePickerView() {
@@ -78,22 +70,27 @@ class SignUpVC: UIViewController {
         
     }
     @IBAction func signUpPressed(_ sender: Any) {
-        if let email = emailTxt.text, let pass = PasswordTxt.text {
-            print(email)
-            print(pass)
+        if PasswordTxt.text == RepasswordTxt.text{
+            guard let email = emailTxt.text  else{return}
+            guard let pass = PasswordTxt.text else{return}
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
-                if user != nil{
-                  self.performSegue(withIdentifier: "goToLogIn", sender: self)
+                if error == nil  && user != nil{
+                    self.performSegue(withIdentifier: "goToLogIn", sender: self)
                 }
                 else{
-                    print("error")
+                    print("Error Log In:\(error!.localizedDescription)")
                 }
+                
             }
             
         }
-        
+        else{
+            ErrorLbl.text = "Password and repassword are not the same"
+            ErrorLbl.isHidden = false
+            
+        }
+  
     }
-    
     
     
 

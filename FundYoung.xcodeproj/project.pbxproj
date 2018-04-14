@@ -20,6 +20,7 @@
 		A520BDD32081D0FA0062A595 /* KnowledgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD22081D0FA0062A595 /* KnowledgeVC.swift */; };
 		A520BDD62081D2A10062A595 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD52081D2A10062A595 /* NotificationVC.swift */; };
 		A520BDD92081D2E80062A595 /* SearchFundsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD82081D2E80062A595 /* SearchFundsVC.swift */; };
+		A520BDDB208205CC0062A595 /* AccountManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDDA208205CC0062A595 /* AccountManagementVC.swift */; };
 		A53440D9203A0D0400AC3508 /* lightGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */; };
 		A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */; };
 		A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */; };
@@ -77,6 +78,7 @@
 		A520BDD22081D0FA0062A595 /* KnowledgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeVC.swift; sourceTree = "<group>"; };
 		A520BDD52081D2A10062A595 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		A520BDD82081D2E80062A595 /* SearchFundsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFundsVC.swift; sourceTree = "<group>"; };
+		A520BDDA208205CC0062A595 /* AccountManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagementVC.swift; sourceTree = "<group>"; };
 		A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle1.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				A562799B203854E9000DF151 /* SignInVC.swift */,
 				A53F0F03207A74CB008B1679 /* SignUpVC.swift */,
+				A520BDDA208205CC0062A595 /* AccountManagementVC.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				A520BDD32081D0FA0062A595 /* KnowledgeVC.swift in Sources */,
 				A551F6EF203F316F00A726A9 /* AssesmentDataService.swift in Sources */,
 				A503938C203A98170086D54D /* LabelStyle1.swift in Sources */,
+				A520BDDB208205CC0062A595 /* AccountManagementVC.swift in Sources */,
 				A520BDD92081D2E80062A595 /* SearchFundsVC.swift in Sources */,
 				A551F6ED203F210500A726A9 /* Question.swift in Sources */,
 				A53440D9203A0D0400AC3508 /* lightGreyBtnBorder.swift in Sources */,

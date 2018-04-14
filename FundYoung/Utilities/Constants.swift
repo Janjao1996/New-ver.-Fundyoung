@@ -17,6 +17,7 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToLogIn"
+let TO_LOGOUT = "toLogout"
 
 //User Defaults
 let TOKEN_KEY = "token"

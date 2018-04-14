@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInVC: UIViewController {
     
@@ -15,7 +16,17 @@ class SignInVC: UIViewController {
     @IBOutlet weak var emailTxt: txtfieldStyle!
     @IBOutlet weak var PasswordTxt: txtfieldStyle!
     @IBAction func signInBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        guard let email = emailTxt.text else{return}
+        guard let pass = PasswordTxt.text else{return}
+        
+        Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+            if error == nil && user != nil{
+                self.performSegue(withIdentifier: TO_LOGIN, sender: self)
+            }
+            else{
+                 print("Error Log In:\(error!.localizedDescription)")
+            }
+        }
     }
     
     @IBAction func signUpBtnPressed(_ sender: Any) {
@@ -23,10 +34,16 @@ class SignInVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
     }
     @IBAction func prepareForUnwind(Segue: UIStoryboardSegue){
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let user = Auth.auth().currentUser {
+            self.performSegue(withIdentifier: TO_LOGIN, sender: self)
+        }
     }
 
     
