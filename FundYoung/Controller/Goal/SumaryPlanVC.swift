@@ -10,20 +10,11 @@ import UIKit
 
 class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    
-   
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch segment.selectedSegmentIndex {
-        case 0:
-            let plan = PlanDataService.instance.getShortTermPlan()[indexPath.row]
+    
+            let plan = PlanDataService.instance.getPlans()[indexPath.row]
             performSegue(withIdentifier: "RebanceVC", sender: plan)
-        case 1:
-            let plan = PlanDataService.instance.getLongTermPlan()[indexPath.row]
-            performSegue(withIdentifier: "RebanceVC", sender: plan)
-        default:
-            break
-        }
+       
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let RebalanceVC = segue.destination as? RebalanceVC{
@@ -36,11 +27,12 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
 
+    @IBOutlet weak var guidLineLbl: UILabel!
     
     @IBOutlet weak var PlanTable:UITableView!
     
     
-    @IBOutlet weak var segment: UISegmentedControl!
+   
     
     @IBOutlet weak var menuBtn: UIButton!
     
@@ -51,51 +43,43 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
+        if PlanDataService.instance.getPlans().count == 0{
+            PlanTable.isHidden = true
+            guidLineLbl.text = "Start you first Goal"
+            
+        }
+        else{
+            guidLineLbl.isHidden = true
+            PlanTable.isHidden = false
+            PlanTable.dataSource = self
+            PlanTable.delegate = self
+            
+        }
         
-        PlanTable.dataSource = self
-        PlanTable.delegate = self
        
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch segment.selectedSegmentIndex {
-        case 0:
-            return PlanDataService.instance.getShortTermPlan().count
-        case 1:
-            return PlanDataService.instance.getLongTermPlan().count
-        default:
-            break
-        }
-        return 0
-        
+            return PlanDataService.instance.getPlans().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "plancell") as? planTableCell {
-            switch segment.selectedSegmentIndex{
-            case 0:
-                let plan = PlanDataService.instance.getShortTermPlan()[indexPath.row]
+                let plan = PlanDataService.instance.getPlans()[indexPath.row]
                 cell.updateView(plan: plan)
                 return  cell
-            case 1:
-                let plan = PlanDataService.instance.getLongTermPlan()[indexPath.row]
-                cell.updateView(plan: plan)
-                return  cell
-            default:
-                break
-            }
-            return PlanCell()
-
         }
         else{
-            return PlanCell()
+            print("fail")
+            return planTableCell()
         }
     }
+    /*
     @IBAction func switchTermAction(_ sender: UISegmentedControl) {
         PlanTable.reloadData()
         
     }
-
+*/
     
     @IBAction func unwindFromIdetifyingVC(unwindSegue : UIStoryboardSegue){
         

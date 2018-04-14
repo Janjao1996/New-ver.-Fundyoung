@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Answer {
+struct Answer {
     var answer: String!
     var mark: Int!
     var choosed: Bool
