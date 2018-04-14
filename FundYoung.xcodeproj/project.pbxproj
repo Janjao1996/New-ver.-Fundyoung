@@ -13,6 +13,13 @@
 		A5039392203C39980086D54D /* PlanDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5039391203C39980086D54D /* PlanDataService.swift */; };
 		A51A6F242056E38900048697 /* PlanCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A6F232056E38900048697 /* PlanCellStyle.swift */; };
 		A51A6F262056E44D00048697 /* termLblStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A6F252056E44D00048697 /* termLblStyle.swift */; };
+		A520BDC72080C6DE0062A595 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDC62080C6DE0062A595 /* Answer.swift */; };
+		A520BDC9208114010062A595 /* QuestionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDC8208114000062A595 /* QuestionLabel.swift */; };
+		A520BDCB208117790062A595 /* AnswerLbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDCA208117790062A595 /* AnswerLbl.swift */; };
+		A520BDCD2081D0510062A595 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDCC2081D0510062A595 /* NewsVC.swift */; };
+		A520BDD32081D0FA0062A595 /* KnowledgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD22081D0FA0062A595 /* KnowledgeVC.swift */; };
+		A520BDD62081D2A10062A595 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD52081D2A10062A595 /* NotificationVC.swift */; };
+		A520BDD92081D2E80062A595 /* SearchFundsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD82081D2E80062A595 /* SearchFundsVC.swift */; };
 		A53440D9203A0D0400AC3508 /* lightGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */; };
 		A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */; };
 		A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */; };
@@ -21,7 +28,6 @@
 		A53F0EF420794407008B1679 /* TypesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EF320794407008B1679 /* TypesCell.swift */; };
 		A53F0EF6207A2756008B1679 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EF5207A2756008B1679 /* AuthService.swift */; };
 		A53F0EFB207A2CB6008B1679 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EF9207A2CB6008B1679 /* SWRevealViewController.m */; };
-		A53F0EFD207A39C5008B1679 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EFC207A39C5008B1679 /* TestVC.swift */; };
 		A53F0EFF207A3D05008B1679 /* GradieantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EFE207A3D05008B1679 /* GradieantView.swift */; };
 		A53F0F02207A4928008B1679 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0F01207A4928008B1679 /* Constants.swift */; };
 		A53F0F04207A74CB008B1679 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0F03207A74CB008B1679 /* SignUpVC.swift */; };
@@ -34,19 +40,10 @@
 		A548A8362076711500C7E1AC /* customUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8352076711400C7E1AC /* customUIView.swift */; };
 		A551F6ED203F210500A726A9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6EC203F210500A726A9 /* Question.swift */; };
 		A551F6EF203F316F00A726A9 /* AssesmentDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6EE203F316F00A726A9 /* AssesmentDataService.swift */; };
-		A551F6F1203F3C0400A726A9 /* Question1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F0203F3C0400A726A9 /* Question1VC.swift */; };
-		A551F6F3203F3C1F00A726A9 /* Question2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F2203F3C1F00A726A9 /* Question2VC.swift */; };
-		A551F6F5203F3C2F00A726A9 /* Question3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F4203F3C2F00A726A9 /* Question3VC.swift */; };
-		A551F6F7203F3C4D00A726A9 /* Question4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F6203F3C4D00A726A9 /* Question4VC.swift */; };
-		A551F6F9203F3C5E00A726A9 /* Question5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F8203F3C5E00A726A9 /* Question5VC.swift */; };
-		A551F6FB203F3C6D00A726A9 /* Question6VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6FA203F3C6D00A726A9 /* Question6VC.swift */; };
-		A551F6FD203F3C8100A726A9 /* Question7VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6FC203F3C8100A726A9 /* Question7VC.swift */; };
-		A551F6FF203F3C9500A726A9 /* Question8VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6FE203F3C9500A726A9 /* Question8VC.swift */; };
-		A551F701203F3CA300A726A9 /* Question9VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F700203F3CA300A726A9 /* Question9VC.swift */; };
-		A551F703203F3CBB00A726A9 /* Question10VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F702203F3CBB00A726A9 /* Question10VC.swift */; };
+		A551F6F1203F3C0400A726A9 /* RiskAssesmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551F6F0203F3C0400A726A9 /* RiskAssesmentVC.swift */; };
 		A558E19D205939FA003627AA /* plancreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558E19C205939FA003627AA /* plancreating.swift */; };
 		A562799A203854E9000DF151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5627999203854E9000DF151 /* AppDelegate.swift */; };
-		A562799C203854E9000DF151 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562799B203854E9000DF151 /* LogInVC.swift */; };
+		A562799C203854E9000DF151 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562799B203854E9000DF151 /* SignInVC.swift */; };
 		A562799F203854E9000DF151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A562799D203854E9000DF151 /* Main.storyboard */; };
 		A56279A4203854E9000DF151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56279A2203854E9000DF151 /* LaunchScreen.storyboard */; };
 		A56279B0203867B4000DF151 /* identifyPlanDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */; };
@@ -73,6 +70,13 @@
 		A5039391203C39980086D54D /* PlanDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDataService.swift; sourceTree = "<group>"; };
 		A51A6F232056E38900048697 /* PlanCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCellStyle.swift; sourceTree = "<group>"; };
 		A51A6F252056E44D00048697 /* termLblStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = termLblStyle.swift; sourceTree = "<group>"; };
+		A520BDC62080C6DE0062A595 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		A520BDC8208114000062A595 /* QuestionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLabel.swift; sourceTree = "<group>"; };
+		A520BDCA208117790062A595 /* AnswerLbl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerLbl.swift; sourceTree = "<group>"; };
+		A520BDCC2081D0510062A595 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		A520BDD22081D0FA0062A595 /* KnowledgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeVC.swift; sourceTree = "<group>"; };
+		A520BDD52081D2A10062A595 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		A520BDD82081D2E80062A595 /* SearchFundsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFundsVC.swift; sourceTree = "<group>"; };
 		A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle1.swift; sourceTree = "<group>"; };
@@ -83,7 +87,6 @@
 		A53F0EF8207A2CB5008B1679 /* FundYoung-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FundYoung-Bridging-Header.h"; sourceTree = "<group>"; };
 		A53F0EF9207A2CB6008B1679 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A53F0EFA207A2CB6008B1679 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		A53F0EFC207A39C5008B1679 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		A53F0EFE207A3D05008B1679 /* GradieantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradieantView.swift; sourceTree = "<group>"; };
 		A53F0F01207A4928008B1679 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A53F0F03207A74CB008B1679 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -96,20 +99,11 @@
 		A548A8352076711400C7E1AC /* customUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customUIView.swift; sourceTree = "<group>"; };
 		A551F6EC203F210500A726A9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A551F6EE203F316F00A726A9 /* AssesmentDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssesmentDataService.swift; sourceTree = "<group>"; };
-		A551F6F0203F3C0400A726A9 /* Question1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1VC.swift; sourceTree = "<group>"; };
-		A551F6F2203F3C1F00A726A9 /* Question2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question2VC.swift; sourceTree = "<group>"; };
-		A551F6F4203F3C2F00A726A9 /* Question3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question3VC.swift; sourceTree = "<group>"; };
-		A551F6F6203F3C4D00A726A9 /* Question4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question4VC.swift; sourceTree = "<group>"; };
-		A551F6F8203F3C5E00A726A9 /* Question5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question5VC.swift; sourceTree = "<group>"; };
-		A551F6FA203F3C6D00A726A9 /* Question6VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question6VC.swift; sourceTree = "<group>"; };
-		A551F6FC203F3C8100A726A9 /* Question7VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question7VC.swift; sourceTree = "<group>"; };
-		A551F6FE203F3C9500A726A9 /* Question8VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question8VC.swift; sourceTree = "<group>"; };
-		A551F700203F3CA300A726A9 /* Question9VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question9VC.swift; sourceTree = "<group>"; };
-		A551F702203F3CBB00A726A9 /* Question10VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question10VC.swift; sourceTree = "<group>"; };
+		A551F6F0203F3C0400A726A9 /* RiskAssesmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssesmentVC.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		A558E19C205939FA003627AA /* plancreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plancreating.swift; sourceTree = "<group>"; };
 		A5627996203854E9000DF151 /* FundYoung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundYoung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5627999203854E9000DF151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A562799B203854E9000DF151 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		A562799B203854E9000DF151 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		A562799E203854E9000DF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A56279A3203854E9000DF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56279A5203854E9000DF151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +142,65 @@
 				7BBA87351B9797884B1332C7 /* Pods_FundYoung.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A520BDCE2081D0610062A595 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A520BDCC2081D0510062A595 /* NewsVC.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A520BDCF2081D07E0062A595 /* Knowledge */ = {
+			isa = PBXGroup;
+			children = (
+				A520BDD22081D0FA0062A595 /* KnowledgeVC.swift */,
+			);
+			path = Knowledge;
+			sourceTree = "<group>";
+		};
+		A520BDD02081D08D0062A595 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A562799B203854E9000DF151 /* SignInVC.swift */,
+				A53F0F03207A74CB008B1679 /* SignUpVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A520BDD12081D0B20062A595 /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				A548A8262071156100C7E1AC /* SumaryPlanVC.swift */,
+				A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */,
+				A548A8312072A9C800C7E1AC /* DurationVC.swift */,
+				A56279B1203867E6000DF151 /* fundRecommendationVC.swift */,
+				A53F0EEF207942DA008B1679 /* fundTypesVC.swift */,
+				A56279B52038682E000DF151 /* fundSelectionVC.swift */,
+				A56279B72038685A000DF151 /* estimateSaving.swift */,
+				A503938F203C2D6A0086D54D /* RebalanceVC.swift */,
+				A551F6F0203F3C0400A726A9 /* RiskAssesmentVC.swift */,
+				A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */,
+				A5D08228206BA74200DAE50A /* namedVC.swift */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		A520BDD42081D27F0062A595 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				A520BDD52081D2A10062A595 /* NotificationVC.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		A520BDD72081D2D00062A595 /* Funds */ = {
+			isa = PBXGroup;
+			children = (
+				A520BDD82081D2E80062A595 /* SearchFundsVC.swift */,
+			);
+			path = Funds;
 			sourceTree = "<group>";
 		};
 		A53F0EF7207A2C57008B1679 /* Supporting files */ = {
@@ -214,6 +267,7 @@
 				A551F6EC203F210500A726A9 /* Question.swift */,
 				A558E19C205939FA003627AA /* plancreating.swift */,
 				A548A8332074B17E00C7E1AC /* fundRatio.swift */,
+				A520BDC62080C6DE0062A595 /* Answer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,29 +275,12 @@
 		A56279AC20386719000DF151 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A562799B203854E9000DF151 /* LogInVC.swift */,
-				A548A8262071156100C7E1AC /* SumaryPlanVC.swift */,
-				A56279AF203867B4000DF151 /* identifyPlanDetailVC.swift */,
-				A548A8312072A9C800C7E1AC /* DurationVC.swift */,
-				A56279B1203867E6000DF151 /* fundRecommendationVC.swift */,
-				A53F0EEF207942DA008B1679 /* fundTypesVC.swift */,
-				A56279B52038682E000DF151 /* fundSelectionVC.swift */,
-				A56279B72038685A000DF151 /* estimateSaving.swift */,
-				A503938F203C2D6A0086D54D /* RebalanceVC.swift */,
-				A551F6F0203F3C0400A726A9 /* Question1VC.swift */,
-				A551F6F2203F3C1F00A726A9 /* Question2VC.swift */,
-				A551F6F4203F3C2F00A726A9 /* Question3VC.swift */,
-				A551F6F6203F3C4D00A726A9 /* Question4VC.swift */,
-				A551F6F8203F3C5E00A726A9 /* Question5VC.swift */,
-				A551F6FA203F3C6D00A726A9 /* Question6VC.swift */,
-				A551F6FC203F3C8100A726A9 /* Question7VC.swift */,
-				A551F6FE203F3C9500A726A9 /* Question8VC.swift */,
-				A551F700203F3CA300A726A9 /* Question9VC.swift */,
-				A551F702203F3CBB00A726A9 /* Question10VC.swift */,
-				A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */,
-				A5D08228206BA74200DAE50A /* namedVC.swift */,
-				A53F0EFC207A39C5008B1679 /* TestVC.swift */,
-				A53F0F03207A74CB008B1679 /* SignUpVC.swift */,
+				A520BDD02081D08D0062A595 /* Authentication */,
+				A520BDCE2081D0610062A595 /* News */,
+				A520BDCF2081D07E0062A595 /* Knowledge */,
+				A520BDD12081D0B20062A595 /* Goal */,
+				A520BDD72081D2D00062A595 /* Funds */,
+				A520BDD42081D27F0062A595 /* Notification */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +302,8 @@
 				A548A8352076711400C7E1AC /* customUIView.swift */,
 				A53F0EF320794407008B1679 /* TypesCell.swift */,
 				A53F0EFE207A3D05008B1679 /* GradieantView.swift */,
+				A520BDC8208114000062A595 /* QuestionLabel.swift */,
+				A520BDCA208117790062A595 /* AnswerLbl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -435,55 +474,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A520BDC72080C6DE0062A595 /* Answer.swift in Sources */,
 				A548A8362076711500C7E1AC /* customUIView.swift in Sources */,
+				A520BDD62081D2A10062A595 /* NotificationVC.swift in Sources */,
 				A53F0EF6207A2756008B1679 /* AuthService.swift in Sources */,
 				A56279B0203867B4000DF151 /* identifyPlanDetailVC.swift in Sources */,
-				A551F6FD203F3C8100A726A9 /* Question7VC.swift in Sources */,
 				A57CC4C0206100EC0096E68E /* RecomendedFundCell.swift in Sources */,
-				A562799C203854E9000DF151 /* LogInVC.swift in Sources */,
+				A562799C203854E9000DF151 /* SignInVC.swift in Sources */,
 				A5039392203C39980086D54D /* PlanDataService.swift in Sources */,
 				A56279B82038685A000DF151 /* estimateSaving.swift in Sources */,
 				A53F0EF420794407008B1679 /* TypesCell.swift in Sources */,
+				A520BDD32081D0FA0062A595 /* KnowledgeVC.swift in Sources */,
 				A551F6EF203F316F00A726A9 /* AssesmentDataService.swift in Sources */,
 				A503938C203A98170086D54D /* LabelStyle1.swift in Sources */,
+				A520BDD92081D2E80062A595 /* SearchFundsVC.swift in Sources */,
 				A551F6ED203F210500A726A9 /* Question.swift in Sources */,
 				A53440D9203A0D0400AC3508 /* lightGreyBtnBorder.swift in Sources */,
+				A520BDCB208117790062A595 /* AnswerLbl.swift in Sources */,
 				A53F0EF0207942DA008B1679 /* fundTypesVC.swift in Sources */,
 				A56279BC20386B30000DF151 /* Plan.swift in Sources */,
 				A51A6F262056E44D00048697 /* termLblStyle.swift in Sources */,
 				A53F0F04207A74CB008B1679 /* SignUpVC.swift in Sources */,
-				A53F0EFD207A39C5008B1679 /* TestVC.swift in Sources */,
-				A551F703203F3CBB00A726A9 /* Question10VC.swift in Sources */,
 				A5039390203C2D6A0086D54D /* RebalanceVC.swift in Sources */,
-				A551F6FB203F3C6D00A726A9 /* Question6VC.swift in Sources */,
 				A558E19D205939FA003627AA /* plancreating.swift in Sources */,
 				A562799A203854E9000DF151 /* AppDelegate.swift in Sources */,
 				A51A6F242056E38900048697 /* PlanCellStyle.swift in Sources */,
 				A548A8272071156100C7E1AC /* SumaryPlanVC.swift in Sources */,
-				A551F6F3203F3C1F00A726A9 /* Question2VC.swift in Sources */,
 				A53F0F02207A4928008B1679 /* Constants.swift in Sources */,
 				A548A8342074B17E00C7E1AC /* fundRatio.swift in Sources */,
 				A548A8302072A14700C7E1AC /* PlanCell.swift in Sources */,
 				A548A82920711EB500C7E1AC /* planTableCell.swift in Sources */,
-				A551F6F1203F3C0400A726A9 /* Question1VC.swift in Sources */,
-				A551F701203F3CA300A726A9 /* Question9VC.swift in Sources */,
+				A551F6F1203F3C0400A726A9 /* RiskAssesmentVC.swift in Sources */,
 				A56279BA20386B21000DF151 /* User.swift in Sources */,
 				A5D082232067E6C900DAE50A /* RiskSelectedVC.swift in Sources */,
+				A520BDC9208114010062A595 /* QuestionLabel.swift in Sources */,
 				A5D082252067F58B00DAE50A /* txtfieldStyle.swift in Sources */,
-				A551F6FF203F3C9500A726A9 /* Question8VC.swift in Sources */,
 				A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */,
 				A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */,
 				A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */,
 				A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */,
 				A53440DF203A730800AC3508 /* UserDataService.swift in Sources */,
 				A5D08229206BA74200DAE50A /* namedVC.swift in Sources */,
-				A551F6F9203F3C5E00A726A9 /* Question5VC.swift in Sources */,
 				A548A8322072A9C800C7E1AC /* DurationVC.swift in Sources */,
 				A56279BE20386B3F000DF151 /* Fund.swift in Sources */,
 				A53F0EFB207A2CB6008B1679 /* SWRevealViewController.m in Sources */,
 				A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */,
-				A551F6F5203F3C2F00A726A9 /* Question3VC.swift in Sources */,
-				A551F6F7203F3C4D00A726A9 /* Question4VC.swift in Sources */,
+				A520BDCD2081D0510062A595 /* NewsVC.swift in Sources */,
 				A53F0EFF207A3D05008B1679 /* GradieantView.swift in Sources */,
 				A5DEDBE220395AEF00153CB3 /* FundDataService.swift in Sources */,
 			);
