@@ -35,11 +35,14 @@ class NewsVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        
         NewsTable.delegate = self
         NewsTable.dataSource = self
+     
         
        
     }
@@ -58,6 +61,8 @@ class NewsVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         }
     }
     @IBAction func unwindFromContentVC(unwindSegue : UIStoryboardSegue){
+        NewsTable.reloadData()
+        
         
     }
     

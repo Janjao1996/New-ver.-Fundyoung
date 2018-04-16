@@ -22,7 +22,7 @@ class RebalanceVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         GoalNameLbl.text = plan_.PlanName
-        DoneBtn.isHidden = true
+        //DoneBtn.isHidden = true
         pieChartUpdate()
         
     }

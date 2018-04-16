@@ -16,14 +16,19 @@ class NewsContentVC: UIViewController {
     
     @IBOutlet weak var titleLbl: UILabel!
     
-    @IBOutlet weak var ContentTxt: UITextView!
+    @IBOutlet weak var contentLbl: UILabel!
+    
+   
     
     var news_: News!
     override func viewDidLoad() {
         super.viewDidLoad()
         newsImage.image = UIImage(named: news_.ImageName)
         titleLbl.text = news_.Title
-        ContentTxt.text = news_.Content
+        contentLbl.text = news_.Content
+        titleLbl.sizeToFit()
+        contentLbl.sizeToFit()
+     
         
 
     }
@@ -32,5 +37,6 @@ class NewsContentVC: UIViewController {
       news_ = NewsDataService.instance.getNewsById(id: news.id)
     }
 
-
+   
+    
 }

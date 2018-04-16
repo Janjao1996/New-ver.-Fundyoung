@@ -85,6 +85,7 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
     @IBAction func unwindFromRebalanceVC(unwindSegue : UIStoryboardSegue){
+        PlanTable.reloadData()
         
     }
     
