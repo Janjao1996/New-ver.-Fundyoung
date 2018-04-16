@@ -24,7 +24,7 @@ class txtfieldStyle: UITextField {
         
         let border = CALayer()
         let width = CGFloat(1.5)
-        border.borderColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        border.borderColor = #colorLiteral(red: 0.4387413263, green: 0.414170444, blue: 0.8123540282, alpha: 1)
         border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
         
         border.borderWidth = width

@@ -23,7 +23,6 @@
 		A520BDDB208205CC0062A595 /* AccountManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDDA208205CC0062A595 /* AccountManagementVC.swift */; };
 		A53440D9203A0D0400AC3508 /* lightGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */; };
 		A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */; };
-		A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */; };
 		A53440DF203A730800AC3508 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DE203A730800AC3508 /* UserDataService.swift */; };
 		A53F0EF0207942DA008B1679 /* fundTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EEF207942DA008B1679 /* fundTypesVC.swift */; };
 		A53F0EF420794407008B1679 /* TypesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0EF320794407008B1679 /* TypesCell.swift */; };
@@ -86,7 +85,6 @@
 		A520BDDA208205CC0062A595 /* AccountManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagementVC.swift; sourceTree = "<group>"; };
 		A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGreyBtnBorder.swift; sourceTree = "<group>"; };
-		A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle1.swift; sourceTree = "<group>"; };
 		A53440DE203A730800AC3508 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		A53F0EEF207942DA008B1679 /* fundTypesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundTypesVC.swift; sourceTree = "<group>"; };
 		A53F0EF320794407008B1679 /* TypesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesCell.swift; sourceTree = "<group>"; };
@@ -307,7 +305,6 @@
 				A5DEDBDE2039564100153CB3 /* FundCell.swift */,
 				A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */,
 				A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */,
-				A53440DC203A0D8600AC3508 /* TextFieldStyle1.swift */,
 				A503938B203A98170086D54D /* LabelStyle1.swift */,
 				A51A6F232056E38900048697 /* PlanCellStyle.swift */,
 				A51A6F252056E44D00048697 /* termLblStyle.swift */,
@@ -536,7 +533,6 @@
 				A56279B2203867E6000DF151 /* fundRecommendationVC.swift in Sources */,
 				A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */,
 				A56279B62038682E000DF151 /* fundSelectionVC.swift in Sources */,
-				A53440DD203A0D8600AC3508 /* TextFieldStyle1.swift in Sources */,
 				A53440DF203A730800AC3508 /* UserDataService.swift in Sources */,
 				A5D08229206BA74200DAE50A /* namedVC.swift in Sources */,
 				A548A8322072A9C800C7E1AC /* DurationVC.swift in Sources */,

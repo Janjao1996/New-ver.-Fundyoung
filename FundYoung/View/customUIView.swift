@@ -15,7 +15,7 @@ class customUIView: UIView {
     }
     
     func click() {
-        layer.borderColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        layer.borderColor = #colorLiteral(red: 0.4705268741, green: 0.4359835684, blue: 0.8188018203, alpha: 1)
         layer.masksToBounds = false
         layer.borderWidth = 2
         layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
