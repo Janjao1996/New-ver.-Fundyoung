@@ -869,7 +869,7 @@
                                 <rect key="frame" x="0.0" y="89" width="375" height="529"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criteria :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyT-P5-vy1">
-                                        <rect key="frame" x="35" y="25" width="70" height="23.5"/>
+                                        <rect key="frame" x="35" y="100" width="70" height="23.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="TpM-2T-Foq"/>
                                             <constraint firstAttribute="width" constant="70" id="ZTY-o1-Q8o"/>
@@ -879,7 +879,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QUy-Fu-vb2">
-                                        <rect key="frame" x="12" y="68.5" width="350" height="30"/>
+                                        <rect key="frame" x="12" y="143.5" width="350" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5i-Kg-Bji">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
@@ -892,7 +892,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIm-Jn-XQs">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.กรุงไทย">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -902,7 +902,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGd-mv-YUo">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.กรุงศรี">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -912,7 +912,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wms-AG-Fsg" userLabel="บลจ.กสิกรไทย">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.กสิกรไทย">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -922,7 +922,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQs-Lp-xb8" userLabel="บลจ.แคปปิตอล ลิ้งค์ จำกัด">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.แคปปิตอล ลิ้งค์ จำกัด">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -932,7 +932,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-0h-jW3">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ซีไอเอ๊มบีขพรินซิเพิล">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -942,7 +942,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXI-oZ-Vjm">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.โซลาริส">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -952,7 +952,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z6-xs-qrZ">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ทหารไทย">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -962,7 +962,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-ux-dA7">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ทาลิส">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -972,7 +972,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMj-gc-UgR">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ไทยพาณิชย์">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -982,7 +982,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFQ-pk-mnc">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ธนชาต">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -992,7 +992,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFK-Bf-bp8">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.บัวหลวง">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1002,7 +1002,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dL-xW-55h">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ฟิลลิป">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1012,7 +1012,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-e1-DnH">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ภัทร">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1022,7 +1022,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBC-Uz-YBz">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.8996661178345764" green="0.89179448904257308" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.แมนูไลฟ์">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1032,7 +1032,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3P-1X-vao">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.ยูโอบี (ประเทศไทย)">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1042,7 +1042,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M55-N6-6dY">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.แลนด์ แอนด์ เฮ้าส์">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1052,7 +1052,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9x1-6b-wzM">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.วรรณ">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1062,7 +1062,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US5-FX-J9n">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.สยามไนท์ ฟันด์ แมแนจเมนท์ จำกัด">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1072,7 +1072,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfD-jv-HFz">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.อเบอร์ดีน">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1082,7 +1082,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsQ-S3-Qer">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.เอ็มเอฟซี">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1092,7 +1092,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0z-Ft-ANL">
-                                                <rect key="frame" x="0.0" y="-157.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="บลจ.แอสเซท พลัส">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1108,7 +1108,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-cD-qBs">
-                                        <rect key="frame" x="12" y="100.5" width="350" height="30"/>
+                                        <rect key="frame" x="12" y="175.5" width="350" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yux-2o-5w0">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
@@ -1121,7 +1121,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZq-Su-f8T">
-                                                <rect key="frame" x="0.0" y="-189.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-264.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="จ่าย">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1131,7 +1131,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1is-7Y-Wwk">
-                                                <rect key="frame" x="0.0" y="-189.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-264.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="ไม่จ่าย">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1144,7 +1144,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ejm-4i-ENh">
-                                        <rect key="frame" x="12" y="132.5" width="350" height="30"/>
+                                        <rect key="frame" x="12" y="207.5" width="350" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mr-tx-Ghc">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
@@ -1157,28 +1157,28 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="men-73-B6z">
-                                                <rect key="frame" x="0.0" y="-221.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Equity">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF5-Oi-0kI">
-                                                <rect key="frame" x="0.0" y="-221.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Fixed Income">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlF-da-c0a">
-                                                <rect key="frame" x="0.0" y="-221.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Balance">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2a-ed-YjH">
-                                                <rect key="frame" x="0.0" y="-221.5" width="350" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
                                                 <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Other">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1190,21 +1190,47 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="6A5-ih-yjp"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-ma-XHy">
+                                        <rect key="frame" x="12.5" y="40" width="350" height="30"/>
+                                        <color key="backgroundColor" red="0.61624461919999995" green="0.58323130749999996" blue="0.96506358849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5q8-5X-VZX"/>
+                                        </constraints>
+                                        <state key="normal" title="ทั้งหมด">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a69-Aq-rUR">
+                                        <rect key="frame" x="117.5" y="297.5" width="140" height="45"/>
+                                        <color key="backgroundColor" red="0.61624461919999995" green="0.58323130749999996" blue="0.96506358849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="8dS-1o-NxJ"/>
+                                            <constraint firstAttribute="width" constant="140" id="wvh-Tc-X0F"/>
+                                        </constraints>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Ejm-4i-ENh" secondAttribute="bottom" constant="50" id="3LP-Gd-xHM"/>
+                                    <constraint firstAttribute="bottom" secondItem="a69-Aq-rUR" secondAttribute="bottom" constant="60" id="3f0-zO-3ZB"/>
                                     <constraint firstAttribute="trailing" secondItem="QUy-Fu-vb2" secondAttribute="trailing" constant="12.5" id="4FO-ki-z9d"/>
                                     <constraint firstAttribute="trailing" secondItem="Ejm-4i-ENh" secondAttribute="trailing" constant="12.5" id="9cq-dE-YtW"/>
+                                    <constraint firstItem="a69-Aq-rUR" firstAttribute="centerX" secondItem="awO-CI-pqj" secondAttribute="centerX" id="Gg4-Qv-S7E"/>
                                     <constraint firstItem="Ejm-4i-ENh" firstAttribute="leading" secondItem="awO-CI-pqj" secondAttribute="leading" constant="12.5" id="Gry-XD-Ugo"/>
                                     <constraint firstItem="Ejm-4i-ENh" firstAttribute="top" secondItem="t3I-cD-qBs" secondAttribute="bottom" constant="2" id="Hcd-xy-WhL"/>
                                     <constraint firstItem="QUy-Fu-vb2" firstAttribute="leading" secondItem="awO-CI-pqj" secondAttribute="leading" constant="12.5" id="LbE-IV-XAy"/>
                                     <constraint firstItem="t3I-cD-qBs" firstAttribute="top" secondItem="QUy-Fu-vb2" secondAttribute="bottom" constant="2" id="MHE-sT-guf"/>
+                                    <constraint firstItem="cpq-ma-XHy" firstAttribute="top" secondItem="awO-CI-pqj" secondAttribute="top" constant="40" id="Sj8-3Q-23I"/>
                                     <constraint firstAttribute="trailing" secondItem="t3I-cD-qBs" secondAttribute="trailing" constant="12.5" id="aGy-9U-LW3"/>
                                     <constraint firstItem="CyT-P5-vy1" firstAttribute="leading" secondItem="awO-CI-pqj" secondAttribute="leading" constant="35" id="bgb-Jm-n77"/>
                                     <constraint firstItem="t3I-cD-qBs" firstAttribute="leading" secondItem="awO-CI-pqj" secondAttribute="leading" constant="12.5" id="cWg-3V-MvJ"/>
-                                    <constraint firstItem="CyT-P5-vy1" firstAttribute="top" secondItem="awO-CI-pqj" secondAttribute="top" constant="25" id="dXm-F5-Ml0"/>
                                     <constraint firstItem="QUy-Fu-vb2" firstAttribute="top" secondItem="CyT-P5-vy1" secondAttribute="bottom" constant="20" id="jl7-l2-KKN"/>
+                                    <constraint firstItem="cpq-ma-XHy" firstAttribute="leading" secondItem="awO-CI-pqj" secondAttribute="leading" constant="12.5" id="k91-kz-U8U"/>
+                                    <constraint firstAttribute="trailing" secondItem="cpq-ma-XHy" secondAttribute="trailing" constant="12.5" id="mSc-Ja-Wkm"/>
+                                    <constraint firstItem="a69-Aq-rUR" firstAttribute="top" secondItem="Ejm-4i-ENh" secondAttribute="bottom" constant="60" id="oOH-4r-ZcN"/>
+                                    <constraint firstItem="CyT-P5-vy1" firstAttribute="top" secondItem="cpq-ma-XHy" secondAttribute="bottom" constant="30" id="sCk-Vg-ADp"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -1258,7 +1284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gm9-hO-LQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2996" y="-4273.3133433283365"/>
+            <point key="canvasLocation" x="-1690.4000000000001" y="-4293.1034482758623"/>
         </scene>
         <!--News-->
         <scene sceneID="5pn-NO-Ww8">
@@ -1738,7 +1764,9 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.90154109589999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextBtnPressed:" destination="Nd5-dO-fm6" eventType="touchUpInside" id="Sim-qO-LvE"/>
                                     <action selector="nextBtnPressed:" destination="Xm0-GQ-zxb" eventType="touchUpInside" id="czm-h8-Xji"/>
+                                    <segue destination="G2w-5g-VoH" kind="show" identifier="RecommendationVC" id="biY-g7-gMu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuW-Au-mdj" customClass="lightGreyBtnBorder" customModule="FundYoung" customModuleProvider="target">
@@ -1772,32 +1800,6 @@
             </objects>
             <point key="canvasLocation" x="1212" y="-1327"/>
         </scene>
-        <!--Master Fund AllocationVC-->
-        <scene sceneID="93S-jz-2nl">
-            <objects>
-                <viewController id="2Zf-PE-kAh" customClass="MasterFundAllocationVC" customModule="FundYoung" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RDn-2Z-Ok2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-E8-Egg">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Fund Allocation" id="lS2-Y5-jBn">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="YnA-ck-zhh"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gsB-Mc-3d4"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6dM-pR-lNT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3242" y="-1075"/>
-        </scene>
         <!--Fund RecommendationVC-->
         <scene sceneID="yXR-YP-myB">
             <objects>
@@ -1809,13 +1811,21 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-Gh-Ura">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="Wzk-9L-82X"/>
+                                    <navigationItem title="Reccomended" id="Wzk-9L-82X">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="xcd-wE-bxL"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Self" id="nXE-L5-Tpw">
+                                            <connections>
+                                                <action selector="SelfPressed:" destination="G2w-5g-VoH" id="Mh7-za-yGT"/>
+                                                <segue destination="2Zh-nO-yMn" kind="show" identifier="goToSelf" id="4GJ-EV-G7i"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02o-eL-Pg7">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02o-eL-Pg7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS8-iQ-l3S">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS8-iQ-l3S">
                                         <rect key="frame" x="0.0" y="230" width="375" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ArR-rN-CFO"/>
@@ -1824,32 +1834,114 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MeX-Ng-Qxq">
-                                        <rect key="frame" x="5" y="307" width="365" height="167"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MeX-Ng-Qxq">
+                                        <rect key="frame" x="5" y="270" width="365" height="240"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="365" id="QM2-b7-jbh"/>
+                                            <constraint firstAttribute="height" constant="240" id="dxu-Vh-Wfc"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="4wy-Se-Tev">
-                                                <rect key="frame" x="0.0" y="28" width="365" height="74"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReccomendFund" rowHeight="60" id="4wy-Se-Tev" customClass="RecomendedFundCell" customModule="FundYoung" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="365" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4wy-Se-Tev" id="da4-Rx-LCk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="73.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Dqr-9I-UYT">
+                                                            <rect key="frame" x="10" y="2.5" width="345" height="54.5"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ypj-tG-c7m">
+                                                                    <rect key="frame" x="0.0" y="4.5" width="165" height="50"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FundName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5y-0l-GUA">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="160" id="6zZ-hS-G6l"/>
+                                                                                <constraint firstAttribute="height" constant="30" id="OqX-em-Z0l"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0be-yK-wrx">
+                                                                            <rect key="frame" x="0.0" y="30" width="160" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="160" id="5Ct-UQ-oqg"/>
+                                                                                <constraint firstAttribute="height" constant="20" id="9Ex-YD-W4Y"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="165" id="R69-Cu-htO"/>
+                                                                        <constraint firstAttribute="height" constant="50" id="gyi-jy-3K4"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0U-Wz-gzX">
+                                                                    <rect key="frame" x="165" y="14.5" width="60" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="VKw-Fl-97l"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="ote-PJ-VXw"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8L7-Nn-aKL">
+                                                                    <rect key="frame" x="225" y="14.5" width="60" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="5Br-E1-Gi3"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="dsJ-Ru-Zma"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQi-a6-hRw">
+                                                                    <rect key="frame" x="285" y="14.5" width="60" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="0Ot-x7-xLj"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="xEO-Qo-kHP"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="54.5" id="vzK-7i-nRV"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Dqr-9I-UYT" firstAttribute="leading" secondItem="da4-Rx-LCk" secondAttribute="leading" constant="10" id="LE8-FN-m9b"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Dqr-9I-UYT" secondAttribute="bottom" constant="2.5" id="RBh-vv-19N"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Dqr-9I-UYT" secondAttribute="trailing" constant="10" id="foU-vc-UgH"/>
+                                                        <constraint firstItem="Dqr-9I-UYT" firstAttribute="top" secondItem="da4-Rx-LCk" secondAttribute="top" constant="2.5" id="wDv-an-meJ"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="AMname" destination="0be-yK-wrx" id="HM6-0d-OFR"/>
+                                                    <outlet property="FundName" destination="Q5y-0l-GUA" id="MZX-Lt-xS1"/>
+                                                    <outlet property="return" destination="8L7-Nn-aKL" id="vUC-p0-eGO"/>
+                                                    <outlet property="weightLbl" destination="zQi-a6-hRw" id="nnz-yo-Gdz"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-VT-BoZ">
-                                        <rect key="frame" x="167" y="509" width="40" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-VT-BoZ">
+                                        <rect key="frame" x="167" y="545" width="40" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="2OP-1e-ZfN"/>
                                             <constraint firstAttribute="height" constant="35" id="p0c-nE-bLO"/>
                                         </constraints>
                                         <state key="normal" title="Next"/>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beI-hz-KpT">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beI-hz-KpT" customClass="PieChartView" customModule="Charts">
                                         <rect key="frame" x="10" y="10" width="355" height="220"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1886,88 +1978,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qKP-3v-Ca8"/>
                     </view>
+                    <connections>
+                        <outlet property="FundTable" destination="MeX-Ng-Qxq" id="Prw-2P-BTn"/>
+                        <outlet property="pieChart" destination="beI-hz-KpT" id="31l-JB-Ta5"/>
+                        <outlet property="portRiskLabel" destination="HS8-iQ-l3S" id="9N1-aY-hsg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRn-mp-PMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904.8" y="-416.0419790104948"/>
-        </scene>
-        <!--Fund TypesVC-->
-        <scene sceneID="CsD-g4-zrI">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="GDP-XC-dOm" customClass="fundTypesVC" customModule="FundYoung" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jqi-ul-nsd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61v-2q-C5d">
-                                <rect key="frame" x="0.0" y="47" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Types" id="2lB-ZH-oLu">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="tDN-By-HHk">
-                                            <color key="tintColor" red="0.1850790897" green="0.18418498780000001" blue="0.1859731916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <connections>
-                                                <segue destination="wMt-fS-CZq" kind="unwind" unwindAction="unwindFromFundSelectionVCWithUnwindSegue:" id="ekk-Ax-bcC"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ecs-a2-2dW">
-                                <rect key="frame" x="0.0" y="92" width="375" height="576"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TypesCell" rowHeight="76" id="WNy-JR-NAb" customClass="TypesCell" customModule="FundYoung" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="76"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WNy-JR-NAb" id="dKd-9d-0zU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fund type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-fJ-Yds">
-                                                    <rect key="frame" x="41" y="11" width="302" height="54"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="typeLbl" destination="7YI-fJ-Yds" id="lO7-7i-KI9"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="rMz-Uz-AlD"/>
-                    </view>
-                    <connections>
-                        <outlet property="fundTypesTable" destination="Ecs-a2-2dW" id="7Bv-Xr-1iZ"/>
-                        <segue destination="v29-rN-kHw" kind="show" identifier="FundTypes" id="UaB-oW-mM2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JDN-Lr-3ge" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="wMt-fS-CZq" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="4398" y="672"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yRf-TU-ZRe">
-            <objects>
-                <viewController id="Mt9-hz-vEg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u63-hq-PcF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="YqR-eZ-Mhm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oWS-Zm-gA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3402" y="-262"/>
+            <point key="canvasLocation" x="1681" y="-536"/>
         </scene>
         <!--Fund SelectionVC-->
         <scene sceneID="Lmb-6Y-vtG">
@@ -2063,7 +2082,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQD-Cq-u85" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dth-v7-I6f" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4964" y="-195"/>
+            <point key="canvasLocation" x="4938" y="-573"/>
         </scene>
         <!--Estimate Saving-->
         <scene sceneID="m3H-AI-Pyl">
@@ -3241,6 +3260,671 @@
                 <exit id="Qjv-Cb-i6p" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="295" y="-1298"/>
+        </scene>
+        <!--Fund Self Port Allocation-->
+        <scene sceneID="Idm-BK-OOW">
+            <objects>
+                <viewController id="2Zh-nO-yMn" customClass="fundSelfPortAllocation" customModule="FundYoung" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="daP-mo-Ndn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eY-pY-zpF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Self" id="mzF-xw-cUM">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="4Uo-BD-2oc"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyu-ZW-hD2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztz-na-7d8">
+                                        <rect key="frame" x="0.0" y="230" width="375" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="AO6-ex-jq9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a0G-7p-6Bk">
+                                        <rect key="frame" x="5" y="270" width="365" height="240"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="G2j-wo-XF4"/>
+                                            <constraint firstAttribute="width" constant="365" id="zgF-1n-7hp"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReccomendFund" rowHeight="60" id="Jj1-bR-ASH" customClass="RecomendedFundCell" customModule="FundYoung" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="365" height="60"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jj1-bR-ASH" id="iut-NS-KIY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="59.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="yG2-Rb-1W4">
+                                                            <rect key="frame" x="10" y="2.5" width="345" height="54.5"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="7ak-ev-fqt">
+                                                                    <rect key="frame" x="0.0" y="4.5" width="165" height="50"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FundName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDL-XY-4M1">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="30" id="Wkn-e3-mCb"/>
+                                                                                <constraint firstAttribute="width" constant="160" id="n9K-X9-4VG"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPM-R9-z8Z">
+                                                                            <rect key="frame" x="0.0" y="30" width="160" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="160" id="KLn-WN-DbJ"/>
+                                                                                <constraint firstAttribute="height" constant="20" id="foL-52-Rwz"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="9WK-71-weq"/>
+                                                                        <constraint firstAttribute="width" constant="165" id="IeA-6R-LTm"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4Y-Ki-oiJ">
+                                                                    <rect key="frame" x="165" y="14.5" width="60" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="Cij-rt-YiW"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="Ulh-dT-T5g"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueg-tu-Tfg">
+                                                                    <rect key="frame" x="225" y="14.5" width="60" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="k1p-3r-DYr"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="qz1-ES-JcU"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCf-n6-pUl">
+                                                                    <rect key="frame" x="285" y="14.5" width="60" height="40"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="3nz-Xu-yfc"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="Ead-TN-Skq"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="54.5" id="Q1Z-Do-qfA"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="yG2-Rb-1W4" secondAttribute="bottom" constant="2.5" id="DNU-4i-yxC"/>
+                                                        <constraint firstItem="yG2-Rb-1W4" firstAttribute="top" secondItem="iut-NS-KIY" secondAttribute="top" constant="2.5" id="DVv-6I-D9s"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yG2-Rb-1W4" secondAttribute="trailing" constant="10" id="Id5-ij-mWJ"/>
+                                                        <constraint firstItem="yG2-Rb-1W4" firstAttribute="leading" secondItem="iut-NS-KIY" secondAttribute="leading" constant="10" id="la9-tN-ZIi"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="AMname" destination="sPM-R9-z8Z" id="Adq-ro-8bx"/>
+                                                    <outlet property="FundName" destination="pDL-XY-4M1" id="3Ra-EQ-aoM"/>
+                                                    <outlet property="return" destination="ueg-tu-Tfg" id="PlE-Av-kTG"/>
+                                                    <outlet property="weightLbl" destination="zCf-n6-pUl" id="Xn5-He-tks"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6y-qB-JUc">
+                                        <rect key="frame" x="167" y="545" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="QBx-kb-2bh"/>
+                                            <constraint firstAttribute="height" constant="35" id="neX-YY-YFB"/>
+                                        </constraints>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <segue destination="HMJ-R9-Zl4" kind="show" id="4na-Zd-H88"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0c-hB-ILO" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="10" y="10" width="355" height="220"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="9HA-sG-JiR"/>
+                                            <constraint firstAttribute="width" constant="355" id="sey-wg-2Kq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="i0c-hB-ILO" secondAttribute="trailing" constant="10" id="4AS-2h-CJv"/>
+                                    <constraint firstItem="f6y-qB-JUc" firstAttribute="top" secondItem="a0G-7p-6Bk" secondAttribute="bottom" constant="35" id="5f9-vG-1uV"/>
+                                    <constraint firstAttribute="bottom" secondItem="f6y-qB-JUc" secondAttribute="bottom" constant="40" id="7i6-Xb-Rh3"/>
+                                    <constraint firstAttribute="trailing" secondItem="a0G-7p-6Bk" secondAttribute="trailing" constant="5" id="9EN-7X-mM8"/>
+                                    <constraint firstItem="a0G-7p-6Bk" firstAttribute="leading" secondItem="nyu-ZW-hD2" secondAttribute="leading" constant="5" id="DYD-9Y-NGl"/>
+                                    <constraint firstAttribute="trailing" secondItem="ztz-na-7d8" secondAttribute="trailing" id="IDJ-Am-75b"/>
+                                    <constraint firstItem="a0G-7p-6Bk" firstAttribute="top" secondItem="ztz-na-7d8" secondAttribute="bottom" id="SPe-dz-KaU"/>
+                                    <constraint firstItem="i0c-hB-ILO" firstAttribute="top" secondItem="nyu-ZW-hD2" secondAttribute="top" constant="10" id="SZH-Ut-0gp"/>
+                                    <constraint firstItem="ztz-na-7d8" firstAttribute="leading" secondItem="nyu-ZW-hD2" secondAttribute="leading" id="YFA-ZQ-adf"/>
+                                    <constraint firstItem="i0c-hB-ILO" firstAttribute="leading" secondItem="nyu-ZW-hD2" secondAttribute="leading" constant="10" id="fxW-jt-9Wg"/>
+                                    <constraint firstItem="ztz-na-7d8" firstAttribute="top" secondItem="i0c-hB-ILO" secondAttribute="bottom" id="knI-sg-pzM"/>
+                                    <constraint firstItem="f6y-qB-JUc" firstAttribute="centerX" secondItem="nyu-ZW-hD2" secondAttribute="centerX" id="mEG-3X-qXP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9eY-pY-zpF" firstAttribute="top" secondItem="2rX-S2-70l" secondAttribute="top" id="4pC-qc-hyo"/>
+                            <constraint firstItem="9eY-pY-zpF" firstAttribute="leading" secondItem="2rX-S2-70l" secondAttribute="leading" id="8gt-hq-4mO"/>
+                            <constraint firstItem="nyu-ZW-hD2" firstAttribute="leading" secondItem="daP-mo-Ndn" secondAttribute="leading" id="Epo-8V-tBV"/>
+                            <constraint firstAttribute="trailing" secondItem="nyu-ZW-hD2" secondAttribute="trailing" id="HxW-5Y-tJc"/>
+                            <constraint firstItem="9eY-pY-zpF" firstAttribute="trailing" secondItem="2rX-S2-70l" secondAttribute="trailing" id="N1b-gv-0oS"/>
+                            <constraint firstAttribute="bottom" secondItem="nyu-ZW-hD2" secondAttribute="bottom" id="P9A-Qp-hEX"/>
+                            <constraint firstItem="nyu-ZW-hD2" firstAttribute="top" secondItem="9eY-pY-zpF" secondAttribute="bottom" id="fWZ-4Z-roR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2rX-S2-70l"/>
+                    </view>
+                    <connections>
+                        <outlet property="FundTable" destination="a0G-7p-6Bk" id="lMY-yz-h89"/>
+                        <outlet property="pieChart" destination="i0c-hB-ILO" id="c1X-Ge-COE"/>
+                        <outlet property="portRiskLabel" destination="ztz-na-7d8" id="vms-pS-BXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0I6-th-96g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="-645"/>
+        </scene>
+        <!--Funds-->
+        <scene sceneID="PGF-AL-DQv">
+            <objects>
+                <viewController id="HMJ-R9-Zl4" customClass="SearchFundsVC" customModule="FundYoung" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xwd-1h-goM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XGI-iX-W9a">
+                                <rect key="frame" x="0.0" y="20" width="375" height="69"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-A2-pAk" customClass="NavibarCustom" customModule="FundYoung" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fund Searching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRp-XW-WFK">
+                                                <rect key="frame" x="112.5" y="20.5" width="150" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAF-4g-6a7">
+                                                <rect key="frame" x="20" y="20" width="35" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="cx9-kj-Tbw"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.47608317909999998" green="0.71023393899999998" blue="0.84879825360000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" image="back"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.63855338289999997" green="0.6043449514" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="dRp-XW-WFK" firstAttribute="centerX" secondItem="LZS-A2-pAk" secondAttribute="centerX" id="656-k9-Gw2"/>
+                                            <constraint firstAttribute="height" constant="68" id="G7Q-SC-gxT"/>
+                                            <constraint firstItem="MAF-4g-6a7" firstAttribute="leading" secondItem="LZS-A2-pAk" secondAttribute="leading" constant="20" id="Qpo-om-MxU"/>
+                                            <constraint firstItem="MAF-4g-6a7" firstAttribute="top" secondItem="LZS-A2-pAk" secondAttribute="top" constant="20" id="U80-sg-nFR"/>
+                                            <constraint firstItem="dRp-XW-WFK" firstAttribute="centerY" secondItem="LZS-A2-pAk" secondAttribute="centerY" id="pKB-y5-YDR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZD-B8-DI1">
+                                        <rect key="frame" x="0.0" y="68" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.86684026719999996" green="0.8646003699" blue="0.86908016450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="aJQ-cw-gr8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LZS-A2-pAk" firstAttribute="leading" secondItem="XGI-iX-W9a" secondAttribute="leading" id="4RO-K6-fnx"/>
+                                    <constraint firstItem="dZD-B8-DI1" firstAttribute="leading" secondItem="XGI-iX-W9a" secondAttribute="leading" id="CEU-Jh-Rqj"/>
+                                    <constraint firstAttribute="trailing" secondItem="LZS-A2-pAk" secondAttribute="trailing" id="NQu-MD-pub"/>
+                                    <constraint firstItem="LZS-A2-pAk" firstAttribute="top" secondItem="XGI-iX-W9a" secondAttribute="top" id="VIx-CW-mEh"/>
+                                    <constraint firstAttribute="height" constant="69" id="eU9-Tr-psq"/>
+                                    <constraint firstItem="dZD-B8-DI1" firstAttribute="top" secondItem="LZS-A2-pAk" secondAttribute="bottom" id="jvp-u9-cjO"/>
+                                    <constraint firstAttribute="trailing" secondItem="dZD-B8-DI1" secondAttribute="trailing" id="mOA-Tm-mJS"/>
+                                </constraints>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCw-Uv-Lug">
+                                <rect key="frame" x="0.0" y="89" width="375" height="578"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criteria :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srm-9L-tgh">
+                                        <rect key="frame" x="35" y="100" width="70" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="1OQ-hD-k1D"/>
+                                            <constraint firstAttribute="height" constant="24" id="Qzh-MG-OZK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-ni-q7L">
+                                        <rect key="frame" x="12" y="143.5" width="350" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xd-uA-3Mc">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
+                                                <color key="backgroundColor" red="0.51065474050000004" green="0.48031297169999998" blue="0.86542493740000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บริษัทหลักทรัพย์จัดการกองทุน">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="firstStackHandleSelection:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="hH6-mB-8M3"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3I-2c-QJJ">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.กรุงไทย">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="rB9-K0-7tx"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xci-oE-DvM">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.กรุงศรี">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="qTN-uP-g1Q"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pny-wU-HiX" userLabel="บลจ.กสิกรไทย">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.กสิกรไทย">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="QxG-g3-UzG"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ8-td-Rah" userLabel="บลจ.แคปปิตอล ลิ้งค์ จำกัด">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.แคปปิตอล ลิ้งค์ จำกัด">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="cmQ-k7-g81"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceV-Nb-4hs">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ซีไอเอ๊มบีขพรินซิเพิล">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="M9l-c0-zVg"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-ro-btw">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.โซลาริส">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="VA5-SH-1ch"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12m-uj-2he">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ทหารไทย">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="CZb-FO-xl0"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2G-p7-jal">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ทาลิส">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="c9j-2P-hsX"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdG-9E-uDz">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ไทยพาณิชย์">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="RtV-2K-Hdk"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKb-kY-dxo">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ธนชาต">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="yDk-yB-jIb"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjF-OB-ztb">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.บัวหลวง">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="BVJ-EU-W2o"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mp-ND-JUK">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ฟิลลิป">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="wyG-Rp-RKW"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNN-75-BaS">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ภัทร">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="RA3-lz-lFv"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRB-aO-ryG">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.แมนูไลฟ์">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="Ru2-vB-cxc"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNI-ee-yUF">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.ยูโอบี (ประเทศไทย)">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="sLQ-YK-JHA"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciw-0p-OlV">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.แลนด์ แอนด์ เฮ้าส์">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="zFd-6r-h5I"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="481-H6-eCR">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.วรรณ">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="1Qs-WX-DL2"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzG-16-7se">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.สยามไนท์ ฟันด์ แมแนจเมนท์ จำกัด">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="df4-oc-ULh"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8An-Lm-eXx">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.อเบอร์ดีน">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="nYa-t4-L2M"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MQ-ci-7wa">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.เอ็มเอฟซี">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="xy8-Yp-Fng"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykk-tf-1K1">
+                                                <rect key="frame" x="0.0" y="-232.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="บลจ.แอสเซท พลัส">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria1Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="1aI-Va-f9v"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="wS5-3r-Bd6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="yVO-D5-Kxa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ufs-oB-mI6">
+                                        <rect key="frame" x="12" y="175.5" width="350" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMl-au-1KF">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
+                                                <color key="backgroundColor" red="0.51065474050000004" green="0.48031297169999998" blue="0.86542493740000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="นโยบายจ่ายเงินปันผล">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="secondStackHandleSelection:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="LiP-w9-6TH"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lat-yd-PqU">
+                                                <rect key="frame" x="0.0" y="-264.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="จ่าย">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="criteria2Tapped:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="Vye-sW-9Hm"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqU-jJ-bv2">
+                                                <rect key="frame" x="0.0" y="-264.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="ไม่จ่าย">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="ddL-lt-5Gu"/>
+                                            <constraint firstAttribute="width" constant="350" id="xzP-cL-ZyP"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-VQ-6Ur">
+                                        <rect key="frame" x="12" y="207.5" width="350" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEq-2x-PHq">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
+                                                <color key="backgroundColor" red="0.51065474050000004" green="0.48031297169999998" blue="0.86542493740000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="ประเภทสินทรัพย์">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ThirdStackHandleSelection:" destination="HMJ-R9-Zl4" eventType="touchUpInside" id="epV-pT-zkA"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtP-ZS-YzR">
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Equity">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-9p-5e8">
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Fixed Income">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9x8-go-ceX">
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Balance">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWe-1c-pOx">
+                                                <rect key="frame" x="0.0" y="-296.5" width="350" height="0.0"/>
+                                                <color key="backgroundColor" red="0.89966611780000005" green="0.89179448900000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Other">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="FmX-46-Y0z"/>
+                                            <constraint firstAttribute="width" constant="350" id="dxu-S0-TLC"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-8C-OK2">
+                                        <rect key="frame" x="12.5" y="40" width="350" height="30"/>
+                                        <color key="backgroundColor" red="0.61624461919999995" green="0.58323130749999996" blue="0.96506358849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="F2l-Ff-nJF"/>
+                                        </constraints>
+                                        <state key="normal" title="ทั้งหมด">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-3f-dkH">
+                                        <rect key="frame" x="117.5" y="297.5" width="140" height="45"/>
+                                        <color key="backgroundColor" red="0.61624461919999995" green="0.58323130749999996" blue="0.96506358849999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Xc2-0T-jSE"/>
+                                            <constraint firstAttribute="width" constant="140" id="nDa-YV-bAc"/>
+                                        </constraints>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ufs-oB-mI6" secondAttribute="trailing" constant="12.5" id="5vd-7P-bba"/>
+                                    <constraint firstItem="Ufs-oB-mI6" firstAttribute="top" secondItem="U8o-ni-q7L" secondAttribute="bottom" constant="2" id="Chy-6w-Wri"/>
+                                    <constraint firstItem="U8o-ni-q7L" firstAttribute="top" secondItem="Srm-9L-tgh" secondAttribute="bottom" constant="20" id="FG1-jv-IFZ"/>
+                                    <constraint firstItem="Ufs-oB-mI6" firstAttribute="leading" secondItem="sCw-Uv-Lug" secondAttribute="leading" constant="12.5" id="I9z-05-MJU"/>
+                                    <constraint firstItem="NiT-8C-OK2" firstAttribute="leading" secondItem="sCw-Uv-Lug" secondAttribute="leading" constant="12.5" id="INg-HO-fRW"/>
+                                    <constraint firstAttribute="trailing" secondItem="NiT-8C-OK2" secondAttribute="trailing" constant="12.5" id="OBg-N8-xp5"/>
+                                    <constraint firstItem="eSP-VQ-6Ur" firstAttribute="leading" secondItem="sCw-Uv-Lug" secondAttribute="leading" constant="12.5" id="VUu-Hb-z8d"/>
+                                    <constraint firstItem="Srm-9L-tgh" firstAttribute="top" secondItem="NiT-8C-OK2" secondAttribute="bottom" constant="30" id="eg7-ND-2qE"/>
+                                    <constraint firstItem="U8o-ni-q7L" firstAttribute="leading" secondItem="sCw-Uv-Lug" secondAttribute="leading" constant="12.5" id="g1A-Ge-rUR"/>
+                                    <constraint firstItem="NiT-8C-OK2" firstAttribute="top" secondItem="sCw-Uv-Lug" secondAttribute="top" constant="40" id="mRE-YZ-7Yn"/>
+                                    <constraint firstItem="WZS-3f-dkH" firstAttribute="top" secondItem="eSP-VQ-6Ur" secondAttribute="bottom" constant="60" id="qeJ-KT-8Om"/>
+                                    <constraint firstAttribute="trailing" secondItem="U8o-ni-q7L" secondAttribute="trailing" constant="12.5" id="qwb-S7-0rg"/>
+                                    <constraint firstItem="eSP-VQ-6Ur" firstAttribute="top" secondItem="Ufs-oB-mI6" secondAttribute="bottom" constant="2" id="rxL-z7-ng6"/>
+                                    <constraint firstItem="WZS-3f-dkH" firstAttribute="centerX" secondItem="sCw-Uv-Lug" secondAttribute="centerX" id="vTu-j9-Exr"/>
+                                    <constraint firstAttribute="bottom" secondItem="WZS-3f-dkH" secondAttribute="bottom" constant="60" id="wFn-bb-7xf"/>
+                                    <constraint firstAttribute="trailing" secondItem="eSP-VQ-6Ur" secondAttribute="trailing" constant="12.5" id="x92-MO-SsA"/>
+                                    <constraint firstItem="Srm-9L-tgh" firstAttribute="leading" secondItem="sCw-Uv-Lug" secondAttribute="leading" constant="35" id="zoO-09-kbt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66974825130000004" green="0.64315891609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="XGI-iX-W9a" firstAttribute="top" secondItem="dmG-Ls-zmQ" secondAttribute="top" id="9Xm-Bz-Y8u"/>
+                            <constraint firstItem="sCw-Uv-Lug" firstAttribute="trailing" secondItem="dmG-Ls-zmQ" secondAttribute="trailing" id="F5q-PZ-HOr"/>
+                            <constraint firstItem="XGI-iX-W9a" firstAttribute="trailing" secondItem="dmG-Ls-zmQ" secondAttribute="trailing" id="I5h-8n-dDn"/>
+                            <constraint firstItem="sCw-Uv-Lug" firstAttribute="top" secondItem="XGI-iX-W9a" secondAttribute="bottom" id="Mv7-uH-OZl"/>
+                            <constraint firstItem="XGI-iX-W9a" firstAttribute="leading" secondItem="dmG-Ls-zmQ" secondAttribute="leading" id="TWz-yd-Y0g"/>
+                            <constraint firstItem="sCw-Uv-Lug" firstAttribute="leading" secondItem="dmG-Ls-zmQ" secondAttribute="leading" id="bjY-wP-EKZ"/>
+                            <constraint firstItem="sCw-Uv-Lug" firstAttribute="bottom" secondItem="dmG-Ls-zmQ" secondAttribute="bottom" id="gK0-dj-WVG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dmG-Ls-zmQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Funds" image="fundsSym" id="RSa-75-55r"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="Policy" destination="Ufs-oB-mI6" id="gnd-rB-0Oh"/>
+                        <outlet property="fundAM" destination="U8o-ni-q7L" id="fJt-cf-GsL"/>
+                        <outlet property="fundAssetType" destination="eSP-VQ-6Ur" id="YPK-NQ-uah"/>
+                        <outlet property="menuBtn" destination="MAF-4g-6a7" id="Fog-qI-zB8"/>
+                        <outletCollection property="amSelected" destination="WdG-9E-uDz" collectionClass="NSMutableArray" id="r2U-5x-WUu"/>
+                        <outletCollection property="amSelected" destination="a4i-ro-btw" collectionClass="NSMutableArray" id="gBt-Oz-Yvr"/>
+                        <outletCollection property="amSelected" destination="3MQ-ci-7wa" collectionClass="NSMutableArray" id="7iF-17-fWl"/>
+                        <outletCollection property="amSelected" destination="Ykk-tf-1K1" collectionClass="NSMutableArray" id="HBq-vZ-cXb"/>
+                        <outletCollection property="amSelected" destination="481-H6-eCR" collectionClass="NSMutableArray" id="w7Q-bO-L6n"/>
+                        <outletCollection property="amSelected" destination="yzG-16-7se" collectionClass="NSMutableArray" id="RPm-S5-Cwr"/>
+                        <outletCollection property="amSelected" destination="hQ8-td-Rah" collectionClass="NSMutableArray" id="bdx-jF-Dhu"/>
+                        <outletCollection property="amSelected" destination="uNN-75-BaS" collectionClass="NSMutableArray" id="dRB-c6-ThF"/>
+                        <outletCollection property="amSelected" destination="Pny-wU-HiX" collectionClass="NSMutableArray" id="wnW-6W-HcP"/>
+                        <outletCollection property="amSelected" destination="8An-Lm-eXx" collectionClass="NSMutableArray" id="aeJ-3j-hhy"/>
+                        <outletCollection property="amSelected" destination="ciw-0p-OlV" collectionClass="NSMutableArray" id="n1g-CI-w6l"/>
+                        <outletCollection property="amSelected" destination="rRB-aO-ryG" collectionClass="NSMutableArray" id="2Zm-HV-2hw"/>
+                        <outletCollection property="amSelected" destination="m3I-2c-QJJ" collectionClass="NSMutableArray" id="WM6-cR-rJK"/>
+                        <outletCollection property="amSelected" destination="12m-uj-2he" collectionClass="NSMutableArray" id="1Vi-4g-jkl"/>
+                        <outletCollection property="amSelected" destination="MNI-ee-yUF" collectionClass="NSMutableArray" id="U4C-Ty-gCE"/>
+                        <outletCollection property="amSelected" destination="4Mp-ND-JUK" collectionClass="NSMutableArray" id="xa4-5n-KeP"/>
+                        <outletCollection property="amSelected" destination="NjF-OB-ztb" collectionClass="NSMutableArray" id="zFn-DP-eml"/>
+                        <outletCollection property="amSelected" destination="gKb-kY-dxo" collectionClass="NSMutableArray" id="uz4-bi-fiv"/>
+                        <outletCollection property="amSelected" destination="ceV-Nb-4hs" collectionClass="NSMutableArray" id="hGt-Bc-CGL"/>
+                        <outletCollection property="amSelected" destination="xci-oE-DvM" collectionClass="NSMutableArray" id="rjr-KA-wti"/>
+                        <outletCollection property="amSelected" destination="W2G-p7-jal" collectionClass="NSMutableArray" id="85W-zT-l5E"/>
+                        <outletCollection property="policySelected" destination="wqU-jJ-bv2" collectionClass="NSMutableArray" id="l7P-Oj-x5Q"/>
+                        <outletCollection property="policySelected" destination="lat-yd-PqU" collectionClass="NSMutableArray" id="P2d-yY-Bi2"/>
+                        <outletCollection property="assetType" destination="9x8-go-ceX" collectionClass="NSMutableArray" id="YPV-oi-jRu"/>
+                        <outletCollection property="assetType" destination="XK4-9p-5e8" collectionClass="NSMutableArray" id="1b1-j8-rg6"/>
+                        <outletCollection property="assetType" destination="PtP-ZS-YzR" collectionClass="NSMutableArray" id="kDb-WO-dZY"/>
+                        <outletCollection property="assetType" destination="dWe-1c-pOx" collectionClass="NSMutableArray" id="zQO-Td-esw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZh-ul-MYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3759" y="-713"/>
         </scene>
     </scenes>
     <resources>

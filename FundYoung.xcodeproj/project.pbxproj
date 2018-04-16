@@ -60,13 +60,12 @@
 		A5D08229206BA74200DAE50A /* namedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D08228206BA74200DAE50A /* namedVC.swift */; };
 		A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEDBDE2039564100153CB3 /* FundCell.swift */; };
 		A5DEDBE220395AEF00153CB3 /* FundDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEDBE120395AEF00153CB3 /* FundDataService.swift */; };
+		A5E263B320852EC000E87CF9 /* fundSelfPortAllocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E263B220852EC000E87CF9 /* fundSelfPortAllocation.swift */; };
 		A5E76ABC208282920076958F /* NewsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76ABB208282920076958F /* NewsDataService.swift */; };
 		A5E76ABE208283B60076958F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76ABD208283B60076958F /* News.swift */; };
 		A5E76AC0208287FD0076958F /* NewsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76ABF208287FD0076958F /* NewsTableCell.swift */; };
 		A5E76AC22082941C0076958F /* NewsContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC12082941C0076958F /* NewsContentVC.swift */; };
 		A5E76AC4208346630076958F /* NavibarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC3208346630076958F /* NavibarCustom.swift */; };
-		A5E76AC6208493CF0076958F /* MasterFundAllocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC5208493CF0076958F /* MasterFundAllocationVC.swift */; };
-		A5E76AC8208494000076958F /* fundSelfCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC7208494000076958F /* fundSelfCreation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,13 +127,12 @@
 		A5D08228206BA74200DAE50A /* namedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namedVC.swift; sourceTree = "<group>"; };
 		A5DEDBDE2039564100153CB3 /* FundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCell.swift; sourceTree = "<group>"; };
 		A5DEDBE120395AEF00153CB3 /* FundDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDataService.swift; sourceTree = "<group>"; };
+		A5E263B220852EC000E87CF9 /* fundSelfPortAllocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundSelfPortAllocation.swift; sourceTree = "<group>"; };
 		A5E76ABB208282920076958F /* NewsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataService.swift; sourceTree = "<group>"; };
 		A5E76ABD208283B60076958F /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		A5E76ABF208287FD0076958F /* NewsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableCell.swift; sourceTree = "<group>"; };
 		A5E76AC12082941C0076958F /* NewsContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContentVC.swift; sourceTree = "<group>"; };
 		A5E76AC3208346630076958F /* NavibarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavibarCustom.swift; sourceTree = "<group>"; };
-		A5E76AC5208493CF0076958F /* MasterFundAllocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFundAllocationVC.swift; sourceTree = "<group>"; };
-		A5E76AC7208494000076958F /* fundSelfCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundSelfCreation.swift; sourceTree = "<group>"; };
 		C8BC92BC8BC0F0A90E3CCD66 /* Pods-FundYoung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundYoung.release.xcconfig"; path = "Pods/Target Support Files/Pods-FundYoung/Pods-FundYoung.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,8 +197,7 @@
 				A551F6F0203F3C0400A726A9 /* RiskAssesmentVC.swift */,
 				A5D082222067E6C900DAE50A /* RiskSelectedVC.swift */,
 				A5D08228206BA74200DAE50A /* namedVC.swift */,
-				A5E76AC5208493CF0076958F /* MasterFundAllocationVC.swift */,
-				A5E76AC7208494000076958F /* fundSelfCreation.swift */,
+				A5E263B220852EC000E87CF9 /* fundSelfPortAllocation.swift */,
 			);
 			path = Goal;
 			sourceTree = "<group>";
@@ -508,7 +505,6 @@
 				A56279B82038685A000DF151 /* estimateSaving.swift in Sources */,
 				A53F0EF420794407008B1679 /* TypesCell.swift in Sources */,
 				A520BDD32081D0FA0062A595 /* KnowledgeVC.swift in Sources */,
-				A5E76AC8208494000076958F /* fundSelfCreation.swift in Sources */,
 				A551F6EF203F316F00A726A9 /* AssesmentDataService.swift in Sources */,
 				A503938C203A98170086D54D /* LabelStyle1.swift in Sources */,
 				A520BDDB208205CC0062A595 /* AccountManagementVC.swift in Sources */,
@@ -520,6 +516,7 @@
 				A5E76AC4208346630076958F /* NavibarCustom.swift in Sources */,
 				A5E76AC0208287FD0076958F /* NewsTableCell.swift in Sources */,
 				A53F0EF0207942DA008B1679 /* fundTypesVC.swift in Sources */,
+				A5E263B320852EC000E87CF9 /* fundSelfPortAllocation.swift in Sources */,
 				A56279BC20386B30000DF151 /* Plan.swift in Sources */,
 				A51A6F262056E44D00048697 /* termLblStyle.swift in Sources */,
 				A53F0F04207A74CB008B1679 /* SignUpVC.swift in Sources */,
@@ -547,7 +544,6 @@
 				A53F0EFB207A2CB6008B1679 /* SWRevealViewController.m in Sources */,
 				A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */,
 				A520BDCD2081D0510062A595 /* NewsVC.swift in Sources */,
-				A5E76AC6208493CF0076958F /* MasterFundAllocationVC.swift in Sources */,
 				A53F0EFF207A3D05008B1679 /* GradieantView.swift in Sources */,
 				A5DEDBE220395AEF00153CB3 /* FundDataService.swift in Sources */,
 			);

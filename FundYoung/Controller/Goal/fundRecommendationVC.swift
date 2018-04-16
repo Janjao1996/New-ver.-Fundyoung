@@ -16,6 +16,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
             if let fundCell = tableView.dequeueReusableCell(withIdentifier: "ReccomendFund") as? RecomendedFundCell{
                 let fundRatio = FundDataService.instance.getFundByRisk(risk: plan.Risk)[indexPath.row]
                 fundCell.updateViews(fund: fundRatio)
+                fundCell.sizeToFit()
                 return fundCell
             }
             else{
@@ -41,9 +42,11 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var pieChart : PieChartView!
     @IBOutlet weak var FundTable: UITableView!
     
+    @IBOutlet weak var portRiskLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        portRiskLabel.text = "Your Port Risl : "
         print(plan.PlanName)
         print(plan.Target)
         print(plan.NumberOfYear)
@@ -51,6 +54,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
         FundTable.dataSource = self
         FundTable.delegate = self
         pieChartUpdate()
+        FundTable.sizeToFit()
     }
     func pieChartUpdate(){
         
@@ -67,6 +71,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
         pieChart.legend.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         pieChart.notifyDataSetChanged()
         
+        
     }
     func getDataSet(risk: Int) -> PieChartDataSet {
         let dataSet = FundDataService.instance.getFundWeightChart(risk: risk)
@@ -75,7 +80,17 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func renderChart(){
         pieChartUpdate()
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let FundSelf = segue.destination as? fundSelfPortAllocation{
+            let plan_ = plan
+            FundSelf.plan_ = plan_
+            
+        }
+    }
+    @IBAction func SelfPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToSelf", sender: self)
+        
+    }
     @IBAction func unwindFromEstimationVC(unwindSegue : UIStoryboardSegue){
         
     }
