@@ -11,14 +11,7 @@ import Charts
 
 class  FundDataService {
     static let instance = FundDataService()
-    private var Funds = [
-        Fund(FundName: "SCBSET50", Risk: 5, Return: 5),
-        Fund(FundName: "SCBFP", Risk: 4, Return: 4),
-        Fund(FundName: "SCBTMFPLUS-P", Risk: 6, Return: 7),
-        Fund(FundName: "SCBSET501", Risk: 5, Return: 5),
-        Fund(FundName: "SCBFP1", Risk: 4, Return: 4),
-        Fund(FundName: "SCBTMFPLUS-P1", Risk: 6, Return: 7)
-    ]
+    var Funds = [Fund]()
     private var Types = ["Equity","Bond","Money Market","Commodities"]
     func getTypes()-> [String]{
         return Types

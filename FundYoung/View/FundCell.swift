@@ -19,7 +19,7 @@ class FundCell: UITableViewCell {
     func updateViews(fund: Fund){
         FundName.text = fund.FundName
         FundRisk.text = String(fund.Risk)
-        FundReturn.text = String(fund.Return)
+       
         
     }
    

@@ -8,8 +8,17 @@
 
 import UIKit
 import FirebaseAuth
+import Alamofire
 
-class SignUpVC: UIViewController {
+class SignUpVC: UIViewController , UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return Gender.count
+    }
+    
     
     
     @IBOutlet weak var emailTxt: UITextField!
@@ -25,10 +34,12 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var GenderTXt: UITextField!
     @IBOutlet weak var DOBTxt: UITextField!
     let DOBPicker = UIDatePicker()
-    
 
+    let genderPicker = UIPickerView()
+    let Gender = ["Male","Female"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         createDatePickerView()
         let doneBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
         doneBtn.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -42,15 +53,29 @@ class SignUpVC: UIViewController {
         RepasswordTxt.inputAccessoryView = doneBtn
         firstNameTxt.inputAccessoryView = doneBtn
         lastNameTxt.inputAccessoryView = doneBtn
-        
+    
+        GenderTXt.textAlignment = .center
+        GenderTXt.inputView = genderPicker
+        genderPicker.dataSource = self
+        genderPicker.delegate = self
+      
+      
         
 
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return Gender[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        GenderTXt.text = Gender[row]
+        GenderTXt.resignFirstResponder()
     }
     
     @objc func done() {
   
         view.endEditing(true)
     }
+  
     func createDatePickerView() {
         let ToolBar = UIToolbar()
         ToolBar.sizeToFit()
@@ -58,8 +83,20 @@ class SignUpVC: UIViewController {
         ToolBar.setItems([done], animated: false)
         DOBTxt.inputAccessoryView = ToolBar
         DOBTxt.inputView = DOBPicker
+        DOBTxt.textAlignment = .center
         DOBPicker.datePickerMode = .date
+        
     }
+    func convertDateFormater(_ date: String) -> String
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM dd, yyyy"
+        let date = dateFormatter.date(from: date)
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return  dateFormatter.string(from: date!)
+        
+    }
+  
     @objc func donePressed(){
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -73,9 +110,45 @@ class SignUpVC: UIViewController {
         if PasswordTxt.text == RepasswordTxt.text{
             guard let email = emailTxt.text  else{return}
             guard let pass = PasswordTxt.text else{return}
+            guard let firstname = firstNameTxt.text else{return}
+            guard let lastname = lastNameTxt.text else{return}
+            guard let gender = GenderTXt.text else {return}
+            guard let dob = DOBTxt.text else{return}
+            let changedFormatDOB = convertDateFormater(dob)
+            //print(gender)
+           // print(changedFormatDOB)
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
                 if error == nil  && user != nil{
+                    user?.getIDTokenForcingRefresh(true, completion: { (idToken, error) in
+                        let headers = [
+                            "Content-Type": "application/json",
+                            "Authorization": "Bearer " + idToken!
+                        ]
+                        //print(headers)
+                        //print(idToken)
+                        let parameters = [
+                            "firstname": firstname,
+                            "lastname": lastname,
+                            "gender": gender,
+                            "dob": changedFormatDOB,
+                            "email": email
+                            
+                        ]
+                        print(parameters)
+                        let URL = "https://fundyoung.herokuapp.com/adduser"
+                        Alamofire.request(URL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseString { (respone) in
+                            if respone.result.error == nil{
+                                print(respone.result.value)
+                            } else{
+                                print(respone.result.error)
+                            }
+                        }
+                        
+                      
+                    })
+         
                     self.performSegue(withIdentifier: "goToLogIn", sender: self)
+                    
                 }
                 else{
                     print("Error Log In:\(error!.localizedDescription)")
@@ -83,12 +156,15 @@ class SignUpVC: UIViewController {
                 
             }
             
+            
         }
         else{
             ErrorLbl.text = "Password and repassword are not the same"
             ErrorLbl.isHidden = false
             
-        }
+            }
+            
+        
   
     }
     

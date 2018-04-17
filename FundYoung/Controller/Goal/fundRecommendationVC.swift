@@ -94,7 +94,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func unwindFromEstimationVC(unwindSegue : UIStoryboardSegue){
         
     }
-    @IBAction func unwindFromFundSelectionVC(unwindSegue : UIStoryboardSegue){
+    @IBAction func unwindFromFundSelfPortVC(unwindSegue : UIStoryboardSegue){
         
     }
 }

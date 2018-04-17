@@ -21,6 +21,9 @@ class SignInVC: UIViewController {
         
         Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
             if error == nil && user != nil{
+                user?.getIDTokenForcingRefresh(true, completion: { (idToken, error) in
+                    print(idToken)
+                })
                 self.performSegue(withIdentifier: TO_LOGIN, sender: self)
             }
             else{
