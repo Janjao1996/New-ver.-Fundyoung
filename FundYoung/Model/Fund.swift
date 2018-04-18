@@ -7,11 +7,44 @@
 //
 
 import Foundation
-struct Fund {
-    private(set) public var Id: Int!
-    private(set) public var FundName: String!
-    private(set) public var Risk: Int!
-    private(set) public var fundType: String!
-    
+
+
+struct Fund : Decodable{
+    public private(set) var id: Int!
+    public private(set) var name: String!
+    public private(set) var risk: Int!
+    public private(set) var type: String!
+    private enum CodingKeys: String,CodingKey{
+        case id = "id"
+        case name = "name"
+        case risk = "risk"
+        case type = "type"
+    }
     
 }
+/*struct name: Codable {
+    var name: String?
+    private enum CodingKeys: String,CodingKey{
+        case name = "name"
+    }
+}
+struct id: Codable {
+    var id: Int?
+    private enum CodingKeys: String,CodingKey{
+        case id = "id"
+    }
+}
+struct risk: Codable {
+    var risk: Int?
+    private enum CodingKeys: String,CodingKey{
+        case risk = "risk"
+    }
+}
+struct type: Codable {
+    var type: String?
+    private enum CodingKeys: String,CodingKey{
+        case type = "type"
+    }
+}
+
+*/

@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import Alamofire
 
-class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDelegate, fundCellDelegate  {
+    func DidTapAdd(fund: Fund) {
+        performSegue(withIdentifier: "AddFund", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selfFundVC = segue.destination as? fundSelfPortAllocation{
+            print("func prepare")
+            assert(sender as? Fund != nil)
+            selfFundVC.initFund(fund: sender as! Fund)
+            
+        } 
+    }
+    
     @IBOutlet weak var FundTable: UITableView!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FundDataService.instance.getFundsByTypes(type: fundtype).count
+      
+        return Funds.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let fundCell = tableView.dequeueReusableCell(withIdentifier: "FundCell") as? FundCell{
-            let fund = FundDataService.instance.getFundsByTypes(type: fundtype)[indexPath.row ]
+            let fund = Funds[indexPath.row]
             fundCell.updateViews(fund: fund)
+            fundCell.delegate = self
             return fundCell
             
         }
@@ -27,10 +44,14 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         
     }
     var fundtype: String!
+    var Funds = [Fund]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        FundDataService.instance.requestAllFundData()
         FundTable.dataSource = self
         FundTable.delegate = self
+        
+        
 
       
     }
@@ -38,5 +59,8 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         fundtype = type
     }
     
+    
+    
    
 }
+

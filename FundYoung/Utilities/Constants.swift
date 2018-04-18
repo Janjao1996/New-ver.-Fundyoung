@@ -13,7 +13,8 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 // url constants
 let BASE_URL = "https://fundyoung.herokuapp.com/"
 let URL_REGISTER = "\(BASE_URL)account/register"
-let URL_ADDUSER = "\(BASE_URL)/adduser"
+let URL_ADDUSER = "\(BASE_URL)adduser"
+
 // segue
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"

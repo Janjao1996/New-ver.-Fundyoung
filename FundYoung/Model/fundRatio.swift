@@ -9,8 +9,8 @@
 import Foundation
 struct fundRatio {
     var fund : Fund!
-    var ratio : Int!
-    init(fund: Fund , ratio: Int){
+    var ratio : Double!
+    init(fund: Fund , ratio: Double){
         self.fund = fund
         self.ratio = ratio
     }

@@ -14,9 +14,8 @@ class fundSelfPortAllocation: UIViewController, UITableViewDataSource,  UITableV
         var fundList = [fundRatio]()
         @IBOutlet weak var pieChart : PieChartView!
         @IBOutlet weak var FundTable: UITableView!
-        
         @IBOutlet weak var portRiskLabel: UILabel!
-        
+        var selectedFund: Fund!
         override func viewDidLoad() {
             super.viewDidLoad()
             portRiskLabel.text = "Your Port Risl : "
@@ -29,6 +28,7 @@ class fundSelfPortAllocation: UIViewController, UITableViewDataSource,  UITableV
             pieChartUpdate()
             FundTable.sizeToFit()
         }
+   
         func pieChartUpdate(){
             
             
@@ -43,7 +43,7 @@ class fundSelfPortAllocation: UIViewController, UITableViewDataSource,  UITableV
             pieChart.chartDescription?.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
             pieChart.legend.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
             pieChart.notifyDataSetChanged()
-            
+            print(fundList)
             
         }
             func getDataSet() -> PieChartDataSet {
@@ -72,6 +72,14 @@ class fundSelfPortAllocation: UIViewController, UITableViewDataSource,  UITableV
                 
                 
                 
+            }
+        }
+        func initFund(fund: Fund) {
+            let numberOfFund = Double(fundList.count + 1)
+            let ratio = 100.0/numberOfFund
+            fundList.append(fundRatio(fund: fund, ratio: 100))
+            for x in 0...fundList.count-1{
+                fundList[x].ratio = ratio
             }
         }
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

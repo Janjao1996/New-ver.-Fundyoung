@@ -42,6 +42,7 @@ class NewsVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         
         NewsTable.delegate = self
         NewsTable.dataSource = self
+    
      
         
        

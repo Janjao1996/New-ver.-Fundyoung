@@ -29,6 +29,7 @@ class SearchFundsVC: UIViewController {
         fundAM.sizeToFit()
         Policy.sizeToFit()
         fundAssetType.sizeToFit()
+    
         
     }
     @IBAction func firstStackHandleSelection(_ sender: Any) {

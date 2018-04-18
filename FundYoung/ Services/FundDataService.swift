@@ -8,13 +8,49 @@
 
 import Foundation
 import Charts
+import Alamofire
+import SwiftyJSON
+import FirebaseAuth
 
 class  FundDataService {
     static let instance = FundDataService()
+    
     var Funds = [Fund]()
+    
+    
+    
     private var Types = ["Equity","Bond","Money Market","Commodities"]
     func getTypes()-> [String]{
         return Types
+    }
+    func requestAllFundData() {
+        let URL = "https://fundyoung.herokuapp.com/allfunds"
+        let idToken = UserDefaults.standard.string(forKey: "UserToken")
+        print(idToken)
+        let headers = [
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + idToken!
+        ]
+        Alamofire.request(URL, method: .get , parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { response in
+            if response.result.error == nil {
+                guard let data = response.data else{return}
+                do {
+                    self.Funds = try JSONDecoder().decode([Fund].self , from: data)
+                }
+                catch let error{
+                    debugPrint(error as Any)
+                }
+            }
+            else{
+                debugPrint(response.result.error as Any)
+            }
+        })
+        
+    }
+    
+    
+    func getAllFunds() -> [Fund] {
+        return Funds
         
     }
    
@@ -26,27 +62,27 @@ class  FundDataService {
         var funds = [fundRatio]()
         switch risk {
         case 1:
-            let fund1 = fundRatio(fund: Funds[0], ratio: 70)
-            let fund2 = fundRatio(fund: Funds[1], ratio: 30)
+            let fund1 = fundRatio(fund: Funds[0], ratio: 70.0)
+            let fund2 = fundRatio(fund: Funds[0], ratio: 30.0)
             funds.append(fund1)
             funds.append(fund2)
             return funds
         case 2:
-            let fund1 = fundRatio(fund: Funds[0], ratio: 16)
-            let fund2 = fundRatio(fund: Funds[1], ratio: 16)
-            let fund3 = fundRatio(fund: Funds[2], ratio: 20)
-            let fund4 = fundRatio(fund: Funds[3], ratio: 48)
+            let fund1 = fundRatio(fund: Funds[0], ratio: 16.0)
+            let fund2 = fundRatio(fund: Funds[0], ratio: 16.0)
+            let fund3 = fundRatio(fund: Funds[0], ratio: 20.0)
+            let fund4 = fundRatio(fund: Funds[0], ratio: 48.0)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
             funds.append(fund4)
             return funds
         case 3:
-            let fund1 = fundRatio(fund: Funds[0], ratio: 16)
-            let fund2 = fundRatio(fund: Funds[1], ratio: 32)
-            let fund3 = fundRatio(fund: Funds[2], ratio: 15)
-            let fund4 = fundRatio(fund: Funds[3], ratio: 35)
-            let fund5 = fundRatio(fund: Funds[4], ratio: 2)
+            let fund1 = fundRatio(fund: Funds[0], ratio: 16.0)
+            let fund2 = fundRatio(fund: Funds[0], ratio: 32.0)
+            let fund3 = fundRatio(fund: Funds[0], ratio: 15.0)
+            let fund4 = fundRatio(fund: Funds[0], ratio: 35.0)
+            let fund5 = fundRatio(fund: Funds[4], ratio: 2.0)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
@@ -54,11 +90,11 @@ class  FundDataService {
             funds.append(fund5)
             return funds
         case 4:
-            let fund1 = fundRatio(fund: Funds[0], ratio: 20)
-            let fund2 = fundRatio(fund: Funds[1], ratio: 48)
-            let fund3 = fundRatio(fund: Funds[2], ratio: 10)
-            let fund4 = fundRatio(fund: Funds[3], ratio: 20)
-            let fund5 = fundRatio(fund: Funds[4], ratio: 2)
+            let fund1 = fundRatio(fund: Funds[0], ratio: 20.0)
+            let fund2 = fundRatio(fund: Funds[1], ratio: 48.0)
+            let fund3 = fundRatio(fund: Funds[2], ratio: 10.0)
+            let fund4 = fundRatio(fund: Funds[3], ratio: 20.0)
+            let fund5 = fundRatio(fund: Funds[4], ratio: 2.0)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
@@ -66,10 +102,10 @@ class  FundDataService {
             funds.append(fund5)
             return funds
         case 5:
-            let fund1 = fundRatio(fund: Funds[0], ratio: 24)
-            let fund2 = fundRatio(fund: Funds[1], ratio: 68)
-            let fund3 = fundRatio(fund: Funds[2], ratio: 5)
-            let fund4 = fundRatio(fund: Funds[3], ratio: 3)
+            let fund1 = fundRatio(fund: Funds[0], ratio: 24.0)
+            let fund2 = fundRatio(fund: Funds[1], ratio: 68.0)
+            let fund3 = fundRatio(fund: Funds[2], ratio: 5.0)
+            let fund4 = fundRatio(fund: Funds[3], ratio: 3.0)
             funds.append(fund1)
             funds.append(fund2)
             funds.append(fund3)
