@@ -5,11 +5,9 @@ class identifyPlanDetailVC: UIViewController {
     
     @IBOutlet weak var targetInput: UITextView!
     
-    var namePlan = ""
-    var targetPlan = 0
-    var yearPlan = 0
+    @IBOutlet weak var NextBtn: DarkGreyBtnBorder!
     
-    
+    var targetPlan: Int!
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -28,10 +26,10 @@ class identifyPlanDetailVC: UIViewController {
     }
     
     @objc func done() {
-        
+        NextBtn.isEnabled = true
         if let targetInput = targetInput.text{
             if let target = Int(targetInput){
-                targetPlan = target
+                PlanDataService.instance.TemperarydPlan.Target = target
                 
                 view.endEditing(true)
             }
@@ -43,16 +41,19 @@ class identifyPlanDetailVC: UIViewController {
     
     @IBAction func nextBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "DurationVC", sender: self)
+        
     }
-    
+        
+    /*
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let risk = segue.destination as? RiskSelectedVC{
-            let plan = Plan(Id: 0 ,PlanName: namePlan, Target: targetPlan, NumberOfYear: yearPlan)
+        
+        if let risk = segue.destination as? DurationVC{
+            let plan = Plan(Id: 0 ,PlanName: "", Target: targetPlan, NumberOfYear:0)
             risk.plan_ = plan
             
         }
-    }
+    }*/
     @IBAction func unwindFromDurationVC(unwindSegue : UIStoryboardSegue){
         
     }

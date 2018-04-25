@@ -10,9 +10,11 @@ import Foundation
 struct fundRatio {
     var fund : Fund!
     var ratio : Double!
+    var fundreturn: Double!
     init(fund: Fund , ratio: Double){
         self.fund = fund
         self.ratio = ratio
+      
     }
     
 }

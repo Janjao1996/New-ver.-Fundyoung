@@ -8,58 +8,49 @@
 
 import UIKit
 
-class DurationVC: UIViewController {
+class DurationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var yearInput: UITextView!
     
-    var namePlan = ""
-    var targetPlan = 0
-    var yearPlan = 0
+  
+    @IBOutlet weak var NextBtn: DarkGreyBtnBorder!
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return year.count
+    }
     
+    let yearPicker = UIPickerView()
+    let year = ["1 year","2 years","3 years","4 years","5 years","6 years","7 years","8 years","9 years","10 years"]
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let doneBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
-        doneBtn.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        doneBtn.setTitle("Done", for: .normal)
-        doneBtn.setTitleColor(#colorLiteral(red: 0.4352941176, green: 0.4431372549, blue: 0.4745098039, alpha: 1), for: .normal)
-        doneBtn.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        doneBtn.layer.borderWidth = 0.5
-        doneBtn.addTarget(self, action: #selector(DurationVC.done), for: .touchUpInside)
+        yearPicker.backgroundColor = #colorLiteral(red: 0.9859201312, green: 0.9828589559, blue: 0.9883212447, alpha: 1)
+        yearPicker.dataSource = self
+        yearPicker.delegate = self
+        yearInput.textAlignment = .center
+        yearInput.inputView = yearPicker
       
-        yearInput.inputAccessoryView = doneBtn
-        
-        
-        
-    }
-    
-    @objc func done() {
-        
-        if let yearInput = yearInput.text{
-            if let year = Int(yearInput){
-                yearPlan = year
-                view.endEditing(true)
-            }
-        }
         
         
     }
-    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return year[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        NextBtn.isEnabled = true
+        PlanDataService.instance.TemperarydPlan.NumberOfYear = row + 1
+        yearInput.text = year[row]
+        yearInput.resignFirstResponder()
+    }
     
     
     @IBAction func nextBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "RiskVC", sender: self)
     }
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let risk = segue.destination as? RiskSelectedVC{
-            let plan = Plan(Id: 0 ,PlanName: namePlan, Target: targetPlan, NumberOfYear: yearPlan)
-            risk.plan_ = plan
-            
-        }
-    }
     @IBAction func unwindFromRiskVC(unwindSegue : UIStoryboardSegue){
         
     }
@@ -67,3 +58,5 @@ class DurationVC: UIViewController {
     
 
 }
+
+

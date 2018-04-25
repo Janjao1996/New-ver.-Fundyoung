@@ -11,7 +11,6 @@ import UIKit
 class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
             let plan = PlanDataService.instance.getPlans()[indexPath.row]
             performSegue(withIdentifier: "RebanceVC", sender: plan)
        
@@ -39,6 +38,7 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        //FundDataService.instance.requestAllFundData()
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class NewsVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,7 +44,7 @@ class NewsVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         
         NewsTable.delegate = self
         NewsTable.dataSource = self
-    
+       
      
         
        
@@ -67,7 +69,6 @@ class NewsVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         
     }
     
-
   
 
 }

@@ -1,26 +1,19 @@
 //
-//  fundSelectionVC.swift
+//  FundCheckVC.swift
 //  FundYoung
 //
-//  Created by Janjao on 17/2/2561 BE.
+//  Created by Janjao on 20/4/2561 BE.
 //  Copyright © 2561 Janjao. All rights reserved.
 //
 
 import UIKit
-import Alamofire
 
-class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-
+class FundCheckVC:  UIViewController, UITableViewDataSource, UITableViewDelegate  {
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let fund = FundDataService.instance.getAllFunds()[indexPath.row]
         performSegue(withIdentifier: "fundDetail", sender: fund)
-    }
-    @IBAction func AddFundToPort(sender: UIButton)
-    {   print("AddPressPerform segue")
-        let fund = FundDataService.instance.getAllFunds()[sender.tag]
-        print(fund)
-        performSegue(withIdentifier: "AddFund", sender: fund)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,7 +26,7 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
     @IBOutlet weak var FundTable: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      
+        
         return FundDataService.instance.getAllFunds().count
         
     }
@@ -42,8 +35,6 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         if let fundCell = tableView.dequeueReusableCell(withIdentifier: "FundCell") as? FundCell{
             let fund = FundDataService.instance.getAllFunds()[indexPath.row]
             fundCell.updateViews(fund: fund)
-            fundCell.AddBtn.tag = indexPath.row
-            fundCell.AddBtn.addTarget(self, action: #selector(fundSelectionVC.AddFundToPort), for: .touchUpInside)
             return fundCell
             
         }
@@ -52,7 +43,7 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         }
         
     }
-   
+    
     
     
     
@@ -62,22 +53,23 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
     var fundtype: String!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        
         FundTable.dataSource = self
         FundTable.delegate = self
-
+        FundDataService.instance.requestAllFundData {
+            self.FundTable.reloadData()
+        }
         
         
         
         
-
-      
+        
+        
+        
     }
     
-    func getType(type: String){
-        fundtype = type
-    }
     
-   
+    
+    
 }
-

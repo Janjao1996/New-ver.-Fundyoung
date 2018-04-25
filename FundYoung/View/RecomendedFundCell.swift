@@ -12,14 +12,24 @@ class RecomendedFundCell: UITableViewCell {
     
     @IBOutlet weak var FundName: UILabel!
     @IBOutlet weak var weightLbl: UILabel!
+    @IBOutlet weak var riskLbl: UILabel!
     @IBOutlet weak var Return: UILabel!
     @IBOutlet weak var AMname: UILabel!
     
     func updateViews(fund: fundRatio){
+      
         FundName.text = fund.fund.name
         weightLbl.text = String(fund.ratio)
-        Return.text = "4"
+        riskLbl.text = String(fund.fund.risk)
+        Return.text = String(fund.fundreturn ?? 0)
         AMname.text = "SCBAM"
     }
+    func totalcellUpdate(risk: Double , return_: Double){
+         FundName.text = "   Total"
+         riskLbl.text = String(risk)
+         Return.text = String(return_ )
+        
+    }
+
     
 }

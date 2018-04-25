@@ -10,12 +10,11 @@ import Foundation
 
 
 struct Fund : Decodable{
-    public private(set) var id: Int!
+ 
     public private(set) var name: String!
     public private(set) var risk: Int!
     public private(set) var type: String!
     private enum CodingKeys: String,CodingKey{
-        case id = "id"
         case name = "name"
         case risk = "risk"
         case type = "type"

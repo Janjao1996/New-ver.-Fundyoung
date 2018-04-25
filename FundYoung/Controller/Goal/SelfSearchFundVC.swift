@@ -10,26 +10,71 @@ import UIKit
 
 class SelfSearchFundVC: UIViewController {
 
+   
+    
+    
+    @IBOutlet var amSelected: [UIButton]!
+    @IBOutlet var policySelected: [UIButton]!
+    @IBOutlet var assetType: [UIButton]!
+    
+    @IBOutlet weak var fundAM: UIStackView!
+    @IBOutlet weak var Policy: UIStackView!
+    @IBOutlet weak var fundAssetType: UIStackView!
+    
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        fundAM.sizeToFit()
+        Policy.sizeToFit()
+        fundAssetType.sizeToFit()
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func firstStackHandleSelection(_ sender: Any) {
+        amSelected.forEach { (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+                
+                
+            })
+            
+        }
+    }
+    @IBAction func criteria1Tapped(_ sender: UIButton) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func secondStackHandleSelection(_ sender: Any) {
+        policySelected.forEach { (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+                
+                
+            })
+        }
     }
-    */
-
+    
+    @IBOutlet weak var AllBtnPressed: UIButton!
+    
+    @IBAction func AllFundsBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToSelectFunds", sender: self)
+    }
+    @IBAction func criteria2Tapped(_ sender: UIButton) {
+    }
+    @IBAction func ThirdStackHandleSelection(_ sender: Any){
+        assetType.forEach { (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+                
+                
+            })
+        }
+    }
 }
+
+

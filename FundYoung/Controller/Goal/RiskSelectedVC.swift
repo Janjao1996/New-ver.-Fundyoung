@@ -22,14 +22,11 @@ class RiskSelectedVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         return risk[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        plan_.Risk = row + 1
+        //assign risk to plan
+        PlanDataService.instance.TemperarydPlan.Risk = row + 1
     }
     
     let risk = ["Risk-Adverse","Conservative","Balanced","Advanced","Aggressive"]
-    
-    
-    var plan_:Plan!
     
     
     @IBOutlet weak var riskPicker: UIPickerView!
@@ -37,30 +34,32 @@ class RiskSelectedVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         performSegue(withIdentifier: "RecommendationVC", sender: self)
     }
     
-    
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let Fundreccomendation = segue.destination as? fundRecommendationVC{
             let plan = plan_
             Fundreccomendation.plan = plan
             
         }
-    }
+    }*/
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        plan_.Risk = 1
+        PlanDataService.instance.TemperarydPlan.Risk = 1
         riskPicker.dataSource = self
         riskPicker.delegate = self
-        print(plan_.PlanName)
-        print(plan_.Target)
-        print(plan_.NumberOfYear)
+      
         
     }
     @IBAction func unwindFromRecommendationVC(unwindSegue : UIStoryboardSegue){
+        PlanDataService.instance.tempfundRatoList.removeAll()
+        
         
     }
     
     
     
 }
+
+
 
