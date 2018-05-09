@@ -23,6 +23,7 @@ class estimateSaving: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        investOnceLbl.text = String(PlanDataService.instance.InvestOnce())
         
         
         
@@ -50,31 +51,35 @@ class estimateSaving: UIViewController {
     }
     
     @IBAction func InintialTxtTapped(_ sender: Any) {
+        PlanDataService.instance.TemperarydPlan.investType = "InvestSomeAndMonthly"
         initialView.click()
         InvestOnceView.unclick()
         MonthlyView.unclick()
     }
     @objc func investOnceTapped(_ sender: UITapGestureRecognizer){
+        PlanDataService.instance.TemperarydPlan.investType = "InvestOnce"
         InvestOnceView.click()
         MonthlyView.unclick()
         initialView.unclick()
+        PlanDataService.instance.TemperarydPlan.firstInvest = PlanDataService.instance.InvestOnce()
+        PlanDataService.instance.TemperarydPlan.nextInvest = 0
+        
+        
     }
     @objc func monthlyTapped(_ sender: UITapGestureRecognizer){
+        PlanDataService.instance.TemperarydPlan.investType = "Monthly"
         MonthlyView.click()
         InvestOnceView.unclick()
         initialView.unclick()
     }
     @objc func initialTapped(_ sender: UITapGestureRecognizer){
+        PlanDataService.instance.TemperarydPlan.investType = "InvestSomeAndMonthly"
         initialView.click()
         InvestOnceView.unclick()
         MonthlyView.unclick()
         
     }
-    func calculateMonthly(){
-        
-    }
- 
- 
+
     @objc func calculate(){
         InitMonthlyLbl.text = String(500000)
         view.endEditing(true)

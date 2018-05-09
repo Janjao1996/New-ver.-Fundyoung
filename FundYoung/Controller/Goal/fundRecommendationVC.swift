@@ -39,7 +39,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fundList.count 
+        return fundList.count
     }
   
     var fundList = [fundRatio]()
@@ -47,38 +47,44 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var FundTable: UITableView!
     var fundreturn = 0.0
     @IBOutlet weak var portRiskLabel: UILabel!
-    
+    var activityIndicator = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = .gray
+        self.view.addSubview(activityIndicator)
+        self.activityIndicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
         FundTable.dataSource = self
         FundTable.delegate = self
         PlanDataService.instance.requestFundByRisk(Risk: PlanDataService.instance.TemperarydPlan.Risk) { (list) in
+            
             for x in list{
                self.fundList.append(x)
             }
             for x in 0...self.fundList.count-1{
+              
                 FundDataService.instance.requestFundReturn(fundID: self.fundList[x].fund.name, completionHandle: { (return_) in
+               
+                    
                     let twodigitReturn = Double(round(100*return_)/100)
                     self.fundList[x].fundreturn = twodigitReturn
+                    PlanDataService.instance.tempfundRatoList[x].fundreturn = twodigitReturn
                     self.FundTable.reloadData()
-                    
+                    UIApplication.shared.endIgnoringInteractionEvents()
+                    self.activityIndicator.stopAnimating()
                 })
                
             }
+          
+            self.portRiskLabel.text = "Your Port Risk : " + String(PlanDataService.instance.getTotalRisk())
+            self.pieChartUpdate()
+
         }
        
-   
-            
-        
-            
-        
-        
-//        print(fundList)
-//
-        portRiskLabel.text = "Your Port Risl : "
-        pieChartUpdate()
+
+     
         FundTable.sizeToFit()
      
     }
@@ -91,17 +97,23 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
         let dataSet = getDataSet(risk: PlanDataService.instance.TemperarydPlan.Risk)
         let data = PieChartData(dataSet: dataSet)
         pieChart.data = data
-        pieChart.chartDescription?.text = "Fund"
-        dataSet.colors = ChartColorTemplates.joyful()
-        pieChart.backgroundColor = UIColor.white
+        pieChart.chartDescription?.text = nil
+        dataSet.colors = ChartColorTemplates.material()
+      //  dataSet.sliceSpace = 2
+     //   dataSet.yValuePosition = PieChartDataSet.ValuePosition.outsideSlice
+        pieChart.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        pieChart.holeRadiusPercent = 0.4
+        pieChart.drawEntryLabelsEnabled = false
+        pieChart.drawHoleEnabled = true
+        pieChart.transparentCircleRadiusPercent = 0.5
+        pieChart.rotationEnabled = false
         pieChart.holeColor = UIColor.clear
-        pieChart.chartDescription?.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
-        pieChart.legend.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        pieChart.legend.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         pieChart.notifyDataSetChanged()
     }
     
     func getDataSet(risk: Int) -> PieChartDataSet {
-        let dataSet = FundDataService.instance.getFundWeightChart(risk: risk)
+        let dataSet = PlanDataService.instance.getFundWeightChart(risk: risk)
        return dataSet
     }
     @IBAction func renderChart(){

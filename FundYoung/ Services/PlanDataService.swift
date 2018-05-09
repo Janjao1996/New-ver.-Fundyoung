@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
-
+import Charts
 
 class PlanDataService{
     static let instance = PlanDataService()
@@ -21,6 +21,8 @@ class PlanDataService{
     var tempReturn: Int!
     var TemperarydPlan = Plan(Id: 0, PlanName: "", Target: 0, NumberOfYear: 0)
     var tempfundRatoList = [fundRatio]()
+    var temAverageReturn = 0.0
+    var tempAverageRisk  = 0.0
     
     
     func requestFundByRisk(Risk: Int , completionHandle: @escaping ([fundRatio])-> ())  {
@@ -44,11 +46,6 @@ class PlanDataService{
                         let ratio = x["ratio"] as? Double ?? 0.0
                         let getfund = Fund(name: name, risk: risk, type: type)
                         var fundratio = fundRatio(fund: getfund, ratio: ratio)
-                        FundDataService.instance.requestFundReturn(fundID: name, completionHandle: { (return_) in
-                            let twodigitReturn = Double(round(100*return_)/100)
-                            fundratio.fundreturn = twodigitReturn
-                        })
-
                         self.tempfundRatoList.append(fundratio)
                     }
                     completionHandle(self.tempfundRatoList)
@@ -67,9 +64,7 @@ class PlanDataService{
         
     }
     
-    
-    
-    
+
     
     func getTotalRisk()-> Double{
         var sum = 0.0
@@ -77,7 +72,8 @@ class PlanDataService{
             sum = sum + (item.ratio * Double(item.fund.risk))
         }
         let twodigitTotalRisk = Double((sum/100)*100)/100
-        return twodigitTotalRisk
+        tempAverageRisk = twodigitTotalRisk
+        return tempAverageRisk
     }
     func getTotalReturn()-> Double{
         var sum = 0.0
@@ -85,23 +81,22 @@ class PlanDataService{
             sum = sum + (item.ratio * item.fundreturn)
         }
         let twodigitTotalReturn = Double((sum/100)*100)/100
-        return twodigitTotalReturn
+        temAverageReturn = twodigitTotalReturn
+        return temAverageReturn
     }
-    func getPlans() -> [Plan]{
-        return Plans
-    }
-   
+
     func getPlan(forPlanID : Int) -> Plan {
         print("get plan")
         
         return Plans[forPlanID]
     }
-    func getNAV() -> Float{
-        return 0
+    func getPlans() -> [Plan] {
+        return Plans
     }
     func InvestOnce() ->Int{
-        
-        return 0
+        let i = getTotalReturn()
+        var pv = Double(TemperarydPlan.Target) / pow( 1.0 + i, Double(TemperarydPlan.NumberOfYear))
+        return Int(pv)
     }
     func InvestMonthly() -> Int {
         return 0
@@ -109,6 +104,17 @@ class PlanDataService{
     func InvestSomeInit(invest: Int) -> Int {
         return 0
     }
+    func getFundWeightChart(risk:Int)-> PieChartDataSet {
+        var entries = [PieChartDataEntry]()
+        for x in 0...tempfundRatoList.count-1{
+            let entry = PieChartDataEntry(value: tempfundRatoList[x].ratio, label: tempfundRatoList[x].fund.type)
+            entries.append(entry)
+        }
+        let dataSet = PieChartDataSet(values: entries, label: nil)
+        return dataSet
+        
+    }
+    
     
 }
 

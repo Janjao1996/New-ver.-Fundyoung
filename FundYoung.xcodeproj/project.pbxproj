@@ -23,6 +23,7 @@
 		A520BDD62081D2A10062A595 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD52081D2A10062A595 /* NotificationVC.swift */; };
 		A520BDD92081D2E80062A595 /* SearchFundsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDD82081D2E80062A595 /* SearchFundsVC.swift */; };
 		A520BDDB208205CC0062A595 /* AccountManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520BDDA208205CC0062A595 /* AccountManagementVC.swift */; };
+		A52CFDED209316C400030EDB /* AllocationSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CFDEC209316C400030EDB /* AllocationSummaryVC.swift */; };
 		A53440D9203A0D0400AC3508 /* lightGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */; };
 		A53440DB203A0D3000AC3508 /* DarkGreyBtnBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */; };
 		A53440DF203A730800AC3508 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53440DE203A730800AC3508 /* UserDataService.swift */; };
@@ -66,6 +67,7 @@
 		A5E76AC0208287FD0076958F /* NewsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76ABF208287FD0076958F /* NewsTableCell.swift */; };
 		A5E76AC22082941C0076958F /* NewsContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC12082941C0076958F /* NewsContentVC.swift */; };
 		A5E76AC4208346630076958F /* NavibarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC3208346630076958F /* NavibarCustom.swift */; };
+		A5EFFD1C2098CDE500B446EA /* EstimateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFFD1B2098CDE500B446EA /* EstimateTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,7 @@
 		A520BDD52081D2A10062A595 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		A520BDD82081D2E80062A595 /* SearchFundsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFundsVC.swift; sourceTree = "<group>"; };
 		A520BDDA208205CC0062A595 /* AccountManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagementVC.swift; sourceTree = "<group>"; };
+		A52CFDEC209316C400030EDB /* AllocationSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllocationSummaryVC.swift; sourceTree = "<group>"; };
 		A53440D8203A0D0400AC3508 /* lightGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DA203A0D3000AC3508 /* DarkGreyBtnBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGreyBtnBorder.swift; sourceTree = "<group>"; };
 		A53440DE203A730800AC3508 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 		A5E76ABF208287FD0076958F /* NewsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableCell.swift; sourceTree = "<group>"; };
 		A5E76AC12082941C0076958F /* NewsContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContentVC.swift; sourceTree = "<group>"; };
 		A5E76AC3208346630076958F /* NavibarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavibarCustom.swift; sourceTree = "<group>"; };
+		A5EFFD1B2098CDE500B446EA /* EstimateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateTableViewCell.swift; sourceTree = "<group>"; };
 		C8BC92BC8BC0F0A90E3CCD66 /* Pods-FundYoung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundYoung.release.xcconfig"; path = "Pods/Target Support Files/Pods-FundYoung/Pods-FundYoung.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,9 +199,10 @@
 				A50621AB2088E5CB008E2064 /* SelfSearchFundVC.swift */,
 				A56279B52038682E000DF151 /* fundSelectionVC.swift */,
 				A56279B72038685A000DF151 /* estimateSaving.swift */,
+				A5D08228206BA74200DAE50A /* namedVC.swift */,
 				A503938F203C2D6A0086D54D /* RebalanceVC.swift */,
 				A551F6F0203F3C0400A726A9 /* RiskAssesmentVC.swift */,
-				A5D08228206BA74200DAE50A /* namedVC.swift */,
+				A52CFDEC209316C400030EDB /* AllocationSummaryVC.swift */,
 			);
 			path = Goal;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				A520BDCA208117790062A595 /* AnswerLbl.swift */,
 				A5E76ABF208287FD0076958F /* NewsTableCell.swift */,
 				A5E76AC3208346630076958F /* NavibarCustom.swift */,
+				A5EFFD1B2098CDE500B446EA /* EstimateTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,6 +511,7 @@
 				A5039392203C39980086D54D /* PlanDataService.swift in Sources */,
 				A56279B82038685A000DF151 /* estimateSaving.swift in Sources */,
 				A53F0EF420794407008B1679 /* TypesCell.swift in Sources */,
+				A5EFFD1C2098CDE500B446EA /* EstimateTableViewCell.swift in Sources */,
 				A520BDD32081D0FA0062A595 /* KnowledgeVC.swift in Sources */,
 				A551F6EF203F316F00A726A9 /* AssesmentDataService.swift in Sources */,
 				A503938C203A98170086D54D /* LabelStyle1.swift in Sources */,
@@ -540,6 +547,7 @@
 				A53440DF203A730800AC3508 /* UserDataService.swift in Sources */,
 				A5D08229206BA74200DAE50A /* namedVC.swift in Sources */,
 				A548A8322072A9C800C7E1AC /* DurationVC.swift in Sources */,
+				A52CFDED209316C400030EDB /* AllocationSummaryVC.swift in Sources */,
 				A56279BE20386B3F000DF151 /* Fund.swift in Sources */,
 				A53F0EFB207A2CB6008B1679 /* SWRevealViewController.m in Sources */,
 				A5DEDBDF2039564100153CB3 /* FundCell.swift in Sources */,

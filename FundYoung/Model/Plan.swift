@@ -16,13 +16,18 @@ struct  Plan {
     var NumberOfYear: Int!
     var Risk: Int!
     var FundList = [Fund]()
-    // var Assesment = [Question]()
+    var investType : String!
+    var firstInvest: Int!
+    var nextInvest: Int!
+
     
     init(Id: Int, PlanName: String, Target : Int, NumberOfYear:Int) {
         self.Id = Id
         self.PlanName = PlanName
         self.Target = Target
         self.NumberOfYear = NumberOfYear
+        self.firstInvest = 0
+        self.nextInvest = 0
     }
     
 }

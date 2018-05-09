@@ -14,7 +14,7 @@ struct fundRatio {
     init(fund: Fund , ratio: Double){
         self.fund = fund
         self.ratio = ratio
-      
+ 
     }
     
 }

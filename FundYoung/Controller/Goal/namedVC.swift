@@ -12,7 +12,7 @@ class namedVC: UIViewController {
     
 
     @IBOutlet weak var nameInput: txtfieldStyle!
-    var namePlan = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let doneBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
@@ -27,10 +27,14 @@ class namedVC: UIViewController {
 
     @objc func done() {
         if let nameInput = nameInput.text{
-            namePlan = nameInput
+            PlanDataService.instance.TemperarydPlan.PlanName = nameInput
             view.endEditing(true)
         }
     }
+    @IBAction func unwindFromSummaryPortVC(unwindSegue : UIStoryboardSegue){
+        
+    }
+    
 
    
 }

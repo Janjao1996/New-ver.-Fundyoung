@@ -51,18 +51,29 @@ class FundCheckVC:  UIViewController, UITableViewDataSource, UITableViewDelegate
     
     
     var fundtype: String!
+    
+    var activityIndicator = UIActivityIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = .gray
+        self.view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
         FundTable.dataSource = self
         FundTable.delegate = self
         FundDataService.instance.requestAllFundData {
             self.FundTable.reloadData()
+            UIApplication.shared.endIgnoringInteractionEvents()
+            self.activityIndicator.stopAnimating()
         }
         
         
         
+    
+       
         
         
         

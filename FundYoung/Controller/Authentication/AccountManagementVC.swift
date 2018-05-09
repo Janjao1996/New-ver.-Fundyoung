@@ -11,8 +11,10 @@ import FirebaseAuth
 
 class AccountManagementVC: UIViewController {
 
+    @IBOutlet weak var mailLBL: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
       
     }

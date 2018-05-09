@@ -132,11 +132,11 @@ class SignUpVC: UIViewController , UIPickerViewDelegate, UIPickerViewDataSource 
                             "gender": gender,
                             "dob": changedFormatDOB,
                             "email": email
-                            
                         ]
                         print(parameters)
                         let URL = "https://fundyoung.herokuapp.com/adduser"
                         Alamofire.request(URL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseString { (respone) in
+                            print(respone.result)
                             if respone.result.error == nil{
                                 print(respone.result.value)
                             } else{
