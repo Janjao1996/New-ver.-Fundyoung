@@ -21,29 +21,44 @@ struct Fund : Decodable{
     }
     
 }
-/*struct name: Codable {
-    var name: String?
-    private enum CodingKeys: String,CodingKey{
-        case name = "name"
+
+struct FundNAV{
+    var fund: fundRatio!
+    var NAV: Double!
+    var totalNAV: Double
+    var investvalue: Int
+    var profit: Double
+    var totalunit: Int
+    init(fund : fundRatio, NAV: Double) {
+        self.fund = fund
+        self.NAV = NAV
+        self.totalNAV = 0
+        self.investvalue = 0
+        self.profit = 0
+        self.totalunit = 0
     }
 }
-struct id: Codable {
-    var id: Int?
-    private enum CodingKeys: String,CodingKey{
-        case id = "id"
+struct fundTypes{
+    var type: String
+    var list : [FundNAV]
+    init(type: String) {
+        self.type  = type
+        self.list = [FundNAV]()
     }
+    
 }
-struct risk: Codable {
-    var risk: Int?
-    private enum CodingKeys: String,CodingKey{
-        case risk = "risk"
-    }
-}
-struct type: Codable {
-    var type: String?
-    private enum CodingKeys: String,CodingKey{
-        case type = "type"
+struct insertFund{
+    var fundID: String!
+    var weigth: Double!
+    var investUnit: Int!
+    var investvalue: Int!
+    init(fundID: String, weigth: Double!, investUnit: Int, investValue: Int) {
+        self.fundID = fundID
+        self.weigth = weigth
+        self.investUnit = investUnit
+        self.investvalue = investValue
+        
     }
 }
 
-*/
+

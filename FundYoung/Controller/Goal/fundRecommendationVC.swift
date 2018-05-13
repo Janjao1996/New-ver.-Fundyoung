@@ -137,6 +137,8 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var nextBtn: UIButton!
     
     @IBAction func nextBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToEstimate", sender: self)
+        fundList.removeAll()
         
     }
     

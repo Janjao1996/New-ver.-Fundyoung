@@ -74,7 +74,7 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
             FundDataService.instance.getFundNAV(fundID: x.fund.name) { (NAV) in
                 let twodigitNAV = Double((NAV/100)*100)
                 let fund = FundNAV(fund: x, NAV: twodigitNAV)
-                let insertfund = insertFund(fundID: x.fund.name, weigth: x.ratio, investUnit: (x.ratio * 0.01 * PlanDataService.instance.TemperarydPlan.firstInvest)/twodigitNAV, investValue: (x.ratio * 0.01 * PlanDataService.instance.TemperarydPlan.firstInvest))
+                let insertfund = insertFund(fundID: x.fund.name, weigth: x.ratio, investUnit: Int((x.ratio * 0.01 * PlanDataService.instance.TemperarydPlan.firstInvest)/twodigitNAV), investValue: Int((x.ratio * 0.01 * PlanDataService.instance.TemperarydPlan.firstInvest)))
                 self.insertList.append(insertfund)
                 print(fund)
                 if x.fund.type == "Money market"{
@@ -155,10 +155,11 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
                         let fund_parameter = ["planid": planID,
                                               "fundid": x.fundID,
                                               "weight": x.weigth,
-                                              "investunit":x.investUnit,
-                                              "investvalue":x.investvalue
+                                              "investunit": x.investUnit,
+                                              "investvalue": x.investvalue
                             
                             ] as [String : Any]
+                        print(fund_parameter)
                         Alamofire.request(add_fund_URL, method: .post, parameters: fund_parameter, encoding: JSONEncoding.default, headers: headers).responseString { (fundrespone) in
                             if fundrespone.result.error == nil{
                                 print(fundrespone.result.value)
@@ -176,6 +177,8 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
                 }
                 
                 self.performSegue(withIdentifier: "goToSummaryPlan", sender: self)
+                PlanDataService.instance.tempfundRatoList.removeAll()
+                
                 //print(respone.result.value)
             } else{
                 print(respone.result.error)
@@ -183,8 +186,10 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
         
             
         }
+        
 
     }
+    
     
     
     
@@ -192,35 +197,4 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
 }
 
 
-
-struct FundNAV{
-    var fund: fundRatio!
-    var NAV: Double!
-    init(fund : fundRatio, NAV: Double) {
-        self.fund = fund
-        self.NAV = NAV
-    }
-}
-struct fundTypes{
-    var type: String
-    var list : [FundNAV]
-    init(type: String) {
-        self.type  = type
-        self.list = [FundNAV]()
-    }
-
-}
-struct insertFund{
-    var fundID: String!
-    var weigth: Double!
-    var investUnit: Double!
-    var investvalue: Double!
-    init(fundID: String, weigth: Double!, investUnit: Double, investValue: Double) {
-        self.fundID = fundID
-        self.weigth = weigth
-        self.investUnit = investUnit
-        self.investvalue = investValue
-        
-    }
-}
 

@@ -19,6 +19,7 @@ struct  Plan {
     var investType : String!
     var firstInvest: Double!
     var nextInvest: Double!
+    var totalPort: Int
 
     
     init(Id: Int, PlanName: String, Target : Int, NumberOfYear:Int) {
@@ -28,6 +29,7 @@ struct  Plan {
         self.NumberOfYear = NumberOfYear
         self.firstInvest = 0
         self.nextInvest = 0
+        self.totalPort = 0
     }
     
 }

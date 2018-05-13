@@ -16,9 +16,9 @@ class RebalanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let fundCell = tableView.dequeueReusableCell(withIdentifier: "funds") as? EstimateTableViewCell {
+        if let fundCell = tableView.dequeueReusableCell(withIdentifier: "funds") as? RebalanceCell {
             let fundRatioNAV = fundlist[indexPath.section].list[indexPath.row]
-            fundCell.updatView(fund:fundRatioNAV)
+            fundCell.updateView(fund:fundRatioNAV)
             return fundCell
         }
         else{
@@ -47,7 +47,9 @@ class RebalanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     @IBOutlet weak var pieChart: PieChartView!
     var plan_ :Plan!
     @IBOutlet weak var GoalNameLbl: UILabel!
-  
+    @IBOutlet weak var targetLbl: UILabel!
+    @IBOutlet weak var DurationLbl: UILabel!
+    
     
     @IBOutlet weak var pie: PieChartView!
     @IBOutlet weak var tableView: UITableView!
@@ -55,19 +57,25 @@ class RebalanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     var FI = fundTypes(type: "Fixed Income")
     var EQ = fundTypes(type: "Equity")
     var CM = fundTypes(type: "Commodities")
-    
+ 
+    @IBOutlet weak var totalPort: UILabel!
     var fundlist = [fundTypes]()
     var PiechartData = [FundNAV]()
     override func viewDidLoad() {
         super.viewDidLoad()
         GoalNameLbl.text = plan_.PlanName
+        targetLbl.text = String(plan_.Target)
+        DurationLbl.text = String(plan_.NumberOfYear)
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
         fundlist.append(MM)
         fundlist.append(FI)
         fundlist.append(EQ)
         fundlist.append(CM)
-        PlanDataService.instance.getfundPlanByID(planId: String(plan_.Id)) { (list) in
+        PlanDataService.instance.getfundPlanByID(planId: String(plan_.Id)) { (list, plan) in
+            
             for x in list{
                 self.PiechartData.append(x)
                 if x.fund.fund.type == "Money market"{
@@ -84,17 +92,20 @@ class RebalanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                     self.fundlist[3].list.append(x)
                     
                 }
+               // self.updateLbl(lbl: String(plan.totalPort))
                 self.tableView.reloadData()
                 self.pieChartUpdate()
             }
+            self.totalPort.text = String(plan.totalPort)
         }
     
     }
     func initPlan(plan: Plan){
         plan_ = Plan(Id: plan.Id, PlanName: plan.PlanName, Target: plan.Target, NumberOfYear: plan.NumberOfYear)
         
+        
     }
-
+  
     
     @IBAction func RebalancePressed(_ sender: Any) {
         if DoneBtn.isHidden{

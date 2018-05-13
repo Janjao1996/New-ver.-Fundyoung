@@ -20,7 +20,8 @@ class PlanDataService{
     var temAverageReturn = 0.0
     var tempAverageRisk  = 0.0
     var planFunds = [FundNAV]()
-    
+    var totalPort = 0
+    var targetPlan = 0
     func requestPlan(completionHandle: @escaping ([Plan])-> ())  {
         let URL = "https://fundyoung.herokuapp.com/getplan"
         print(URL)
@@ -105,7 +106,7 @@ class PlanDataService{
     func getTotalRisk()-> Double{
         var sum = 0.0
         for item in tempfundRatoList{
-            sum = sum + ((item.ratio * 0.01) * Double(item.fund.risk))
+            sum = sum + ((item.ratio) * Double(item.fund.risk))
         }
         let twodigitTotalRisk = Double((sum/100)*100)/100
         tempAverageRisk = twodigitTotalRisk
@@ -146,7 +147,7 @@ class PlanDataService{
         return dataSet
         
     }
-    func getfundPlanByID(planId: String , completionHandle: @escaping ([FundNAV])-> ())  {
+    func getfundPlanByID(planId: String , completionHandle: @escaping ([FundNAV], SummaryPlanDetail)-> ())  {
         let URL_GETPLAN = "https://fundyoung.herokuapp.com/plan/" + planId        //print(URL_GETRETURN)
         let Token = UserDefaults.standard.string(forKey: "UserToken")
         let headers = [
@@ -160,24 +161,33 @@ class PlanDataService{
                 print(response.result.value)
                 do {
                     let temp = response.result.value as! [String: Any]
-         
                         let plan =  temp["plan"] as! [String: Any]
                         let name = plan["name"] as? String ?? ""
                         let target = plan["target"] as? Int ?? 0
+                        let totalport = plan["porttotal"] as? Int ?? 0
+                        let plan_ = SummaryPlanDetail(name: name, target: target, totalPort: self.totalPort)
                         let funds = plan["funds"] as? [[String: Any]]
                     for fund in funds!{
                             let fundID = fund["fundid"] as? String ?? ""
+                            let totalNAV = fund["totalnav"] as? Double ?? 0
                             let type = fund["type"] as? String ?? ""
                             let weight = fund["value"] as? Double ?? 0
                             let NAV = fund["nav"] as? Double ?? 0
+                            let invesunit = fund["investunit"] as? Int ?? 0
+                            let investval = fund["investvalue"] as? Int ?? 0
+                            let profit = fund["profit"] as? Double ?? 0
                             let getfund = Fund(name: fundID, risk: 0, type: type)
                             let fundratio = fundRatio(fund: getfund, ratio: weight)
-                            let navFund = FundNAV(fund: fundratio, NAV: NAV)
+                            var navFund = FundNAV(fund: fundratio, NAV: NAV)
+                            navFund.totalNAV = totalNAV
+                            navFund.investvalue = investval
+                            navFund.totalunit = invesunit
+                            navFund.profit = profit
                             self.planFunds.append(navFund)
                         }
                         
                     
-                    completionHandle(self.planFunds)
+                    completionHandle(self.planFunds, plan_)
                 }
                 catch let error{
                     debugPrint(error as Any)
@@ -194,5 +204,10 @@ class PlanDataService{
     
     
 }
-
+struct SummaryPlanDetail{
+    var name: String!
+    var target: Int!
+    var totalPort: Int!
+    
+}
 

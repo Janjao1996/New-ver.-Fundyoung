@@ -48,21 +48,19 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = .gray
         self.view.addSubview(activityIndicator)
-//        activityIndicator.startAnimating()
-//        UIApplication.shared.beginIgnoringInteractionEvents()
+        activityIndicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
         PlanDataService.instance.requestPlan { (list) in
             for x in list{
-                self.activityIndicator.startAnimating()
-                UIApplication.shared.beginIgnoringInteractionEvents()
                 self.planList.append(x)
                 self.PlanTable.reloadData()
-                UIApplication.shared.endIgnoringInteractionEvents()
-                self.activityIndicator.stopAnimating()
-
+               
             }
             if self.planList.count == 0{
                 self.PlanTable.isHidden = true
                 self.guidLineLbl.text = "Start your first Goal ^"
+                UIApplication.shared.endIgnoringInteractionEvents()
+                self.activityIndicator.stopAnimating()
                 
             }
             else{
@@ -71,8 +69,12 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 self.PlanTable.isHidden = false
                 self.PlanTable.dataSource = self
                 self.PlanTable.delegate = self
+                UIApplication.shared.endIgnoringInteractionEvents()
+                self.activityIndicator.stopAnimating()
                 
             }
+
+            
             
             
         }
