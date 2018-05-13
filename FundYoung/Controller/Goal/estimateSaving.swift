@@ -61,7 +61,7 @@ class estimateSaving: UIViewController {
         InvestOnceView.click()
         MonthlyView.unclick()
         initialView.unclick()
-        PlanDataService.instance.TemperarydPlan.firstInvest = PlanDataService.instance.InvestOnce()
+        PlanDataService.instance.TemperarydPlan.firstInvest = Double(PlanDataService.instance.InvestOnce())
         PlanDataService.instance.TemperarydPlan.nextInvest = 0
         
         

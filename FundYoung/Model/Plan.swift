@@ -17,8 +17,8 @@ struct  Plan {
     var Risk: Int!
     var FundList = [Fund]()
     var investType : String!
-    var firstInvest: Int!
-    var nextInvest: Int!
+    var firstInvest: Double!
+    var nextInvest: Double!
 
     
     init(Id: Int, PlanName: String, Target : Int, NumberOfYear:Int) {

@@ -13,17 +13,53 @@ import Charts
 
 class PlanDataService{
     static let instance = PlanDataService()
-    private let Plans = [Plan(Id : 0,PlanName: "RoadTrip to U.S.", Target: 200000, NumberOfYear: 3),
-        Plan(Id : 1, PlanName: "RoadTrip to Japan", Target: 200000, NumberOfYear: 3),
-        Plan(Id : 2,PlanName: "RoadTrip to Thailand", Target: 200000, NumberOfYear: 3),
-        Plan(Id : 1, PlanName: "Home2", Target: 5000000, NumberOfYear: 20)
-    ]
+    var plans = [Plan]()
     var tempReturn: Int!
     var TemperarydPlan = Plan(Id: 0, PlanName: "", Target: 0, NumberOfYear: 0)
     var tempfundRatoList = [fundRatio]()
     var temAverageReturn = 0.0
     var tempAverageRisk  = 0.0
+    var planFunds = [FundNAV]()
     
+    func requestPlan(completionHandle: @escaping ([Plan])-> ())  {
+        let URL = "https://fundyoung.herokuapp.com/getplan"
+        print(URL)
+        let Token = UserDefaults.standard.string(forKey: "UserToken")
+        let headers = [
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": "Bearer " + Token!
+        ]
+        
+        Alamofire.request(URL, method: .get , parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { response in
+            if response.result.error == nil {
+                do {
+                    print(response.result.value)
+                    let temp = response.result.value as! [[String: Any]]
+                    for x in temp{
+                        let id = x["id"] as? Int ?? 0
+                        let name = x["name"] as? String ?? ""
+                        let target = x["target"] as? Int ?? 0
+                        let duration = x["duration"] as? Int ?? 0
+                        //let ratio = x["startdate"] as? String ?? ""
+
+                        let plan = Plan(Id: id, PlanName: name, Target: target, NumberOfYear: duration)
+                        self.plans.append(plan)
+                    }
+                    completionHandle(self.plans)
+                    
+                }
+                catch let error{
+                    debugPrint(error as Any)
+                }
+                
+            }
+            else{
+                debugPrint(response.result.error as Any)
+            }
+        })
+        
+        
+    }
     
     func requestFundByRisk(Risk: Int , completionHandle: @escaping ([fundRatio])-> ())  {
         let URL = "https://fundyoung.herokuapp.com/fundrisk/" + String(Risk)
@@ -69,7 +105,7 @@ class PlanDataService{
     func getTotalRisk()-> Double{
         var sum = 0.0
         for item in tempfundRatoList{
-            sum = sum + (item.ratio * Double(item.fund.risk))
+            sum = sum + ((item.ratio * 0.01) * Double(item.fund.risk))
         }
         let twodigitTotalRisk = Double((sum/100)*100)/100
         tempAverageRisk = twodigitTotalRisk
@@ -78,21 +114,17 @@ class PlanDataService{
     func getTotalReturn()-> Double{
         var sum = 0.0
         for item in tempfundRatoList{
-            sum = sum + (item.ratio * item.fundreturn)
+            sum = sum + ((item.ratio * 0.01) * item.fundreturn)
         }
         let twodigitTotalReturn = Double((sum/100)*100)/100
         temAverageReturn = twodigitTotalReturn
         return temAverageReturn
     }
 
-    func getPlan(forPlanID : Int) -> Plan {
-        print("get plan")
-        
-        return Plans[forPlanID]
-    }
-    func getPlans() -> [Plan] {
-        return Plans
-    }
+//    func getPlan(forPlanID : Int) -> Plan {
+//        print("get plan")
+//    }
+ 
     func InvestOnce() ->Int{
         let i = getTotalReturn()
         var pv = Double(TemperarydPlan.Target) / pow( 1.0 + i, Double(TemperarydPlan.NumberOfYear))
@@ -112,6 +144,51 @@ class PlanDataService{
         }
         let dataSet = PieChartDataSet(values: entries, label: nil)
         return dataSet
+        
+    }
+    func getfundPlanByID(planId: String , completionHandle: @escaping ([FundNAV])-> ())  {
+        let URL_GETPLAN = "https://fundyoung.herokuapp.com/plan/" + planId        //print(URL_GETRETURN)
+        let Token = UserDefaults.standard.string(forKey: "UserToken")
+        let headers = [
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": "Bearer " + Token!
+        ]
+        
+        Alamofire.request(URL_GETPLAN, method: .get , parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { response in
+            if response.result.error == nil {
+               // guard let data = response.data else{return}
+                print(response.result.value)
+                do {
+                    let temp = response.result.value as! [String: Any]
+         
+                        let plan =  temp["plan"] as! [String: Any]
+                        let name = plan["name"] as? String ?? ""
+                        let target = plan["target"] as? Int ?? 0
+                        let funds = plan["funds"] as? [[String: Any]]
+                    for fund in funds!{
+                            let fundID = fund["fundid"] as? String ?? ""
+                            let type = fund["type"] as? String ?? ""
+                            let weight = fund["value"] as? Double ?? 0
+                            let NAV = fund["nav"] as? Double ?? 0
+                            let getfund = Fund(name: fundID, risk: 0, type: type)
+                            let fundratio = fundRatio(fund: getfund, ratio: weight)
+                            let navFund = FundNAV(fund: fundratio, NAV: NAV)
+                            self.planFunds.append(navFund)
+                        }
+                        
+                    
+                    completionHandle(self.planFunds)
+                }
+                catch let error{
+                    debugPrint(error as Any)
+                }
+            }
+            else{
+                debugPrint(response.result.error as Any)
+            }
+            
+        })
+        
         
     }
     

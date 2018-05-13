@@ -16,8 +16,6 @@ class  FundDataService {
     static let instance = FundDataService()
     var Funds = [Fund]()
 
-
-    
     func requestAllFundData(completionHandler: @escaping() -> ()) {
         let URL_GETALLFUNDS = "https://fundyoung.herokuapp.com/allfunds"
         let Token = UserDefaults.standard.string(forKey: "UserToken")
@@ -96,6 +94,9 @@ class  FundDataService {
     func getAllFunds() -> [Fund] {
         return Funds
         
+    }
+    func ClearFunds()  {
+        Funds.removeAll()
     }
     
     

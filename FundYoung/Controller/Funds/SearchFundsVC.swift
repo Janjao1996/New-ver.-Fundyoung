@@ -73,6 +73,7 @@ class SearchFundsVC: UIViewController {
         }
     }
     @IBAction func unwindFromFundCheckVC(unwindSegue : UIStoryboardSegue){
+        FundDataService.instance.ClearFunds()
         
     }
 

@@ -9,9 +9,39 @@
 import UIKit
 import Charts
 
-class RebalanceVC: UIViewController {
+class RebalanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fundlist[section].list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let fundCell = tableView.dequeueReusableCell(withIdentifier: "funds") as? EstimateTableViewCell {
+            let fundRatioNAV = fundlist[indexPath.section].list[indexPath.row]
+            fundCell.updatView(fund:fundRatioNAV)
+            return fundCell
+        }
+        else{
+            return UITableViewCell()
+            
+        }
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return fundlist.count
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Money Market"
+        }
+        else if section == 1{
+            return "Fixed Income"
+        }else if section == 2{
+            return "Equity"
+        }
+        else{
+            return "Commodities"
+        }
+    }
     @IBOutlet weak var DoneBtn: UIButton!
     @IBOutlet weak var RelalanceBtn: UIButton!
     @IBOutlet weak var pieChart: PieChartView!
@@ -19,16 +49,50 @@ class RebalanceVC: UIViewController {
     @IBOutlet weak var GoalNameLbl: UILabel!
   
     
+    @IBOutlet weak var pie: PieChartView!
+    @IBOutlet weak var tableView: UITableView!
+    var MM = fundTypes(type: "Money Market")
+    var FI = fundTypes(type: "Fixed Income")
+    var EQ = fundTypes(type: "Equity")
+    var CM = fundTypes(type: "Commodities")
+    
+    var fundlist = [fundTypes]()
+    var PiechartData = [FundNAV]()
     override func viewDidLoad() {
         super.viewDidLoad()
         GoalNameLbl.text = plan_.PlanName
-        //DoneBtn.isHidden = true
-        pieChartUpdate()
-        
+        tableView.dataSource = self
+        tableView.delegate = self
+        fundlist.append(MM)
+        fundlist.append(FI)
+        fundlist.append(EQ)
+        fundlist.append(CM)
+        PlanDataService.instance.getfundPlanByID(planId: String(plan_.Id)) { (list) in
+            for x in list{
+                self.PiechartData.append(x)
+                if x.fund.fund.type == "Money market"{
+                    self.fundlist[0].list.append(x)
+                }
+                else if x.fund.fund.type == "Fixed Income"{
+                    self.fundlist[1].list.append(x)
+                }
+                else if x.fund.fund.type == "Equity"{
+                    self.fundlist[2].list.append(x)
+                    
+                }
+                else if x.fund.fund.type == "Commodities"{
+                    self.fundlist[3].list.append(x)
+                    
+                }
+                self.tableView.reloadData()
+                self.pieChartUpdate()
+            }
+        }
+    
     }
     func initPlan(plan: Plan){
-        plan_ = PlanDataService.instance.getPlan(forPlanID: plan.Id)
-        print(plan_.PlanName)
+        plan_ = Plan(Id: plan.Id, PlanName: plan.PlanName, Target: plan.Target, NumberOfYear: plan.NumberOfYear)
+        
     }
 
     
@@ -41,21 +105,33 @@ class RebalanceVC: UIViewController {
     }
     func pieChartUpdate(){
         
-        let entry1 = PieChartDataEntry(value: Double(50.0), label: "#1")
-        let entry2 = PieChartDataEntry(value: Double(50.0), label: "#2")
-        let dataSet = PieChartDataSet(values: [entry1, entry2], label: "Widget Types")
+        let dataSet = getDataSet()
         let data = PieChartData(dataSet: dataSet)
-        pieChart.data = data
-        pieChart.chartDescription?.text = "Share of Widgets by Type"
-        dataSet.colors = ChartColorTemplates.joyful()
-        //dataSet.valueColors = [UIColor.black]
-        pieChart.backgroundColor = UIColor.white
-        pieChart.holeColor = UIColor.clear
-        pieChart.chartDescription?.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
-        pieChart.legend.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
-        pieChart.notifyDataSetChanged()
-        
+        print(data.dataSets)
+        dataSet.colors = ChartColorTemplates.material()
+        pie.data = data
+        pie.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        pie.holeRadiusPercent = 0.4
+        pie.drawEntryLabelsEnabled = false
+        pie.drawHoleEnabled = true
+        pie.transparentCircleRadiusPercent = 0.5
+        pie.rotationEnabled = false
+        pie.holeColor = UIColor.clear
+        pie.legend.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        pie.notifyDataSetChanged()
     }
+    func getDataSet()-> PieChartDataSet{
+        var entries = [PieChartDataEntry]()
+        for x in 0...PiechartData.count-1{
+            let entry = PieChartDataEntry(value: PiechartData[x].fund.ratio, label: PiechartData[x].fund.fund.type)
+            entries.append(entry)
+        }
+        let dataSet = PieChartDataSet(values: entries, label: nil)
+        return dataSet
+    }
+    
     
   
 }
+
+

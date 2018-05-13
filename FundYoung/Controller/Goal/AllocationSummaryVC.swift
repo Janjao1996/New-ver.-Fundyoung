@@ -55,7 +55,7 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
     var CM = fundTypes(type: "Commodities")
     
     var fundlist = [fundTypes]()
-  
+    var insertList = [insertFund]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -74,6 +74,8 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
             FundDataService.instance.getFundNAV(fundID: x.fund.name) { (NAV) in
                 let twodigitNAV = Double((NAV/100)*100)
                 let fund = FundNAV(fund: x, NAV: twodigitNAV)
+                let insertfund = insertFund(fundID: x.fund.name, weigth: x.ratio, investUnit: (x.ratio * 0.01 * PlanDataService.instance.TemperarydPlan.firstInvest)/twodigitNAV, investValue: (x.ratio * 0.01 * PlanDataService.instance.TemperarydPlan.firstInvest))
+                self.insertList.append(insertfund)
                 print(fund)
                 if x.fund.type == "Money market"{
                     self.fundlist[0].list.append(fund)
@@ -142,17 +144,20 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
             ] as [String : Any]
         print(parameters)
         let URL = "https://fundyoung.herokuapp.com/plan/addplan"
-        Alamofire.request(URL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseString { (respone) in
+        Alamofire.request(URL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (respone) in
             if respone.result.error == nil{
                 do {
-                    
-                    let planID =  1
+                    let temp = respone.result.value as! [String: Any]
+                    let planID = temp["id"]
                     print(planID)
-                    for x in PlanDataService.instance.tempfundRatoList{
+                    for x in self.insertList{
                         let add_fund_URL = "https://fundyoung.herokuapp.com/plan/addfundplan"
                         let fund_parameter = ["planid": planID,
-                                              "fundid": x.fund.name,
-                                              "weight": x.ratio
+                                              "fundid": x.fundID,
+                                              "weight": x.weigth,
+                                              "investunit":x.investUnit,
+                                              "investvalue":x.investvalue
+                            
                             ] as [String : Any]
                         Alamofire.request(add_fund_URL, method: .post, parameters: fund_parameter, encoding: JSONEncoding.default, headers: headers).responseString { (fundrespone) in
                             if fundrespone.result.error == nil{
@@ -175,6 +180,8 @@ class AllocationSummaryVC: UIViewController, UITableViewDelegate, UITableViewDat
             } else{
                 print(respone.result.error)
             }
+        
+            
         }
 
     }
@@ -202,5 +209,18 @@ struct fundTypes{
         self.list = [FundNAV]()
     }
 
+}
+struct insertFund{
+    var fundID: String!
+    var weigth: Double!
+    var investUnit: Double!
+    var investvalue: Double!
+    init(fundID: String, weigth: Double!, investUnit: Double, investValue: Double) {
+        self.fundID = fundID
+        self.weigth = weigth
+        self.investUnit = investUnit
+        self.investvalue = investValue
+        
+    }
 }
 

@@ -63,7 +63,17 @@ class SignInVC: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        //try! Auth.auth().signOut()
+    
+        
         if let user = Auth.auth().currentUser {
+            user.getIDTokenForcingRefresh(true, completion: { (idToken, error) in
+                
+                if let token = idToken {
+                    UserDefaults.standard.set(token, forKey: "UserToken")
+                    print(UserDefaults.standard.string(forKey: "UserToken"))
+                }
+            })
             self.performSegue(withIdentifier: TO_LOGIN, sender: self)
         }
     }

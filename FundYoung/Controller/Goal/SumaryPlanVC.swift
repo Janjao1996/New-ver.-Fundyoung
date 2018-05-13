@@ -11,7 +11,7 @@ import UIKit
 class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let plan = PlanDataService.instance.getPlans()[indexPath.row]
+            let plan = planList[indexPath.row]
             performSegue(withIdentifier: "RebanceVC", sender: plan)
        
     }
@@ -32,8 +32,10 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
    
-    
+    var planList = [Plan]()
     @IBOutlet weak var menuBtn: UIButton!
+    
+    var activityIndicator = UIActivityIndicatorView()
     
     override func viewDidLoad() {
         
@@ -42,30 +44,49 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
-        
-        if PlanDataService.instance.getPlans().count == 0{
-            PlanTable.isHidden = true
-            guidLineLbl.text = "Start you first Goal"
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = .gray
+        self.view.addSubview(activityIndicator)
+//        activityIndicator.startAnimating()
+//        UIApplication.shared.beginIgnoringInteractionEvents()
+        PlanDataService.instance.requestPlan { (list) in
+            for x in list{
+                self.activityIndicator.startAnimating()
+                UIApplication.shared.beginIgnoringInteractionEvents()
+                self.planList.append(x)
+                self.PlanTable.reloadData()
+                UIApplication.shared.endIgnoringInteractionEvents()
+                self.activityIndicator.stopAnimating()
+
+            }
+            if self.planList.count == 0{
+                self.PlanTable.isHidden = true
+                self.guidLineLbl.text = "Start your first Goal ^"
+                
+            }
+            else{
+                
+                self.guidLineLbl.isHidden = true
+                self.PlanTable.isHidden = false
+                self.PlanTable.dataSource = self
+                self.PlanTable.delegate = self
+                
+            }
+            
             
         }
-        else{
-            guidLineLbl.isHidden = true
-            PlanTable.isHidden = false
-            PlanTable.dataSource = self
-            PlanTable.delegate = self
-            
-        }
-        
+       
        
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return PlanDataService.instance.getPlans().count
+            return planList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "plancell") as? planTableCell {
-                let plan = PlanDataService.instance.getPlans()[indexPath.row]
+                let plan = planList[indexPath.row]
                 cell.updateView(plan: plan)
                 return  cell
         }
@@ -74,12 +95,6 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             return planTableCell()
         }
     }
-    /*
-    @IBAction func switchTermAction(_ sender: UISegmentedControl) {
-        PlanTable.reloadData()
-        
-    }
-*/
     
     @IBAction func unwindFromIdetifyingVC(unwindSegue : UIStoryboardSegue){
         
@@ -91,3 +106,5 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
 
 }
+
+

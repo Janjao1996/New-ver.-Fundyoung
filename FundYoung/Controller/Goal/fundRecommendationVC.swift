@@ -58,6 +58,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
         UIApplication.shared.beginIgnoringInteractionEvents()
         FundTable.dataSource = self
         FundTable.delegate = self
+        
         PlanDataService.instance.requestFundByRisk(Risk: PlanDataService.instance.TemperarydPlan.Risk) { (list) in
             
             for x in list{
