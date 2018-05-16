@@ -49,6 +49,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var portRiskLabel: UILabel!
     var activityIndicator = UIActivityIndicatorView()
     override func viewDidLoad() {
+        fundList.removeAll()
         super.viewDidLoad()
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
@@ -129,6 +130,7 @@ class fundRecommendationVC: UIViewController, UITableViewDelegate, UITableViewDa
     }*/
     @IBAction func SelfPressed(_ sender: Any) {
         performSegue(withIdentifier: "goToSelf", sender: self)
+        PlanDataService.instance.tempfundRatoList.removeAll()
         
     }
     

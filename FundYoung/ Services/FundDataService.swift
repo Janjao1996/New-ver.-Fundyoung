@@ -31,7 +31,7 @@ class  FundDataService {
                 do {
                     let temp = response.result.value as! [[String: Any]]
                     for x in temp{
-                        let name = x["name"] as? String ?? ""
+                        let name = x["fundid"] as? String ?? ""
                         let risk = x["risk"] as? Int ?? 0
                         let type = x["type"] as? String ?? ""
                         let fund = Fund(name: name, risk: risk, type: type)
@@ -64,10 +64,10 @@ class  FundDataService {
         
         Alamofire.request(URL_GETRETURN, method: .get , parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { response in
             if response.result.error == nil {
-               // guard let data = response.data else{return}
-                
+                   // guard let data = response.data else{return}
+                print(response.result.value)
                 do {
-                   // print(response.result.value)
+                    
                     let temp = response.result.value as! [String: Any]
                     completionHandle(temp["fundreturn"] as? Double ?? 0)
                 }

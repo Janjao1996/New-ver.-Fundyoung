@@ -20,7 +20,7 @@ class EstimateTableViewCell: UITableViewCell {
         fundname.text = fund.fund.fund.name
             
         investValue.text = String(Double(PlanDataService.instance.TemperarydPlan.firstInvest) * fund.fund.ratio * 0.01)
-        totalUnit.text = String(Double(PlanDataService.instance.TemperarydPlan.firstInvest) * fund.fund.ratio * (1/fund.NAV) * 0.01)
+        totalUnit.text = String(Int(Double(PlanDataService.instance.TemperarydPlan.firstInvest) * fund.fund.ratio * (1/fund.NAV) * 0.01))
                                 
         NAVperUnit.text = String(fund.NAV)
     }

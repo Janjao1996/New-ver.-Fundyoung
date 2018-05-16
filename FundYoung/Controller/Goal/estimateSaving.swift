@@ -24,7 +24,7 @@ class estimateSaving: UIViewController {
         super.viewDidLoad()
         
         investOnceLbl.text = String(PlanDataService.instance.InvestOnce())
-        
+        monthlyLbl.text = String(PlanDataService.instance.InvestMonthly())
         
         
         let calcBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
@@ -71,6 +71,7 @@ class estimateSaving: UIViewController {
         MonthlyView.click()
         InvestOnceView.unclick()
         initialView.unclick()
+        PlanDataService.instance.TemperarydPlan.firstInvest = Double(PlanDataService.instance.InvestMonthly())
     }
     @objc func initialTapped(_ sender: UITapGestureRecognizer){
         PlanDataService.instance.TemperarydPlan.investType = "InvestSomeAndMonthly"
@@ -81,7 +82,12 @@ class estimateSaving: UIViewController {
     }
 
     @objc func calculate(){
-        InitMonthlyLbl.text = String(500000)
+        let invest = Int(initialInvestLbl.text!)
+        PlanDataService.instance.TemperarydPlan.firstInvest = Double(invest!)
+        print(invest)
+        let monthly = PlanDataService.instance.InvestSomeInit(invest: invest!)
+        PlanDataService.instance.TemperarydPlan.nextInvest = Double(monthly)
+        InitMonthlyLbl.text = String(monthly)
         view.endEditing(true)
         
     }

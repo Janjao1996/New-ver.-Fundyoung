@@ -38,7 +38,8 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var activityIndicator = UIActivityIndicatorView()
     
     override func viewDidLoad() {
-        
+        PlanDataService.instance.plans.removeAll()
+        planList.removeAll()
         super.viewDidLoad()
         //FundDataService.instance.requestAllFundData()
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
@@ -50,11 +51,14 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         UIApplication.shared.beginIgnoringInteractionEvents()
-        PlanDataService.instance.requestPlan { (list) in
+//        PlanDataService.instance.requestPlan { (list) in
+//
+//        }
+        PlanDataService.instance.getPlanAll { (list) in
             for x in list{
                 self.planList.append(x)
                 self.PlanTable.reloadData()
-               
+                
             }
             if self.planList.count == 0{
                 self.PlanTable.isHidden = true
@@ -73,12 +77,7 @@ class SumaryPlanVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 self.activityIndicator.stopAnimating()
                 
             }
-
-            
-            
-            
         }
-       
        
         
     }

@@ -20,7 +20,7 @@ class RecomendedFundCell: UITableViewCell {
       
         FundName.text = fund.fund.name
         weightLbl.text = String(fund.ratio)
-        riskLbl.text = String(fund.fund.risk)
+        //riskLbl.text = String(fund.fund.risk ?? 0)
         Return.text = String(fund.fundreturn ?? 0)
         AMname.text = "SCBAM"
     }

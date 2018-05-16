@@ -35,7 +35,6 @@
 		A53F0F04207A74CB008B1679 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F0F03207A74CB008B1679 /* SignUpVC.swift */; };
 		A548A8272071156100C7E1AC /* SumaryPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8262071156100C7E1AC /* SumaryPlanVC.swift */; };
 		A548A82920711EB500C7E1AC /* planTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A82820711EB500C7E1AC /* planTableCell.swift */; };
-		A548A82E207282BB00C7E1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A548A82D207282BA00C7E1AC /* Assets.xcassets */; };
 		A548A8322072A9C800C7E1AC /* DurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8312072A9C800C7E1AC /* DurationVC.swift */; };
 		A548A8342074B17E00C7E1AC /* fundRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8332074B17E00C7E1AC /* fundRatio.swift */; };
 		A548A8362076711500C7E1AC /* customUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548A8352076711400C7E1AC /* customUIView.swift */; };
@@ -69,6 +68,7 @@
 		A5E76AC22082941C0076958F /* NewsContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC12082941C0076958F /* NewsContentVC.swift */; };
 		A5E76AC4208346630076958F /* NavibarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E76AC3208346630076958F /* NavibarCustom.swift */; };
 		A5EFFD1C2098CDE500B446EA /* EstimateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFFD1B2098CDE500B446EA /* EstimateTableViewCell.swift */; };
+		A5F5E24420AB68AF0026AEE9 /* Assets 02-09-25-823.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F5E24320AB68AF0026AEE9 /* Assets 02-09-25-823.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,7 +103,6 @@
 		A53F0F03207A74CB008B1679 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A548A8262071156100C7E1AC /* SumaryPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumaryPlanVC.swift; sourceTree = "<group>"; };
 		A548A82820711EB500C7E1AC /* planTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planTableCell.swift; sourceTree = "<group>"; };
-		A548A82D207282BA00C7E1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A548A8312072A9C800C7E1AC /* DurationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationVC.swift; sourceTree = "<group>"; };
 		A548A8332074B17E00C7E1AC /* fundRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundRatio.swift; sourceTree = "<group>"; };
 		A548A8352076711400C7E1AC /* customUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customUIView.swift; sourceTree = "<group>"; };
@@ -139,6 +138,7 @@
 		A5E76AC12082941C0076958F /* NewsContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContentVC.swift; sourceTree = "<group>"; };
 		A5E76AC3208346630076958F /* NavibarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavibarCustom.swift; sourceTree = "<group>"; };
 		A5EFFD1B2098CDE500B446EA /* EstimateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateTableViewCell.swift; sourceTree = "<group>"; };
+		A5F5E24320AB68AF0026AEE9 /* Assets 02-09-25-823.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 02-09-25-823.xcassets"; sourceTree = "<group>"; };
 		C8BC92BC8BC0F0A90E3CCD66 /* Pods-FundYoung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundYoung.release.xcconfig"; path = "Pods/Target Support Files/Pods-FundYoung/Pods-FundYoung.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,8 +275,8 @@
 				A562799D203854E9000DF151 /* Main.storyboard */,
 				A56279A2203854E9000DF151 /* LaunchScreen.storyboard */,
 				A567A0A2207E0F9D0019CEFA /* GoogleService-Info.plist */,
+				A5F5E24320AB68AF0026AEE9 /* Assets 02-09-25-823.xcassets */,
 				A56279A5203854E9000DF151 /* Info.plist */,
-				A548A82D207282BA00C7E1AC /* Assets.xcassets */,
 			);
 			path = FundYoung;
 			sourceTree = "<group>";
@@ -420,8 +420,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56279A4203854E9000DF151 /* LaunchScreen.storyboard in Resources */,
+				A5F5E24420AB68AF0026AEE9 /* Assets 02-09-25-823.xcassets in Resources */,
 				A567A0A3207E0F9D0019CEFA /* GoogleService-Info.plist in Resources */,
-				A548A82E207282BB00C7E1AC /* Assets.xcassets in Resources */,
 				A562799F203854E9000DF151 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

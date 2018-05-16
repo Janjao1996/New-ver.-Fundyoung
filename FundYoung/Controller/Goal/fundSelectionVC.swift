@@ -57,16 +57,26 @@ class fundSelectionVC: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     
     
-    
+    var activityIndicator = UIActivityIndicatorView()
     
     var fundtype: String!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        PlanDataService.instance.tempfundRatoList.removeAll()
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = .gray
+        self.view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
         FundTable.dataSource = self
         FundTable.delegate = self
-
-        
+        FundDataService.instance.requestAllFundData {
+            self.FundTable.reloadData()
+            
+            UIApplication.shared.endIgnoringInteractionEvents()
+            self.activityIndicator.stopAnimating()
+        }
         
         
         

@@ -63,11 +63,13 @@ class RebalanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     var PiechartData = [FundNAV]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        PlanDataService.instance.planFunds.removeAll()
+        fundlist.removeAll()
+        PiechartData.removeAll()
+        totalPort.text = String(plan_.totalPort)
         GoalNameLbl.text = plan_.PlanName
         targetLbl.text = String(plan_.Target)
         DurationLbl.text = String(plan_.NumberOfYear)
-        
-        
         tableView.dataSource = self
         tableView.delegate = self
         fundlist.append(MM)
@@ -96,7 +98,7 @@ class RebalanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                 self.tableView.reloadData()
                 self.pieChartUpdate()
             }
-            self.totalPort.text = String(plan.totalPort)
+            //self.totalPort.text = String(plan.totalPort)
         }
     
     }

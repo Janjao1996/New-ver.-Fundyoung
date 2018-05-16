@@ -26,7 +26,7 @@ class RiskSelectedVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         PlanDataService.instance.TemperarydPlan.Risk = row + 1
     }
     
-    let risk = ["Risk-Adverse","Conservative","Balanced","Advanced","Aggressive"]
+    let risk = ["ความเสี่ยงต่ำมาก","ความเสี่ยงต่ำ","ความเสี่ยงปานกลาง","ความเสี่ยงสูง","ความเสี่ยงสูงมาก"]
     
     
     @IBOutlet weak var riskPicker: UIPickerView!

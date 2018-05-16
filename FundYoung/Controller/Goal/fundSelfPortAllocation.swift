@@ -15,9 +15,12 @@ class fundSelfPortAllocation: UIViewController, UITableViewDataSource,  UITableV
         @IBOutlet weak var FundTable: UITableView!
         @IBOutlet weak var portRiskLabel: UILabel!
         var selectedFund: Fund!
+    
+    
         override func viewDidLoad() {
             super.viewDidLoad()
-            portRiskLabel.text = "Your Port Risl : "
+            PlanDataService.instance.tempfundRatoList.removeAll()
+           // portRiskLabel.text = "Your Port Risl : "
          
             FundTable.dataSource = self
             FundTable.delegate = self

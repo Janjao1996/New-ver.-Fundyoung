@@ -63,7 +63,7 @@ class SignInVC: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //try! Auth.auth().signOut()
+       //try! Auth.auth().signOut()
     
         
         if let user = Auth.auth().currentUser {

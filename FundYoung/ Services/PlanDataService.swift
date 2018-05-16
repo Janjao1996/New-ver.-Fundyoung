@@ -77,7 +77,7 @@ class PlanDataService{
                     let temp = response.result.value as! [[String: Any]]
                     for x in temp{
                         let fund =  x["fund"] as! [String: Any]
-                        let name = fund["name"] as? String ?? ""
+                        let name = fund["fundid"] as? String ?? ""
                         let risk = fund["risk"] as? Int ?? 0
                         let type = fund["type"] as? String ?? ""
                         let ratio = x["ratio"] as? Double ?? 0.0
@@ -132,10 +132,21 @@ class PlanDataService{
         return Int(pv)
     }
     func InvestMonthly() -> Int {
-        return 0
+        var i = getTotalReturn()
+            i = i / 12
+        var pmt = Double(TemperarydPlan.Target) / (((pow((1 + i),(Double(TemperarydPlan.NumberOfYear) * 12))) - 1) / i )
+ 
+        return Int(pmt)
     }
     func InvestSomeInit(invest: Int) -> Int {
-        return 0
+        var i = getTotalReturn()
+            i = i / 12
+        var fv = Double(invest) * (pow(Double(1 + i), Double(TemperarydPlan.NumberOfYear) * 12))
+        var fv2 = TemperarydPlan.Target - Int(fv)
+        var pmt = Double(fv2) / (((pow((1 + i),(Double(TemperarydPlan.NumberOfYear) * 12))) - 1) / i )
+        
+        
+        return Int(pmt)
     }
     func getFundWeightChart(risk:Int)-> PieChartDataSet {
         var entries = [PieChartDataEntry]()
@@ -147,7 +158,7 @@ class PlanDataService{
         return dataSet
         
     }
-    func getfundPlanByID(planId: String , completionHandle: @escaping ([FundNAV], SummaryPlanDetail)-> ())  {
+    func getfundPlanByID(planId: String , completionHandle: @escaping ([FundNAV], [Plan])-> ())  {
         let URL_GETPLAN = "https://fundyoung.herokuapp.com/plan/" + planId        //print(URL_GETRETURN)
         let Token = UserDefaults.standard.string(forKey: "UserToken")
         let headers = [
@@ -161,7 +172,8 @@ class PlanDataService{
                 print(response.result.value)
                 do {
                     let temp = response.result.value as! [String: Any]
-                        let plan =  temp["plan"] as! [String: Any]
+                    let planArray =  temp["plan"] as!  [[String:Any]]
+                    let plan = planArray[0]
                         let name = plan["name"] as? String ?? ""
                         let target = plan["target"] as? Int ?? 0
                         let totalport = plan["porttotal"] as? Int ?? 0
@@ -187,7 +199,53 @@ class PlanDataService{
                         }
                         
                     
-                    completionHandle(self.planFunds, plan_)
+                    completionHandle(self.planFunds, self.plans)
+                }
+                catch let error{
+                    debugPrint(error as Any)
+                }
+            }
+            else{
+                debugPrint(response.result.error as Any)
+            }
+            
+        })
+        
+        
+    }
+    func getPlanAll(completionHandle: @escaping ([Plan])-> ())  {
+        let URL_GETPLAN = "https://fundyoung.herokuapp.com/plan/all"        //print(URL_GETRETURN)
+        let Token = UserDefaults.standard.string(forKey: "UserToken")
+        let headers = [
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": "Bearer " + Token!
+        ]
+        
+        Alamofire.request(URL_GETPLAN, method: .get , parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { response in
+            if response.result.error == nil {
+                // guard let data = response.data else{return}
+                print("get plan ")
+                print(response.result.value)
+                do {
+                    let temp = response.result.value as! [String: Any]
+                    let planArray =  temp["plan"] as!  [[String:Any]]
+                    //let plan = planArray[0]
+                    for x in planArray{
+                        let id = x["id"] as? Int ?? 0
+                        let name = x["name"] as? String ?? ""
+                        let target = x["target"] as? Int ?? 0
+                        let totalport = x["porttotal"] as? Double ?? 0
+                        let duration = x["duration"] as? Int ?? 0
+                        var plan_ = Plan(Id: id, PlanName: name, Target: target, NumberOfYear: duration)
+                        
+                        plan_.totalPort = Int(totalport)
+                        print(plan_.totalPort)
+                        
+                        self.plans.append(plan_)
+                    }
+                    
+                    
+                    completionHandle(self.plans)
                 }
                 catch let error{
                     debugPrint(error as Any)
@@ -210,4 +268,5 @@ struct SummaryPlanDetail{
     var totalPort: Int!
     
 }
+
 

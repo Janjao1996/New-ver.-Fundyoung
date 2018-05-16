@@ -12,10 +12,13 @@ class planTableCell: UITableViewCell {
 
 
     @IBOutlet weak var planNameLbl: UILabel!
+    @IBOutlet weak var navlbl: UILabel!
     
     func updateView(plan: Plan) {
         
         planNameLbl.text = plan.PlanName
+        navlbl.text = String(plan.totalPort)
+        
     }
  
 
